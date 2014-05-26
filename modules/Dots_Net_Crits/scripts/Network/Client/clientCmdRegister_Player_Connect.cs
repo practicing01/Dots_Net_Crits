@@ -20,6 +20,10 @@ if (%ScriptObject_Client.GameConnection_Handle==%GameConnection_Handle)//Already
 
 %ScriptObject_Client.Connector_Name=%Connector_Name;//Refresh name.
 
+//Refresh lobby clients list.
+
+Module_Lobby.Populate_Connected_Clients_List();
+
 return;
 
 }
@@ -36,5 +40,9 @@ Connector_Name=%Connector_Name;
 };
 
 Dots_Net_Crits.Simset_Client_List.add(%ScriptObject_Client);
+
+//Refresh lobby clients list.
+
+Module_Lobby.Populate_Connected_Clients_List();
 
 }

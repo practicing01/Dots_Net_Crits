@@ -29,5 +29,214 @@
 		hovertime="1000"
 		groupNum="-1"
 		useMouseEvents="1" />
-		
+
+	<!-- Connected clients list -->
+	<GuiScrollCtrl
+			Name="Gui_Scroller_Connected_Clients"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="25 140"
+			Extent="200 200"
+			MinExtent="1 1"
+			canSave="1"
+			Visible="1"
+			Active="1"
+			hovertime="1000"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					Name="Gui_List_Connected_Clients"
+					Profile="gui_list_profile_colored"
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="185 200"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+
+	<!-- Party B list -->
+<!--	<GuiScrollCtrl
+			Name="Gui_Scroller_Party_B"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="575 140"
+			Extent="200 200"
+			MinExtent="1 1"
+			canSave="1"
+			Visible="1"
+			Active="1"
+			hovertime="1000"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					Name="Gui_List_Party_B"
+					Profile="gui_list_profile_colored"
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="185 200"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+-->
+	<!-- Gameplay modules list -->
+	<GuiScrollCtrl
+			Name="Gui_Scroller_Gameplay_Modules"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="300 140"
+			Extent="200 200"
+			MinExtent="1 1"
+			canSave="1"
+			Visible="1"
+			Active="1"
+			hovertime="1000"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					Name="Gui_List_Gameplay_Modules"
+					Profile="gui_list_profile_colored"
+					class="Class_Gui_List_Gameplay_Modules"
+					command=""
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="185 200"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+
+		<!-- Join Party A -->
+<!--	<GuiButtonCtrl
+		Name="Gui_Button_Lobby_Join_Party_A"
+		Profile="BlackButtonProfile"
+		class="Class_Gui_Lobby_Button"
+		Button_Type="Join_Party_A"
+		Text="Join Party"
+		ButtonType="PushButton"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="50 340"
+		Extent="140 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+-->
+		<!-- Join Party B -->
+<!--	<GuiButtonCtrl
+		Name="Gui_Button_Lobby_Join_Party_B"
+		Profile="BlackButtonProfile"
+		class="Class_Gui_Lobby_Button"
+		Button_Type="Join_Party_B"
+		Text="Join Party"
+		ButtonType="PushButton"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="594 340"
+		Extent="140 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+-->
+		<!-- Ready -->
+	<GuiButtonCtrl
+		Name="Gui_Button_Lobby_Ready"
+		Profile="BlackButtonProfile"
+		class="Class_Gui_Lobby_Button"
+		Button_Type="Ready"
+		Text="Ready"
+		ButtonType="PushButton"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="339 440"
+		Extent="140 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+
+		<!-- Connected clients -->
+	<GuiTextCtrl
+		Profile="GuiTextProfile"
+		Text="Players"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="93 76"
+		Extent="64 64"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+
+		<!-- Party B -->
+<!--	<GuiTextCtrl
+		Profile="GuiTextProfile"
+		Text="Party B"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="643 76"
+		Extent="64 64"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+-->
+		<!--Choose Gameplay -->
+	<GuiTextCtrl
+		Profile="GuiTextProfile"
+		Text="Choose Gameplay"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="355 76"
+		Extent="90 64"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="1"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
+							
 </GuiControl>

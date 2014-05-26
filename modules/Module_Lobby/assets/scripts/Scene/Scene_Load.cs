@@ -2,7 +2,11 @@ exec("./Ass_Load.cs");
 exec("./Ass_Unload.cs");
 exec("./Variables_Initialize.cs");
 exec("./Scene_Initialize.cs");
+exec("./Populate_Connected_Clients_List.cs");
+exec("./../Remote_Procedure_Calls/Remote_Procedure_Calls.cs");
+exec("./Load_Gameplay.cs");
 exec("./../Buttons/Buttons.cs");
+exec("./../Classes/Classes.cs");
 
 function Module_Lobby::Scene_Load(%this)
 {

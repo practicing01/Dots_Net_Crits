@@ -1,3 +1,3 @@
-exec("./Register_Player_Connect.cs");
-exec("./Register_Player_Disconnect.cs");
-exec("./Query_Response.cs");
+exec("./clientCmdRegister_Player_Connect.cs");
+exec("./clientCmdRegister_Player_Disconnect.cs");
+exec("./clientCmdQuery_Response.cs");

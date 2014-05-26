@@ -1,6 +1,24 @@
 function Module_Lobby::Scene_Unload(%this)
 {
 
+if (isObject(%this.SimSet_Gameplay_Modules))
+{
+
+%this.SimSet_Gameplay_Modules.deleteObjects();
+
+%this.SimSet_Gameplay_Modules.delete();
+
+}
+
+if (isObject(%this.Simset_Client_List))
+{
+
+%this.Simset_Client_List.deleteObjects();
+
+%this.Simset_Client_List.delete();
+
+}
+
 cancel(%this.Schedule_Rotate_Stars);
 
 %this.SimSet_Stars.deleteObjects();

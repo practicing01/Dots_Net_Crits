@@ -1,8 +1,8 @@
 <ModuleDefinition
-	ModuleId="Module_Construct"
-	Type="Gameplay_Module"
+	ModuleId="Module_Teleport"
+	Type="Gameplay_Mechanic"
 	VersionId="1"
-	Description="Construct Gameplay Module"
+	Description="Teleport gameplay mechanic."
 	ScriptFile="main.cs"
 	CreateFunction="create"
     DestroyFunction="destroy">

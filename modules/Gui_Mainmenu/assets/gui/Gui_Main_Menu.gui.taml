@@ -116,8 +116,8 @@
 			Visible="1"
 			Active="1"
 			hovertime="1000"
-			vScrollBar="alwaysOn"
-			hScrollBar="alwaysOff">
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
 			
 				<GuiListBoxCtrl 
 					Name="Gui_List_Servers"
@@ -128,7 +128,7 @@
 					HorizSizing="relative"
 					VertSizing="relative"
 					Position="0 0"
-					Extent="200 200"
+					Extent="185 200"
 					MinExtent="1 1"
 					canSave="1"
 					Visible="1"

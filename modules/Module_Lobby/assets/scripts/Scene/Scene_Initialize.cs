@@ -1,6 +1,49 @@
 function Module_Lobby::Scene_Initialize(%this)
 {
 
+//Populate the connected clients list.
+
+%this.Populate_Connected_Clients_List();
+
+//Search for gameplay modules and populate the list.
+
+Gui_List_Gameplay_Modules.clearItems();
+
+%String_Gameplay_Modules=ModuleDatabase.findModuleTypes("Gameplay_Module",false);
+
+if (isObject(%this.SimSet_Gameplay_Modules))
+{
+
+%this.SimSet_Gameplay_Modules.deleteObjects();
+
+}
+
+%Int_Module_Count=getWordCount(%String_Gameplay_Modules);
+
+for (%x=0;%x<%Int_Module_Count;%x++)
+{
+
+%Module_ID_Gameplay_Module=getWord(%String_Gameplay_Modules,%x);
+
+ModuleDatabase.LoadExplicit(%Module_ID_Gameplay_Module.ModuleId);
+
+%ScriptObject_Gameplay_Module=new ScriptObject()
+{
+
+Module_ID_Gameplay_Module=%Module_ID_Gameplay_Module.ModuleId;
+
+String_Description=%Module_ID_Gameplay_Module.Description;
+
+};
+
+%this.SimSet_Gameplay_Modules.add(%ScriptObject_Gameplay_Module);
+
+Gui_List_Gameplay_Modules.addItem(%Module_ID_Gameplay_Module.Description);
+
+ModuleDatabase.unloadExplicit(%Module_ID_Gameplay_Module.ModuleId);
+
+}
+
 //Generate trigonometry tables.
 
 for (%x=0;%x<360;%x++)

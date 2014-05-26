@@ -1,9 +1,9 @@
 function Module_Gui_Instructions_Menu::Scene_Initialize(%this)
 {
 
-%Text="Credits for code and art to their respective authors.";
+%Text="Refresh the server list,";
 %Text=%Text NL "";
-%Text=%Text NL "Thank you for playing. ~ practicing01";
+%Text=%Text NL "Double click a server entry.";
 
 %this.Gui_Text_ML=new GuiMLTextCtrl()
 {

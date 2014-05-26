@@ -1,8 +1,7 @@
 <ModuleDefinition
-	ModuleId="Module_Construct"
-	Type="Gameplay_Module"
+	ModuleId="Module_Gameplay_Mechanic_Browser"
 	VersionId="1"
-	Description="Construct Gameplay Module"
+	Description="Module Gameplay Mechanic Browser"
 	ScriptFile="main.cs"
 	CreateFunction="create"
     DestroyFunction="destroy">

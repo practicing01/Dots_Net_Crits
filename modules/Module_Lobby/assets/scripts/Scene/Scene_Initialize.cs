@@ -1,6 +1,15 @@
 function Module_Lobby::Scene_Initialize(%this)
 {
 
+//Register the lobby for client synchronization.
+
+if (!Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.isMember(%this))
+{
+
+Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.add(%this);
+
+}
+
 //Populate the connected clients list.
 
 %this.Populate_Connected_Clients_List();

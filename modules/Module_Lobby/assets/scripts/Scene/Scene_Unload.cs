@@ -1,6 +1,13 @@
 function Module_Lobby::Scene_Unload(%this)
 {
 
+if (Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.isMember(%this))
+{
+
+Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.remove(%this);
+
+}
+
 if (isObject(%this.SimSet_Gameplay_Modules))
 {
 

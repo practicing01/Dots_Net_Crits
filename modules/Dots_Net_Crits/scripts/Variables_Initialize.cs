@@ -32,4 +32,8 @@ allowConnections(true);
 
 %this.Bool_Is_Client=true;
 
+//List of modules that need to know when clients connect or disconnect.
+//Their Synchronize_Clients() function will be called.
+%this.SimSet_Modules_That_Synchronize_Clients=new SimSet();
+
 }

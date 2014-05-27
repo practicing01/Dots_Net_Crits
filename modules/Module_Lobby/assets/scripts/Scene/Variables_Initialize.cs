@@ -5,28 +5,6 @@ function Module_Lobby::Variables_Initialize(%this)
 
 %this.Simset_Client_List=new SimSet();
 
-for (%x=0;%x<Dots_Net_Crits.Simset_Client_List.getCount();%x++)
-{
-
-%ScriptObject_Client=Dots_Net_Crits.Simset_Client_List.getObject(%x);
-
-%ScriptObject_Client_Copy=new ScriptObject()
-{
-
-GameConnection_Handle=%ScriptObject_Client.GameConnection_Handle;
-
-Connector_Name=%ScriptObject_Client.Connector_Name;
-
-//Specific to Module_Lobby
-
-Bool_Ready=false;
-
-};
-
-%this.Simset_Client_List.add(%ScriptObject_Client_Copy);
-
-}
-
 /********************************/
 
 %this.SimSet_Gameplay_Modules=new SimSet();

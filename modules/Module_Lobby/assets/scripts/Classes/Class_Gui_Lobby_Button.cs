@@ -6,7 +6,7 @@ if (%this.Button_Type$="Ready")
 
 //Relay that we're ready.
 
-commandToServer('Lobby_Client_Ready');
+commandToServer('Relay_Module_Function',Module_Lobby,"Lobby_Client_Ready");
 
 }
 

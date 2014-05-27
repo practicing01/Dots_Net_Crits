@@ -1,2 +1,2 @@
 exec("./serverCmdMaster_Server_Query_Request.cs");
-exec("./serverCmdLobby_Client_Ready.cs");
+exec("./serverCmdRelay_Module_Function.cs");

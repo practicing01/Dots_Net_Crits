@@ -20,9 +20,14 @@ if (%ScriptObject_Client.GameConnection_Handle==%GameConnection_Handle)//Already
 
 %ScriptObject_Client.Connector_Name=%Connector_Name;//Refresh name.
 
-//Refresh lobby clients list.
+for (%y=0;%y<Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.getCount();%y++)
+{
 
-Module_Lobby.Populate_Connected_Clients_List();
+%Module_ID=Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.getObject(%y);
+
+%Module_ID.Synchronize_Clients(%ScriptObject_Client,true);
+
+}
 
 return;
 
@@ -41,8 +46,13 @@ Connector_Name=%Connector_Name;
 
 Dots_Net_Crits.Simset_Client_List.add(%ScriptObject_Client);
 
-//Refresh lobby clients list.
+for (%y=0;%y<Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.getCount();%y++)
+{
 
-Module_Lobby.Populate_Connected_Clients_List();
+%Module_ID=Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.getObject(%y);
+
+%Module_ID.Synchronize_Clients(%ScriptObject_Client,true);
+
+}
 
 }

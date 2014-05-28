@@ -190,6 +190,27 @@
 		hovertime="1000"
 		groupNum="-1"
 		useMouseEvents="1" />
+		<!-- Start -->
+	<GuiButtonCtrl
+		Name="Gui_Button_Lobby_Start"
+		Profile="BlackButtonProfile"
+		class="Class_Gui_Lobby_Button"
+		Button_Type="Start"
+		Text="Start"
+		ButtonType="PushButton"
+		canSaveDynamicFields="0"
+		isContainer="0"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="660 440"
+		Extent="140 30"
+		MinExtent="1 1"
+		canSave="1"
+		Visible="0"
+		Active="1"
+		hovertime="1000"
+		groupNum="-1"
+		useMouseEvents="1" />
 
 		<!-- Connected clients -->
 	<GuiTextCtrl

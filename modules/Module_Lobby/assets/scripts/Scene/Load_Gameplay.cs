@@ -1,8 +1,27 @@
-function Module_Lobby::Load_Gameplay(%this)
+function Module_Lobby::Load_Gameplay(%this,%Module_ID_Gameplay_Module)
 {
 
-//Check if total players are ready and total>1 then load gameplay.
+for (%x=0;%x<%this.SimSet_Gameplay_Modules.getCount();%x++)
+{
 
-//If no gameplay module is selected, choose one at random.
+%ScriptObject_Gameplay_Module=%this.SimSet_Gameplay_Modules.getObject(%x);
+
+//Potential bug to use $= instead of ==?
+if (%ScriptObject_Gameplay_Module.Module_ID_Gameplay_Module$=%Module_ID_Gameplay_Module)
+{
+
+ModuleDatabase.LoadExplicit(%Module_ID_Gameplay_Module);
+
+%Module_ID_Gameplay_Module.Scene_Load();
+
+return;
+
+}
+
+}
+
+//Disconnect from server because we don't have the gameplay module.
+
+Gui_Lobby.Go_Main_Menu();
 
 }

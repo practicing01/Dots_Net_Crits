@@ -26,8 +26,6 @@ else if (isObject(Dots_Net_Crits.GameConnection_Client_Connection)&&Dots_Net_Cri
 
 Module_Gui_Main_Menu.Scene_Unload();
 
-Canvas.popDialog(Gui_Main_Menu);
-
 Module_Lobby.Scene_Load();
 
 }

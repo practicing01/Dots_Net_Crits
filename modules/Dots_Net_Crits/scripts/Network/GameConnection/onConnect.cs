@@ -15,6 +15,20 @@ echo(%arg0 SPC %arg1 SPC %arg2 SPC %arg3 SPC %arg4 SPC %arg5 SPC
 
 %this.Connector_Type=%arg1;//"Client" or "Server"
 
+if (%this.Connector_Type$="Client")
+{
+
+%this.Bool_Token_Bearer=false;
+
+if (ClientGroup.getCount()==1)
+{
+
+%this.Bool_Token_Bearer=true;
+
+}
+
+}
+
 if (Dots_Net_Crits.Bool_Hosting_Server)
 {
 
@@ -29,15 +43,15 @@ if (%GameConnection_Client.Connector_Type$="Client")
 if (%GameConnection_Client!=%this)
 {
 
-commandToClient(%GameConnection_Client,'Register_Player_Connect',false,%this,%this.Connector_Name);
+commandToClient(%GameConnection_Client,'Register_Player_Connect',false,%this,%this.Connector_Name,%this.Bool_Token_Bearer);
 
-commandToClient(%this,'Register_Player_Connect',false,%GameConnection_Client,%GameConnection_Client.Connector_Name);
+commandToClient(%this,'Register_Player_Connect',false,%GameConnection_Client,%GameConnection_Client.Connector_Name,%GameConnection_Client.Bool_Token_Bearer);
 
 }
 else
 {
 
-commandToClient(%this,'Register_Player_Connect',true,%GameConnection_Client,%GameConnection_Client.Connector_Name);
+commandToClient(%this,'Register_Player_Connect',true,%GameConnection_Client,%GameConnection_Client.Connector_Name,%GameConnection_Client.Bool_Token_Bearer);
 
 }
 

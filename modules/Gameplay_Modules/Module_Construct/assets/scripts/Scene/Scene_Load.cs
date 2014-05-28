@@ -6,6 +6,8 @@ exec("./Scene_Initialize.cs");
 function Module_Construct::Scene_Load(%this)
 {
 
+Module_Lobby.Scene_Unload();
+
 %this.Ass_Load();
 
 Scene_Dots_Net_Crits.clear();

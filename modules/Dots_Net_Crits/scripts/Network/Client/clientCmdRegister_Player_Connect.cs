@@ -1,4 +1,4 @@
-function clientCmdRegister_Player_Connect(%Bool_Is_My_Initializer,%GameConnection_Client_Sender,%Connector_Name)
+function clientCmdRegister_Player_Connect(%Bool_Is_My_Initializer,%GameConnection_Client_Sender,%Connector_Name,%Bool_Token_Bearer)
 {
 
 echo("Register_Player_Connect:" SPC %GameConnection_Client_Sender SPC %Connector_Name);
@@ -19,6 +19,8 @@ if (%ScriptObject_Client.GameConnection_Handle==%GameConnection_Client_Sender)//
 {
 
 %ScriptObject_Client.Connector_Name=%Connector_Name;//Refresh name.
+
+%ScriptObject_Client.Bool_Token_Bearer=%Bool_Token_Bearer;
 
 for (%y=0;%y<Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.getCount();%y++)
 {
@@ -41,6 +43,8 @@ return;
 GameConnection_Handle=%GameConnection_Client_Sender;
 
 Connector_Name=%Connector_Name;
+
+Bool_Token_Bearer=%Bool_Token_Bearer;
 
 };
 

@@ -16,6 +16,8 @@ if (%ScriptObject_Client_Copy.GameConnection_Handle==%ScriptObject_Client.GameCo
 
 %ScriptObject_Client_Copy.Connector_Name=%ScriptObject_Client.Connector_Name;
 
+%ScriptObject_Client_Copy.Bool_Token_Bearer=%ScriptObject_Client.Bool_Token_Bearer;
+
 %Bool_Client_Exists=true;
 
 break;
@@ -34,6 +36,8 @@ GameConnection_Handle=%ScriptObject_Client.GameConnection_Handle;
 
 Connector_Name=%ScriptObject_Client.Connector_Name;
 
+Bool_Token_Bearer=%ScriptObject_Client.Bool_Token_Bearer;
+
 //Specific to Module_Lobby
 
 Bool_Ready=false;
@@ -41,8 +45,6 @@ Bool_Ready=false;
 };
 
 %this.Simset_Client_List.add(%ScriptObject_New_Client);
-
-}
 
 //Find this local clients information and send for Synchronize_Module_Data().
 
@@ -62,6 +64,17 @@ Module_Lobby,"Synchronize_Module_Data",
 break;
 
 }
+
+}
+
+}
+
+//Enable start game button if this is the token bearer.
+
+if (%ScriptObject_Client.GameConnection_Handle==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side&&%ScriptObject_Client.Bool_Token_Bearer)
+{
+
+Gui_Button_Lobby_Start.Visible=true;
 
 }
 

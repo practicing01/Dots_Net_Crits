@@ -15,5 +15,11 @@ else if (%Module_Function$="Synchronize_Module_Data")
 %this.Synchronize_Module_Data(%GameConnection_Client_Sender,%Parameter_0);
 
 }
+else if (%Module_Function$="Load_Gameplay")
+{
+
+%this.Load_Gameplay(%Parameter_0);
+
+}
 
 }

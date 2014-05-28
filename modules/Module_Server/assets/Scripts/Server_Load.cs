@@ -34,6 +34,8 @@ echo("Connecting to the master server.");
 
 %this.GameConnection_Connection.connect($pref::Dots_Net_Crits::Master_IP);
 
+schedule(30000,0,"Module_Server::Server_Pass_Token",%this);
+
 }
 
 }

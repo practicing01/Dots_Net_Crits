@@ -44,10 +44,26 @@ Bool_Ready=false;
 
 }
 
-//Need to send the current clients status.
-//Need to figure out a way to have only 1 client send this information.  Perhaps the Token Bearer.
-//Or perhaps when a client connects and recieves the data for the other connected clients,
-//it sends a request to the server to request to the other clients that they send their data.
+//Find this local clients information and send for Synchronize_Module_Data().
+
+for (%x=0;%x<%this.Simset_Client_List.getCount();%x++)
+{
+
+%ScriptObject_Client_Copy=%this.Simset_Client_List.getObject(%x);
+
+if (%ScriptObject_Client_Copy.GameConnection_Handle==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side)
+{
+
+commandToServer('Relay_Module_Function_To_Specific_Client',
+%ScriptObject_Client.GameConnection_Handle,//Reciever client.
+Module_Lobby,"Synchronize_Module_Data",
+%ScriptObject_Client_Copy.Bool_Ready);//Sender client data.
+
+break;
+
+}
+
+}
 
 }
 else//Disconnect.

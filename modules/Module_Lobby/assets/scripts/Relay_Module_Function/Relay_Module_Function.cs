@@ -9,5 +9,11 @@ if (%Module_Function$="Lobby_Client_Ready")
 %this.Lobby_Client_Ready(%GameConnection_Client_Sender);
 
 }
+else if (%Module_Function$="Synchronize_Module_Data")
+{
+
+%this.Synchronize_Module_Data(%GameConnection_Client_Sender,%Parameter_0);
+
+}
 
 }

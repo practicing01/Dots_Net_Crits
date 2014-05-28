@@ -3,6 +3,7 @@ exec("./Ass_Unload.cs");
 exec("./Variables_Initialize.cs");
 exec("./Scene_Initialize.cs");
 exec("./Synchronize_Clients.cs");
+exec("./Synchronize_Module_Data.cs");
 exec("./Populate_Connected_Clients_List.cs");
 exec("./Lobby_Client_Ready.cs");
 exec("./Load_Gameplay.cs");

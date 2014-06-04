@@ -1,6 +1,17 @@
 function Module_Server::Server_Load(%this)
 {
 
+if (Dots_Net_Crits.Bool_Local_Connection)
+{
+
+echo("Can't connect to master server, this is a local connection.");
+
+}
+else
+{
+
+echo("Connecting to the master server.");
+
 if (isObject(%this.GameConnection_Connection))
 {
 
@@ -21,21 +32,10 @@ $pref::Dots_Net_Crits::Player_Name,//Connector Name
 
 );
 
-if (Dots_Net_Crits.Bool_Local_Connection)
-{
-
-echo("Can't connect to master server, this is a local connection.");
-
-}
-else
-{
-
-echo("Connecting to the master server.");
-
 %this.GameConnection_Connection.connect($pref::Dots_Net_Crits::Master_IP);
 
-schedule(30000,0,"Module_Server::Server_Pass_Token",%this);
-
 }
+
+schedule(30000,0,"Module_Server::Server_Pass_Token",%this);
 
 }

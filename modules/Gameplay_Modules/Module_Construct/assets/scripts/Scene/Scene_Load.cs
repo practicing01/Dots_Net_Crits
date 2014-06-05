@@ -2,6 +2,8 @@ exec("./Ass_Load.cs");
 exec("./Ass_Unload.cs");
 exec("./Variables_Initialize.cs");
 exec("./Scene_Initialize.cs");
+exec("./Initialize/Initialize.cs");
+exec("./../Classes/Classes.cs");
 
 function Module_Construct::Scene_Load(%this)
 {

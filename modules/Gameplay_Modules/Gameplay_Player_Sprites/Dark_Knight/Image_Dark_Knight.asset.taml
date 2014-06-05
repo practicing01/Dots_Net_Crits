@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Dark_Knight"
+    ImageFile="Dark_Knight.png"
+    CellCountX="3"
+    CellCountY="4"
+    CellWidth="16"
+    CellHeight="18"
+    Optimal_Resolution="800 480"/>
+

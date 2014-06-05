@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Samurai_F_Stand_Down"
+    Image="@asset=Module_Gameplay:Image_Samurai_F"
+    AnimationFrames="7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

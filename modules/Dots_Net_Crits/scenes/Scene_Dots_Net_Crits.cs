@@ -1,34 +1,34 @@
 function Window_Create_Dots_Net_Crits()
 {
 
-if (!isObject(Window_Dots_Net_Crits))
+if (!isObject(SceneWindow_Dots_Net_Crits))
 {
 
-new SceneWindow(Window_Dots_Net_Crits);   
+new SceneWindow(SceneWindow_Dots_Net_Crits);   
 
-Window_Dots_Net_Crits.Profile=Gui_Profile_Window_Dots_Net_Crits;
+SceneWindow_Dots_Net_Crits.Profile=Gui_Profile_SceneWindow_Dots_Net_Crits;
 
-Canvas.setContent(Window_Dots_Net_Crits);                     
+Canvas.setContent(SceneWindow_Dots_Net_Crits);                     
 
 }
 
-Window_Dots_Net_Crits.stopCameraMove();
-Window_Dots_Net_Crits.dismount();
-Window_Dots_Net_Crits.setViewLimitOff();
-Window_Dots_Net_Crits.setRenderGroups(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setRenderLayers(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setObjectInputEventGroupFilter(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setObjectInputEventLayerFilter(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setLockMouse(true);
-Window_Dots_Net_Crits.setCameraPosition(0,0);
-Window_Dots_Net_Crits.setCameraZoom(1);
-Window_Dots_Net_Crits.setCameraAngle(0);
+SceneWindow_Dots_Net_Crits.stopCameraMove();
+SceneWindow_Dots_Net_Crits.dismount();
+SceneWindow_Dots_Net_Crits.setViewLimitOff();
+SceneWindow_Dots_Net_Crits.setRenderGroups(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setRenderLayers(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setObjectInputEventGroupFilter(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setObjectInputEventLayerFilter(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setLockMouse(true);
+SceneWindow_Dots_Net_Crits.setCameraPosition(0,0);
+SceneWindow_Dots_Net_Crits.setCameraZoom(1);
+SceneWindow_Dots_Net_Crits.setCameraAngle(0);
 
 Dots_Net_Crits.Resolution=getRes();
 %Y_Times_100=100*Dots_Net_Crits.Resolution.Y;
 %Cam_Y=%Y_Times_100/Dots_Net_Crits.Resolution.X;
 
-Window_Dots_Net_Crits.setCameraSize(100,%Cam_Y);
+SceneWindow_Dots_Net_Crits.setCameraSize(100,%Cam_Y);
 
 if (!isObject(Gui_Dots_Net_Crits_Overlay))
 {
@@ -42,7 +42,7 @@ Profile=gui_profile_modalless;
 
 };   
 
-Window_Dots_Net_Crits.addGuiControl(Gui_Dots_Net_Crits_Overlay);
+SceneWindow_Dots_Net_Crits.addGuiControl(Gui_Dots_Net_Crits_Overlay);
 
 Gui_Dots_Net_Crits_Overlay.setActive(true);
 
@@ -55,10 +55,10 @@ Gui_Dots_Net_Crits_Overlay.setActive(true);
 function Window_Destroy_Dots_Net_Crits()
 {
     
-if (isObject(Window_Dots_Net_Crits))
+if (isObject(SceneWindow_Dots_Net_Crits))
 {
 
-Window_Dots_Net_Crits.delete();
+SceneWindow_Dots_Net_Crits.delete();
 
 }
 
@@ -89,25 +89,25 @@ return;
 
 }
     
-Window_Dots_Net_Crits.setScene(Scene_Dots_Net_Crits);
+SceneWindow_Dots_Net_Crits.setScene(Scene_Dots_Net_Crits);
 
-Window_Dots_Net_Crits.stopCameraMove();
-Window_Dots_Net_Crits.dismount();
-Window_Dots_Net_Crits.setViewLimitOff();
-Window_Dots_Net_Crits.setRenderGroups(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setRenderLayers(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setObjectInputEventGroupFilter(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setObjectInputEventLayerFilter(Dots_Net_Crits.All_Bits);
-Window_Dots_Net_Crits.setLockMouse(true);
-Window_Dots_Net_Crits.setCameraPosition(0,0);
-Window_Dots_Net_Crits.setCameraZoom(1);
-Window_Dots_Net_Crits.setCameraAngle(0);
+SceneWindow_Dots_Net_Crits.stopCameraMove();
+SceneWindow_Dots_Net_Crits.dismount();
+SceneWindow_Dots_Net_Crits.setViewLimitOff();
+SceneWindow_Dots_Net_Crits.setRenderGroups(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setRenderLayers(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setObjectInputEventGroupFilter(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setObjectInputEventLayerFilter(Dots_Net_Crits.All_Bits);
+SceneWindow_Dots_Net_Crits.setLockMouse(true);
+SceneWindow_Dots_Net_Crits.setCameraPosition(0,0);
+SceneWindow_Dots_Net_Crits.setCameraZoom(1);
+SceneWindow_Dots_Net_Crits.setCameraAngle(0);
 
 Dots_Net_Crits.Resolution=getRes();
 %Y_Times_100=100*Dots_Net_Crits.Resolution.Y;
 %Cam_Y=%Y_Times_100/Dots_Net_Crits.Resolution.X;
 
-Window_Dots_Net_Crits.setCameraSize(100,%Cam_Y);
+SceneWindow_Dots_Net_Crits.setCameraSize(100,%Cam_Y);
 
 }
 
@@ -118,7 +118,7 @@ function Scene_Create_Dots_Net_Crits()
 
 //new Scene(Scene_Dots_Net_Crits);
 
-if (!isObject(Window_Dots_Net_Crits))
+if (!isObject(SceneWindow_Dots_Net_Crits))
 {
 
 error("Dots_Net_Crits: did not create scene; no window available.");

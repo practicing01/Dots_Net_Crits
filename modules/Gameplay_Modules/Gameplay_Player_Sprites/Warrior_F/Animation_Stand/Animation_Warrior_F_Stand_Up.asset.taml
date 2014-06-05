@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Warrior_F_Stand_Up"
+    Image="@asset=Module_Gameplay:Image_Warrior_F"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

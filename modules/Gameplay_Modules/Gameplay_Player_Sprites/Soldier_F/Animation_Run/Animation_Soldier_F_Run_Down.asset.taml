@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Soldier_F_Run_Down"
+    Image="@asset=Module_Gameplay:Image_Soldier_F"
+    AnimationFrames="6 7 8"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

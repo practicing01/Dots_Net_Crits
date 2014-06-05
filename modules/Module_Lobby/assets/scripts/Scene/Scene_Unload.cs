@@ -28,17 +28,32 @@ if (isObject(%this.Simset_Client_List))
 
 cancel(%this.Schedule_Rotate_Stars);
 
+if (isObject(%this.SimSet_Stars))
+{
+
 %this.SimSet_Stars.deleteObjects();
 
 %this.SimSet_Stars.delete();
+
+}
+
+if (isObject(%this.SimSet_Sine_Table))
+{
 
 %this.SimSet_Sine_Table.deleteObjects();
 
 %this.SimSet_Sine_Table.delete();
 
+}
+
+if (isObject(%this.SimSet_Cosine_Table))
+{
+
 %this.SimSet_Cosine_Table.deleteObjects();
 
 %this.SimSet_Cosine_Table.delete();
+
+}
 
 Canvas.popDialog(Gui_Lobby);
 

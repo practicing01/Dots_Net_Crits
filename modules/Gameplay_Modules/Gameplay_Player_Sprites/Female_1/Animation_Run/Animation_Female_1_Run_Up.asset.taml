@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Female_1_Run_Up"
+    Image="@asset=Module_Gameplay:Image_Female_1"
+    AnimationFrames="0 1 2"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

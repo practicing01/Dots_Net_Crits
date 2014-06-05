@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Vampire_Stand_Up"
+    Image="@asset=Module_Gameplay:Image_Vampire"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Queen_Run_Up"
+    Image="@asset=Module_Gameplay:Image_Queen"
+    AnimationFrames="0 1 2"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

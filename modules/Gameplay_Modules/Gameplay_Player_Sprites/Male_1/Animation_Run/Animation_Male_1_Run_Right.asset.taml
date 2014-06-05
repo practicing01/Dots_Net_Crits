@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Male_1_Run_Right"
+    Image="@asset=Module_Gameplay:Image_Male_1"
+    AnimationFrames="3 4 5"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

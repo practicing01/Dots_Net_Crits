@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Cultist_Run_Up"
+    Image="@asset=Module_Gameplay:Image_Cultist"
+    AnimationFrames="0 1 2"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

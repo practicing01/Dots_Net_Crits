@@ -51,7 +51,7 @@ Image="Dots_Net_Crits:CannotRender";
 
 Dots_Net_Crits.add(CannotRenderProxy);
 
-Dots_Net_Crits.Camera_Size=Window_Dots_Net_Crits.getCameraSize();
+Dots_Net_Crits.Camera_Size=SceneWindow_Dots_Net_Crits.getCameraSize();
 
 %Local_Time=getLocalTime();
 

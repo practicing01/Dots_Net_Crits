@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Bunny_Girl_Stand_Right"
+    Image="@asset=Module_Gameplay:Image_Bunny_Girl"
+    AnimationFrames="4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

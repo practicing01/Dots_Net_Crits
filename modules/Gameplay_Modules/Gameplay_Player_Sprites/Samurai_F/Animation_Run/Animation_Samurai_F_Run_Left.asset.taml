@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Samurai_F_Run_Left"
+    Image="@asset=Module_Gameplay:Image_Samurai_F"
+    AnimationFrames="9 10 11"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

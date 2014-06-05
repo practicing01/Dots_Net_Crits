@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Soldier_F_Cast_Up"
+    Image="@asset=Module_Gameplay:Image_Soldier_F_Cast"
+    AnimationFrames="0 1 2 3 4"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

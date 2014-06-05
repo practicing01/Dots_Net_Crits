@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Bard_Attack_Up"
+    Image="@asset=Module_Gameplay:Image_Bard_Attack"
+    AnimationFrames="0 1 2 3"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

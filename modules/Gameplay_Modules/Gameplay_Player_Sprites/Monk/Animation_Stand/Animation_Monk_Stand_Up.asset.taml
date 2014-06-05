@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Monk_Stand_Up"
+    Image="@asset=Module_Gameplay:Image_Monk"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

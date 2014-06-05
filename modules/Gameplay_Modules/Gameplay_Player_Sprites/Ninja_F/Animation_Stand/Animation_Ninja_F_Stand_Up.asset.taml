@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Ninja_F_Stand_Up"
+    Image="@asset=Module_Gameplay:Image_Ninja_F"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

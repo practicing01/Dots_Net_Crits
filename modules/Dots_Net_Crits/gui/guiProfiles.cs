@@ -333,7 +333,7 @@ if(!isObject(GuiToolboxProfile)) new GuiControlProfile( GuiToolboxProfile : GuiS
 
 //-----------------------------------------------------------------------------
 
-if(!isObject(Gui_Profile_Window_Dots_Net_Crits)) new GuiControlProfile (Gui_Profile_Window_Dots_Net_Crits : GuiDefaultProfile)
+if(!isObject(Gui_Profile_SceneWindow_Dots_Net_Crits)) new GuiControlProfile (Gui_Profile_SceneWindow_Dots_Net_Crits : GuiDefaultProfile)
 {
     // fill color
     opaque = false;

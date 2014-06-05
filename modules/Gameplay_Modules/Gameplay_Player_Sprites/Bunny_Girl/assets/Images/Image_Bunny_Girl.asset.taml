@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Bunny_Girl"
+    ImageFile="Bunny_Girl.png"
+    CellCountX="3"
+    CellCountY="4"
+    CellWidth="20"
+    CellHeight="18"
+    Optimal_Resolution="800 480"/>
+

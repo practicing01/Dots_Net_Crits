@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Ninja_Attack"
+    ImageFile="Ninja_Attack.png"
+    CellCountX="4"
+    CellCountY="4"
+    CellWidth="18"
+    CellHeight="20"
+    Optimal_Resolution="800 480"/>
+

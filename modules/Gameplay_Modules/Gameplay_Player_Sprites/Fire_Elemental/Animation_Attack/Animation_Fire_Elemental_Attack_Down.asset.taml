@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Fire_Elemental_Attack_Down"
+    Image="@asset=Module_Gameplay:Image_Fire_Elemental_Attack"
+    AnimationFrames="8 9 10 11"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

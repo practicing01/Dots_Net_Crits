@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Mage_Stand_Up"
+    Image="@asset=Module_Gameplay:Image_Mage"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

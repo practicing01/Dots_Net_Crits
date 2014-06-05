@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Monk_Run_Right"
+    Image="@asset=Module_Gameplay:Image_Monk"
+    AnimationFrames="3 4 5"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

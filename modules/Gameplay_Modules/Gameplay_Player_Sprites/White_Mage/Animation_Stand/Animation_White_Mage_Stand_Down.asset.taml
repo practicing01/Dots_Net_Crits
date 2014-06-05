@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_White_Mage_Stand_Down"
+    Image="@asset=Module_Gameplay:Image_White_Mage"
+    AnimationFrames="7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

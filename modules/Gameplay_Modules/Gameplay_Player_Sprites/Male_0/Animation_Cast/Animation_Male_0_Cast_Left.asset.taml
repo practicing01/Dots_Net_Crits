@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Male_0_Cast_Left"
+    Image="@asset=Module_Gameplay:Image_Male_0_Cast"
+    AnimationFrames="15 16 17 18 19"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dark_Elemental_Run_Left"
+    Image="@asset=Module_Gameplay:Image_Dark_Elemental"
+    AnimationFrames="9 10 11"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

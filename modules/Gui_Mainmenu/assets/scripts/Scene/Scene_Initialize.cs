@@ -14,6 +14,27 @@ BodyType="static";
 
 Scene_Dots_Net_Crits.add(%Sprite_BG_Render);
 
+if (isObject(Module_Master_Server))
+{
+
+Module_Master_Server.Master_Server_Unload();
+
+}
+
+if (isObject(Module_Server))
+{
+
+Module_Server.Server_Unload();
+
+}
+
+if (isObject(Module_Lobby))
+{
+
+Module_Lobby.Scene_Unload();
+
+}
+
 ModuleDatabase.LoadExplicit("Module_Master_Server");
 
 ModuleDatabase.LoadExplicit("Module_Server");

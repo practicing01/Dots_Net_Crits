@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Angel_F_Cast"
+    ImageFile="Angel_F_Cast.png"
+    CellCountX="5"
+    CellCountY="4"
+    CellWidth="20"
+    CellHeight="20"
+    Optimal_Resolution="800 480"/>
+

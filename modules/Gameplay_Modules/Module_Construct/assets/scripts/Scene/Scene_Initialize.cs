@@ -1,6 +1,6 @@
 function Module_Construct::Scene_Initialize(%this)
 {
 
-echo("Initialized Module_Construct");
+%this.Sprite_Select_Initialize();
 
 }

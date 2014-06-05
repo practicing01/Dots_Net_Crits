@@ -8,7 +8,7 @@ class="Class_Dots_Net_Crits_Input_Controller";
 
 };
 
-Window_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller);
+SceneWindow_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller);
 
 /*Load splashes*/
 

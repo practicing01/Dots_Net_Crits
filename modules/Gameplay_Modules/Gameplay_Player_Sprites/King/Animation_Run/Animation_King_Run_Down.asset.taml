@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_King_Run_Down"
+    Image="@asset=Module_Gameplay:Image_King"
+    AnimationFrames="6 7 8"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

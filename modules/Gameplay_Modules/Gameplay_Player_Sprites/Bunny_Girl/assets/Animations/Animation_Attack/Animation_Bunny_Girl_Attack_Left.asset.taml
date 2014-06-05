@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Bunny_Girl_Attack_Left"
+    Image="@asset=Module_Gameplay:Image_Bunny_Girl_Attack"
+    AnimationFrames="12 13 14 15"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Angel_F_Cast_Down"
+    Image="@asset=Module_Gameplay:Image_Angel_F_Cast"
+    AnimationFrames="10 11 12 13 14"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

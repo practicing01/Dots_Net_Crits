@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Ninja_Stand_Right"
+    Image="@asset=Module_Gameplay:Image_Ninja"
+    AnimationFrames="4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

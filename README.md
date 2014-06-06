@@ -9,3 +9,9 @@ Credits:
 
 AbiDrew : http://opengameart.org/content/animated-opengameart-splash-screen
 Peter Collingridge : https://www.khanacademy.org/cs/3d-tutorial-4/1648921303
+Redshrike
+surt
+MrBeast
+CharlesGabriel
+Blarumyrran
+: http://opengameart.org/content/oga-16x16-jrpg-sprites-tiles

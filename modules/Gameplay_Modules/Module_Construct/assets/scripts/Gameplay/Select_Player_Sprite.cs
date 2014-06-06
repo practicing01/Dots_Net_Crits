@@ -26,13 +26,27 @@ SPC
 
 Size=%ScriptObject_Client_Copy.ScriptObject_Player_Sprite_Data.Vector_2D_Size;
 
-Animation=%ScriptObject_Client_Copy.ScriptObject_Player_Sprite_Data.Animation_Run_Down;
+Animation=%ScriptObject_Client_Copy.ScriptObject_Player_Sprite_Data.Animation_Stand_Down;
 
 SceneLayer=16;
 
 Module_ID_Parent=%this;
 
+ScriptObject_Client_Parent=%ScriptObject_Client_Copy;
+
+class="Class_Player_Sprite";
+
+SceneGroup=0;
+
+Collision_Shape_Index=-1;
+
+String_Name=%ScriptObject_Client_Copy.Connector_Name;
+
 };
+
+%ScriptObject_Client_Copy.Sprite_Player_Sprite.Collision_Shape_Index=%ScriptObject_Client_Copy.Sprite_Player_Sprite.createPolygonBoxCollisionShape(%ScriptObject_Client_Copy.Sprite_Player_Sprite.Size);
+
+//%ScriptObject_Client_Copy.Sprite_Player_Sprite.setUseInputEvents(true);
 
 Scene_Dots_Net_Crits.add(%ScriptObject_Client_Copy.Sprite_Player_Sprite);
 

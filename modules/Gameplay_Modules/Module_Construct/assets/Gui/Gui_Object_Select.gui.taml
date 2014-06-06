@@ -1,0 +1,44 @@
+<GuiControl
+    Name="Gui_Object_Select"
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="50 50"
+    MinExtent="1 1"
+    Visible="1"
+	HelpTag="0">
+
+	<!-- Object List -->
+	<GuiScrollCtrl
+			Name="Gui_Scroller_Object_List"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="0 0"
+			Extent="50 50"
+			MinExtent="1 1"
+			canSave="1"
+			Visible="1"
+			Active="1"
+			hovertime="1000"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					Name="Gui_List_Object_List"
+                                        class="Class_Gui_List_Object_List"
+					Profile="gui_list_profile_colored"
+					isContainer="0"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="35 50"
+					MinExtent="1 1"
+					canSave="1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+							
+</GuiControl>

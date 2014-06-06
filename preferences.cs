@@ -31,3 +31,4 @@ $pref::Video::safeModeOn = 1;
 $pref::Video::windowedRes = "800 600 32";
 $pref::Audio::sfxVolume = 0;
 $pref::Audio::musicVolume = 0;
+$pref::T2D::imageAssetGlobalFilterMode = "Nearest";

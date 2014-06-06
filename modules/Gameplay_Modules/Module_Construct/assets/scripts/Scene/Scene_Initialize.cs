@@ -40,6 +40,12 @@ Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.add(%this);
 
 }
 
+/*****/
+
+Dots_Net_Crits.add(TamlRead("./../../Gui/Gui_Object_Select.gui.taml"));
+
+/*****/
+
 %this.Sprite_Select_Initialize();
 
 }

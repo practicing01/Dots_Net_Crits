@@ -30,4 +30,21 @@ SPC
 
 %this.Vector_2D_Floor_Tile_Size=Vector_2D_Ass_Size_To_Camera_Scale(%this.Ass_Image_Floor_Tile);
 
+/*****/
+
+%this.Script_Object_Input_Controller=new ScriptObject()
+{
+
+class="Class_Module_Construct_Input_Controller";
+
+Module_ID_Parent=%this;
+
+};
+
+SceneWindow_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller);
+
+%this.SimSet_Picked_Object_List=new SimSet();
+
+%this.Picked_Object=0;
+
 }

@@ -8,6 +8,8 @@ SceneLayer=30;
 
 BodyType="static";
 
+PickingAllowed=false;
+
 };
 
 %this.CompositeSprite_Floor.SetBatchLayout("off");

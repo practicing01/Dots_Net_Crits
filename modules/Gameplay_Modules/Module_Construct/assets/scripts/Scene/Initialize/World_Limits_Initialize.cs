@@ -21,6 +21,8 @@ Module_ID_Parent=%this;
 
 Collision_Shape_Index=-1;
 
+PickingAllowed=false;
+
 };
 
 %SceneObject_Wall.setCollisionGroups(0,25,26);
@@ -48,6 +50,8 @@ BodyType="static";
 Module_ID_Parent=%this;
 
 Collision_Shape_Index=-1;
+
+PickingAllowed=false;
 
 };
 
@@ -77,6 +81,8 @@ Module_ID_Parent=%this;
 
 Collision_Shape_Index=-1;
 
+PickingAllowed=false;
+
 };
 
 %SceneObject_Wall.setCollisionGroups(0,25,26);
@@ -104,6 +110,8 @@ BodyType="static";
 Module_ID_Parent=%this;
 
 Collision_Shape_Index=-1;
+
+PickingAllowed=false;
 
 };
 

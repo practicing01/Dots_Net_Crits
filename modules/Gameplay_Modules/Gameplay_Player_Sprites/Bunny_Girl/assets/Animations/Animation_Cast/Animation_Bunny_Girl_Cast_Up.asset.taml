@@ -1,6 +1,6 @@
 <AnimationAsset
     AssetName="Animation_Bunny_Girl_Cast_Up"
-    Image="@asset=Module_Gameplay:Image_Bunny_Girl_Cast"
+    Image="@asset=Module_Bunny_Girl:Image_Bunny_Girl_Cast"
     AnimationFrames="0 1 2 3 4"
     AnimationCycle="true"
 	AnimationTime="1.0" />

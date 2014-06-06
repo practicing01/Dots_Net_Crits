@@ -10,6 +10,10 @@ for (%x=0;%x<%this.SimSet_Gameplay_Modules.getCount();%x++)
 if (%ScriptObject_Gameplay_Module.Module_ID_Gameplay_Module$=%Module_ID_Gameplay_Module)
 {
 
+cancel(%this.Schedule_Rotate_Stars);
+
+Canvas.popDialog(Gui_Lobby);
+
 ModuleDatabase.LoadExplicit(%Module_ID_Gameplay_Module);
 
 %Module_ID_Gameplay_Module.Scene_Load();

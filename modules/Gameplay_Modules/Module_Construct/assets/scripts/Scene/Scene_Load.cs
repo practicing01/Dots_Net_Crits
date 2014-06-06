@@ -4,11 +4,13 @@ exec("./Variables_Initialize.cs");
 exec("./Scene_Initialize.cs");
 exec("./Initialize/Initialize.cs");
 exec("./../Classes/Classes.cs");
+exec("./Synchronize_Clients.cs");
+exec("./Synchronize_Module_Data.cs");
+exec("./../Relay_Module_Function/Relay_Module_Function.cs");
+exec("./../Gameplay/Gameplay.cs");
 
 function Module_Construct::Scene_Load(%this)
 {
-
-Module_Lobby.Scene_Unload();
 
 %this.Ass_Load();
 

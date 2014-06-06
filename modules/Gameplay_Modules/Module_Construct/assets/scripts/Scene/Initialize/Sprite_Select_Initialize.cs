@@ -34,6 +34,8 @@ Module_ID_Player_Sprite_Module=%Module_ID_Player_Sprite_Module.ModuleId;
 
 String_Description=%Module_ID_Player_Sprite_Module.Description;
 
+ScriptObject_Sprite_Data=0;
+
 };
 
 %this.SimSet_Player_Sprite_Modules.add(%ScriptObject_Player_Sprite_Module);
@@ -43,5 +45,20 @@ Gui_List_Player_Sprite_List.addItem(%Module_ID_Player_Sprite_Module.Description)
 ModuleDatabase.unloadExplicit(%Module_ID_Player_Sprite_Module.ModuleId);
 
 }
+
+/****/
+
+%this.Sprite_Player_Sprite_Preview=new Sprite()
+{
+
+Position=SceneWindow_Dots_Net_Crits.getCameraSize().X*0.25 SPC 0;
+
+//Size=SceneWindow_Dots_Net_Crits.getCameraSize().X*0.5 SPC SceneWindow_Dots_Net_Crits.getCameraSize().Y*0.5;
+
+Visible=false;
+
+};
+
+Scene_Dots_Net_Crits.add(%this.Sprite_Player_Sprite_Preview);
 
 }

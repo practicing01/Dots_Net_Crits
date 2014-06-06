@@ -1,7 +1,7 @@
 <AnimationAsset
     AssetName="Animation_Child_Run_Up"
     Image="@asset=Module_Gameplay:Image_Child"
-    AnimationFrames="0 1 2"
+    AnimationFrames="0 1 2 1"
     AnimationCycle="true"
 	AnimationTime="1.0" />
 

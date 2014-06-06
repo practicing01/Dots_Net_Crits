@@ -1,7 +1,7 @@
 <AnimationAsset
     AssetName="Animation_Female_1_Run_Left"
     Image="@asset=Module_Gameplay:Image_Female_1"
-    AnimationFrames="9 10 11"
+    AnimationFrames="9 10 11 10"
     AnimationCycle="true"
 	AnimationTime="1.0" />
 

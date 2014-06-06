@@ -1,7 +1,7 @@
 <AnimationAsset
     AssetName="Animation_Bunny_Girl_Run_Down"
-    Image="@asset=Module_Gameplay:Image_Bunny_Girl"
-    AnimationFrames="6 7 8"
+    Image="@asset=Module_Bunny_Girl:Image_Bunny_Girl"
+    AnimationFrames="6 7 8 7"
     AnimationCycle="true"
 	AnimationTime="1.0" />
 

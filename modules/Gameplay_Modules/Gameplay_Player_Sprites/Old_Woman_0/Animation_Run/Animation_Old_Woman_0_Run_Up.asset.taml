@@ -1,7 +1,7 @@
 <AnimationAsset
     AssetName="Animation_Old_Woman_0_Run_Up"
     Image="@asset=Module_Gameplay:Image_Old_Woman_0"
-    AnimationFrames="0 1 2"
+    AnimationFrames="0 1 2 1"
     AnimationCycle="true"
 	AnimationTime="1.0" />
 

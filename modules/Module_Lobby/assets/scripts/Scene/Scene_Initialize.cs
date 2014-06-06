@@ -1,7 +1,7 @@
 function Module_Lobby::Scene_Initialize(%this)
 {
 
-//Register the lobby for client synchronization.
+//Register Module_Lobby for client synchronization.
 
 if (!Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.isMember(%this))
 {

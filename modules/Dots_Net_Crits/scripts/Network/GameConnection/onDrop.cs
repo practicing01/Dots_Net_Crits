@@ -3,7 +3,7 @@ function GameConnection::onDrop(%this,%Reason)
 
 echo(%this SPC "GameConnection onDrop. Reason:" SPC %Reason);
 
-if (Dots_Net_Crits.Bool_Hosting_Server)
+if (Dots_Net_Crits.Bool_Hosting_Server||Dots_Net_Crits.Bool_Local_Connection)
 {
 
 for (%x=0;%x<ClientGroup.getCount();%x++)

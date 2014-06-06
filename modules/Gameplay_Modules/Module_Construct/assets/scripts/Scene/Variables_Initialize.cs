@@ -1,13 +1,21 @@
 function Module_Construct::Variables_Initialize(%this)
 {
 
+%this.Simset_Client_List=new SimSet();
+
+/*****/
+
 %this.SimSet_Floor_Grid=new SimSet();
 
 %this.CompositeSprite_Floor=0;
 
+/*****/
+
 %this.SimSet_Player_Sprite_Modules=new SimSet();
 
-%this.Int_Player_Sprite_Selection=-1;
+%this.ScriptObject_Player_Sprite_Module=-1;
+
+%this.Sprite_Player_Sprite_Preview=0;
 
 /*****/
 

@@ -1,6 +1,13 @@
 function Gui_Main_Menu::Single_Player(%this)
 {
 
+if (Dots_Net_Crits.Bool_Hosting_Server||Dots_Net_Crits.Bool_Hosting_Master_Server)
+{
+
+return;
+
+}
+
 if (isObject(Dots_Net_Crits.GameConnection_Master_Server_Query))
 {
 

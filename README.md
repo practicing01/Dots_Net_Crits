@@ -15,3 +15,4 @@ MrBeast
 CharlesGabriel
 Blarumyrran
 : http://opengameart.org/content/oga-16x16-jrpg-sprites-tiles
+piacenti : http://opengameart.org/content/spell-book-pack-0

@@ -1,9 +1,9 @@
 <ModuleDefinition
-	ModuleId="Module_Teleport"
+	ModuleId="Module_Move"
 	Type="Gameplay_Mechanic"
 	Group="Movement"
 	VersionId="1"
-	Description="Teleport object."
+	Description="Move object."
 	ScriptFile="main.cs"
 	CreateFunction="create"
     DestroyFunction="destroy">

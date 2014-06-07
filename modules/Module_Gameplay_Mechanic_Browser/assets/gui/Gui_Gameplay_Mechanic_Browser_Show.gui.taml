@@ -1,0 +1,17 @@
+<GuiButtonCtrl
+		Name="GuiButtonCtrl_Gameplay_Mechanic_Browser_Show"
+		Profile="BlackButtonProfile"
+		class="Class_Gameplay_Mechanic_Browser_Button"
+                String_Type="Show"
+		Text="Gameplay Mechanic Browser"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 0"
+		Extent="150 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+										
+</GuiButtonCtrl>

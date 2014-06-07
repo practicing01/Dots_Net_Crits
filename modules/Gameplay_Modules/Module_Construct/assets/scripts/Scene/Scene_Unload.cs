@@ -1,6 +1,13 @@
 function Module_Construct::Scene_Unload(%this)
 {
 
+if (isObject(Module_Gameplay_Mechanic_Browser))
+{
+
+ModuleDatabase.UnloadExplicit(Module_Gameplay_Mechanic_Browser);
+
+}
+
 if (Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.isMember(%this))
 {
 

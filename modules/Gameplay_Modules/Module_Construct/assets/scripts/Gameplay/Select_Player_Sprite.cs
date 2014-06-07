@@ -63,6 +63,10 @@ Canvas.popDialog(Gui_Player_Sprite_Select);
 
 %this.Floor_Initialize();
 
+ModuleDatabase.LoadExplicit(Module_Gameplay_Mechanic_Browser);
+
+Module_Gameplay_Mechanic_Browser.Gui_Load();
+
 }
 
 break;

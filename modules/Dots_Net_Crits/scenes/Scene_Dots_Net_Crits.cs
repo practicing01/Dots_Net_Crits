@@ -38,8 +38,12 @@ new GuiControl(Gui_Dots_Net_Crits_Overlay)
 {
 
 Position="0 0";
+
 Extent=Dots_Net_Crits.Resolution;
+
 Profile=gui_profile_modalless;
+
+class="Class_Gui_Dots_Net_Crits_Overlay";
 
 };   
 
@@ -181,3 +185,10 @@ echo(%Scene_Object_0.class);
 echo(%Scene_Object_1.class);
 
 }*/
+
+function Class_Gui_Dots_Net_Crits_Overlay::onControlDropped(%this,%GuiControl_Target,%Vector_2D_Position)
+{
+
+%GuiControl_Target.onControlDropped(%Vector_2D_Position);
+
+}

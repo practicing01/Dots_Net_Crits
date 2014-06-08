@@ -31,26 +31,28 @@ if (isObject(%this.SimSet_Gameplay_Mechanic_Modules))
 for (%x=0;%x<%Int_Module_Count;%x++)
 {
 
-%Module_ID_Gameplay_Mechanic_Module=getWord(%String_Gameplay_Mechanic_Modules,%x);
+%Module_ID_Gameplay_Mechanic=getWord(%String_Gameplay_Mechanic_Modules,%x);
 
-ModuleDatabase.LoadExplicit(%Module_ID_Gameplay_Mechanic_Module.ModuleId);
+ModuleDatabase.LoadExplicit(%Module_ID_Gameplay_Mechanic.ModuleId);
 
 %ScriptObject_Gameplay_Mechanic_Module=new ScriptObject()
 {
 
-Module_ID_Gameplay_Mechanic_Module=%Module_ID_Gameplay_Mechanic_Module.ModuleId;
+Module_ID_Gameplay_Mechanic=%Module_ID_Gameplay_Mechanic.ModuleId;
 
-String_Description=%Module_ID_Gameplay_Mechanic_Module.Description;
+String_Description=%Module_ID_Gameplay_Mechanic.Description;
 
-Group=%Module_ID_Gameplay_Mechanic_Module.Group;
+Group=%Module_ID_Gameplay_Mechanic.Group;
 
 Int_List_Index=-1;
+
+Bool_Loaded=false;
 
 };
 
 %this.SimSet_Gameplay_Mechanic_Modules.add(%ScriptObject_Gameplay_Mechanic_Module);
 
-ModuleDatabase.unloadExplicit(%Module_ID_Gameplay_Mechanic_Module.ModuleId);
+ModuleDatabase.unloadExplicit(%Module_ID_Gameplay_Mechanic.ModuleId);
 
 //Check if this group is new.
 

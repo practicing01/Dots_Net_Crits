@@ -11,6 +11,10 @@ function Module_Lobby::Variables_Initialize(%this)
 
 /********************************/
 
+%this.Module_ID_Gameplay_Module=0;
+
+/********************************/
+
 %this.SimSet_Stars=new SimSet();
 
 %this.Schedule_Rotate_Stars=0;

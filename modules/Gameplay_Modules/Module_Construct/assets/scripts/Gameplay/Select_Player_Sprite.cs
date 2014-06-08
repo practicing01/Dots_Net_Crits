@@ -42,6 +42,12 @@ Collision_Shape_Index=-1;
 
 String_Name=%ScriptObject_Client_Copy.Connector_Name;
 
+Int_Index=0;//Not used by player sprites but for modularities sake.  Used by other objects though for identification though.
+
+Int_Base_Speed=%this.Int_Gameplay_Object_Speed;
+
+Int_Current_Speed=%this.Int_Gameplay_Object_Speed;
+
 };
 
 %ScriptObject_Client_Copy.Sprite_Player_Sprite.Collision_Shape_Index=%ScriptObject_Client_Copy.Sprite_Player_Sprite.createPolygonBoxCollisionShape(%ScriptObject_Client_Copy.Sprite_Player_Sprite.Size);
@@ -49,6 +55,8 @@ String_Name=%ScriptObject_Client_Copy.Connector_Name;
 //%ScriptObject_Client_Copy.Sprite_Player_Sprite.setUseInputEvents(true);
 
 Scene_Dots_Net_Crits.add(%ScriptObject_Client_Copy.Sprite_Player_Sprite);
+
+%this.SimSet_Gameplay_Objects.add(%ScriptObject_Client_Copy.Sprite_Player_Sprite);
 
 //Close player sprite select gui and load map.
 

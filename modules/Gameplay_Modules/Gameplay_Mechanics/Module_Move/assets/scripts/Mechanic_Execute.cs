@@ -1,6 +1,6 @@
-function Module_Move::Mechanic_Execute(%this,%ScriptObject_Client)
+function Module_Move::Mechanic_Execute(%this)
 {
 
-echo(%ScriptObject_Client.Connector_Name SPC "executed Move");
+%this.Bool_Targeting_Object=true;
 
 }

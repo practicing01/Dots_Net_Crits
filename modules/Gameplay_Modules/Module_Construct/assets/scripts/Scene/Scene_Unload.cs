@@ -8,6 +8,22 @@ ModuleDatabase.UnloadExplicit(Module_Gameplay_Mechanic_Browser);
 
 }
 
+if (isObject(%this.SimSet_Gameplay_Objects))
+{
+
+%this.SimSet_Gameplay_Objects.delete();
+
+}
+
+if (isObject(%this.Simset_Client_List))
+{
+
+%this.Simset_Client_List.deleteObjects();
+
+%this.Simset_Client_List.delete();
+
+}
+
 if (Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.isMember(%this))
 {
 

@@ -1,5 +1,6 @@
 function Class_Module_Construct_Input_Controller::onTouchDown(%this,%touchID,%Vector_2D_World_Position)
 {
+return;
 
 %String_Object_List=Scene_Dots_Net_Crits.pickPoint(%Vector_2D_World_Position,"","","any");
 

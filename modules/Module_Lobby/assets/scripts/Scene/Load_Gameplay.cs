@@ -18,6 +18,8 @@ ModuleDatabase.LoadExplicit(%Module_ID_Gameplay_Module);
 
 %Module_ID_Gameplay_Module.Scene_Load();
 
+%this.Module_ID_Gameplay_Module=%Module_ID_Gameplay_Module;
+
 return;
 
 }

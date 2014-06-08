@@ -63,7 +63,7 @@
 			HorizSizing="relative"
 			VertSizing="relative"
 			Position="0 80"
-			Extent="200 150"
+			Extent="200 120"
 			MinExtent="1 1"
 			canSave="1"
 			Visible="1"
@@ -80,7 +80,7 @@
 					HorizSizing="relative"
 					VertSizing="relative"
 					Position="0 0"
-					Extent="200 150"
+					Extent="200 120"
 					MinExtent="1 1"
 					canSave="1"
 					Visible="1"
@@ -119,5 +119,22 @@
     Visible="1"/>
 
 </GuiButtonCtrl>
--->										
+-->
+
+<GuiButtonCtrl
+		Name="GuiButtonCtrl_Use"
+		Profile="blackButtonProfile"
+		class="Class_Gameplay_Mechanic_Browser_Button"
+                String_Type="Execute"
+		Text="Execute"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="80 200"
+		Extent="50 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1"/>
+
 </GuiDragAndDropControl>

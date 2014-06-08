@@ -19,6 +19,14 @@ function Module_Construct::Variables_Initialize(%this)
 
 /*****/
 
+%this.SimSet_Gameplay_Objects=new SimSet();//This will hold objects that gameplay modules can interact with. This includes player sprites.
+
+/*****/
+
+%this.Int_Gameplay_Object_Speed=10;
+
+/*****/
+
 %this.Vector_2D_Camera_Size=SceneWindow_Dots_Net_Crits.getCameraSize();
 
 %this.Vector_2D_Floor_Screen_Area_Size="1 1";

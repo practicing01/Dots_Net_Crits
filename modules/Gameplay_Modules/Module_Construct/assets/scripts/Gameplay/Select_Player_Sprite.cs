@@ -28,6 +28,8 @@ Size=%ScriptObject_Client_Copy.ScriptObject_Player_Sprite_Data.Vector_2D_Size;
 
 Animation=%ScriptObject_Client_Copy.ScriptObject_Player_Sprite_Data.Animation_Stand_Down;
 
+FixedAngle=true;
+
 SceneLayer=16;
 
 Module_ID_Parent=%this;
@@ -47,6 +49,8 @@ Int_Index=0;//Not used by player sprites but for modularities sake.  Used by oth
 Int_Base_Speed=%this.Int_Gameplay_Object_Speed;
 
 Int_Current_Speed=%this.Int_Gameplay_Object_Speed;
+
+Float_Angle=-90;
 
 };
 

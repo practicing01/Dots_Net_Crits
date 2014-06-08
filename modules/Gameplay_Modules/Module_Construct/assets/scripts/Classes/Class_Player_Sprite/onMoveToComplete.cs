@@ -1,6 +1,6 @@
 function Class_Player_Sprite::onMoveToComplete(%this)
 {
 
-echo("onMoveToComplete");
+%this.Animate(%this.Float_Angle,0);
 
 }

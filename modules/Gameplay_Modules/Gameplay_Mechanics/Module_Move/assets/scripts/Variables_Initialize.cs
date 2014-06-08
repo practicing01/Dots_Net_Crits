@@ -69,7 +69,7 @@ hScrollBar="dynamic";
 %GuiListBoxCtrl_Object_List=new GuiListBoxCtrl()
 {
 
-class="Class_GuiListBoxCtrl_Object_List";
+class="Class_Module_Move_GuiListBoxCtrl_Object_List";
 
 Profile="gui_list_profile_colored";
 

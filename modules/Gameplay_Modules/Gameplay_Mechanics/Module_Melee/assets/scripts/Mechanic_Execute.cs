@@ -1,6 +1,6 @@
-function Module_Melee::Mechanic_Execute(%this,%ScriptObject_Client)
+function Module_Melee::Mechanic_Execute(%this)
 {
 
-echo(%ScriptObject_Client.Connector_Name SPC "executed Melee");
+%this.Bool_Targeting_Object=true;
 
 }

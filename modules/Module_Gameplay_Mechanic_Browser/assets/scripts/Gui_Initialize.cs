@@ -107,6 +107,8 @@ useMouseEvents="1";
 
 GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.add(%GuiButtonCtrl_Group);
 
+GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.Extent.X+=80;
+
 GuiScrollCtrl_Gameplay_Mechanic_Tab_List.computeSizes();
 
 }

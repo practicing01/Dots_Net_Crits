@@ -1,4 +1,4 @@
-function Class_GuiListBoxCtrl_Object_List::onDoubleClick(%this)
+function Class_Module_Teleport_GuiListBoxCtrl_Object_List::onDoubleClick(%this)
 {
 
 %this.Module_ID_Parent.Picked_Object=%this.Module_ID_Parent.SimSet_Picked_Object_List.getObject(%this.getSelectedItem());

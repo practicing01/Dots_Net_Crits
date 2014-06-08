@@ -45,7 +45,7 @@
 					HorizSizing="relative"
 					VertSizing="relative"
 					Position="0 0"
-					Extent="200 35"
+					Extent="80 35"
 					MinExtent="1 1"
 					Visible="1"
 					Active="1"

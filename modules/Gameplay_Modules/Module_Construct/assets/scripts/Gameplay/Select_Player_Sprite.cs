@@ -52,6 +52,8 @@ Int_Current_Speed=%this.Int_Gameplay_Object_Speed;
 
 Float_Angle=-90;
 
+Bool_Is_Moving=false;
+
 };
 
 %ScriptObject_Client_Copy.Sprite_Player_Sprite.Collision_Shape_Index=%ScriptObject_Client_Copy.Sprite_Player_Sprite.createPolygonBoxCollisionShape(%ScriptObject_Client_Copy.Sprite_Player_Sprite.Size);

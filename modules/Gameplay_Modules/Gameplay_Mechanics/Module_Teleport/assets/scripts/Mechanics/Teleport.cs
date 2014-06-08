@@ -1,4 +1,4 @@
-function Module_Move::Move(%this,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Vector_2D_World_Position)
+function Module_Teleport::Teleport(%this,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Vector_2D_World_Position)
 {
 
 for (%x=0;%x<%Module_ID_Parent.SimSet_Gameplay_Objects.getCount();%x++)
@@ -11,11 +11,9 @@ if (%Gameplay_Object.Int_Index==%Int_Index&&%Gameplay_Object.ScriptObject_Client
 
 //Call the object's animation function.
 
-%Gameplay_Object.Animate(Vector2AngleToPoint(%Gameplay_Object.Position,%Vector_2D_World_Position),1);
+%Gameplay_Object.Animate(Vector2AngleToPoint(%Gameplay_Object.Position,%Vector_2D_World_Position),3);
 
-%Gameplay_Object.moveTo(%Vector_2D_World_Position,%Gameplay_Object.Int_Current_Speed,true,false);
-
-%Gameplay_Object.Bool_Is_Moving=true;
+%Gameplay_Object.Position=%Vector_2D_World_Position;
 
 return;
 

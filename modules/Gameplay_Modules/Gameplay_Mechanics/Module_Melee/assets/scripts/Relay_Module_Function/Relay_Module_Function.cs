@@ -6,7 +6,7 @@ function Module_Melee::Relay_Module_Function(%this,%GameConnection_Client_Sender
 if (%Module_Function$="Melee")
 {
 
-%this.Melee(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
+%this.Melee(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
 
 }
 

@@ -5,8 +5,6 @@ function Module_Teleport::Variables_Initialize(%this)
 
 %this.Bool_Targeting_Position=false;
 
-%this.Vector_2D_Target_Position="0 0";
-
 /*****/
 
 %this.Simset_Client_List=new SimSet();

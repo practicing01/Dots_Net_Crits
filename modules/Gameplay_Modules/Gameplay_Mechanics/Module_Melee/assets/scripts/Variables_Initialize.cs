@@ -3,9 +3,7 @@ function Module_Melee::Variables_Initialize(%this)
 
 %this.Bool_Targeting_Object=false;
 
-%this.Bool_Targeting_Position=false;
-
-%this.Vector_2D_Target_Position="0 0";
+%this.Bool_Targeting_Second_Object=false;
 
 /*****/
 
@@ -25,6 +23,8 @@ SceneWindow_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller
 %this.SimSet_Picked_Object_List=new SimSet();
 
 %this.Picked_Object=0;
+
+%this.Picked_Second_Object=0;
 
 %this.Gui_Object_List=new GuiControl()
 {

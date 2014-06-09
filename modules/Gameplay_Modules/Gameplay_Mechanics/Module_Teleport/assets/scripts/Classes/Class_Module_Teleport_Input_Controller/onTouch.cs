@@ -6,8 +6,6 @@ if (!%this.Module_ID_Parent.Bool_Targeting_Object&&!%this.Module_ID_Parent.Bool_
 if (%this.Module_ID_Parent.Bool_Targeting_Position)
 {
 
-%this.Module_ID_Parent.Vector_2D_Target_Position=%Vector_2D_World_Position;
-
 %this.Module_ID_Parent.Bool_Targeting_Position=false;
 
 commandToServer('Relay_Module_Function',Module_Teleport,"Teleport",

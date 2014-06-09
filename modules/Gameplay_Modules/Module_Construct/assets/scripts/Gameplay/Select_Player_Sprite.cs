@@ -60,6 +60,8 @@ Int_Health=100;
 
 %ScriptObject_Client_Copy.Sprite_Player_Sprite.Collision_Shape_Index=%ScriptObject_Client_Copy.Sprite_Player_Sprite.createPolygonBoxCollisionShape(%ScriptObject_Client_Copy.Sprite_Player_Sprite.Size);
 
+%ScriptObject_Client_Copy.Sprite_Player_Sprite.setCollisionShapeIsSensor(%ScriptObject_Client_Copy.Sprite_Player_Sprite.Collision_Shape_Index,true);
+
 //%ScriptObject_Client_Copy.Sprite_Player_Sprite.setUseInputEvents(true);
 
 Scene_Dots_Net_Crits.add(%ScriptObject_Client_Copy.Sprite_Player_Sprite);

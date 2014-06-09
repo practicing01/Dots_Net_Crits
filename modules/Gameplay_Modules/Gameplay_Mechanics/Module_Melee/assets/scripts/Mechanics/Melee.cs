@@ -1,4 +1,4 @@
-function Module_Melee::Melee(%this,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Second_Module_ID_Parent,%Second_GameConnection_Handle,%Second_Int_Index)
+function Module_Melee::Melee(%this,%GameConnection_Client_Sender,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Second_Module_ID_Parent,%Second_GameConnection_Handle,%Second_Int_Index)
 {
 
 %Gameplay_Object=0;
@@ -45,7 +45,28 @@ if (isObject(%Gameplay_Object))
 if (isObject(%Second_Gameplay_Object))
 {
 
-%Second_Gameplay_Object.Update_Health(10,-1);
+if (%GameConnection_Client_Sender==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side)
+{
+
+%Float_Distance=%Gameplay_Object.Size.X;
+
+if (%Gameplay_Object.Size.X<%Gameplay_Object.Size.Y){%Float_Distance=%Gameplay_Object.Size.Y;}
+
+%Float_Distance*=1.5;
+
+if (Vector2Distance(%Gameplay_Object.Position,%Second_Gameplay_Object.Position)<=%Float_Distance)
+{
+
+commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent,"Update_Health",
+%Second_Gameplay_Object.ScriptObject_Client_Parent.GameConnection_Handle,
+%Second_Gameplay_Object.ScriptObject_Client_Parent.Int_Index,
+10,
+-1
+);
+
+}
+
+}
 
 }
 

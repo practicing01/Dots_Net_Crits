@@ -9,5 +9,11 @@ if (%Module_Function$="Select_Player_Sprite")
 %this.Select_Player_Sprite(%GameConnection_Client_Sender,%Parameter_0);
 
 }
+else if (%Module_Function$="Update_Health")
+{
+
+%this.Update_Health(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
+
+}
 
 }

@@ -68,6 +68,13 @@ commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent
 
 }
 
+if (%Second_GameConnection_Handle==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side)//Shake camera.
+{
+
+SceneWindow_Dots_Net_Crits.startCameraShake(5,0.25);
+
+}
+
 }
 
 }

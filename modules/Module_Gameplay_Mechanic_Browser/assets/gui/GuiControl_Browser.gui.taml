@@ -1,5 +1,4 @@
 <GuiDragAndDropControl
-    Name="Gui_Gameplay_Mechanic_Browser"
     class="Class_Gui_Gameplay_Mechanic_Browser"
     Profile="GuiDefaultProfile"
     deleteOnMouseUp="0"
@@ -12,7 +11,7 @@
     useMouseEvents="1">
 
 <GuiSpriteCtrl
-    Name="GuiSpriteCtrl_Background"
+    InternalName="GuiSpriteCtrl_Gameplay_Mechanic_Tab_List"
     Profile="gui_profile_modalless"
     class="Class_GuiSpriteCtrl_Gameplay_Mechanic_Browser_Background"
     Image="Module_Gameplay_Mechanic_Browser:Image_Game_Mechanic_Browser"
@@ -25,22 +24,20 @@
 
 	<!-- Gameplay_Mechanic_Tab List -->
 	<GuiScrollCtrl
-			Name="GuiScrollCtrl_Gameplay_Mechanic_Tab_List"
+			InternalName="GuiScrollCtrl_Gameplay_Mechanic_Tab_List"
 			Profile="GuiLightScrollProfile_0"
 			HorizSizing="relative"
 			VertSizing="relative"
 			Position="0 30"
 			Extent="200 50"
 			MinExtent="1 1"
-			canSave="1"
 			Visible="1"
 			Active="1"
-			hovertime="1000"
 			vScrollBar="alwaysOff"
 			hScrollBar="dynamic">
 			
                                 <GuiDynamicCtrlArrayControl 
-					Name="GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List"
+					InternalName="GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List"
 					Profile="gui_list_profile_colored"
 					HorizSizing="relative"
 					VertSizing="relative"
@@ -58,31 +55,27 @@
 	
 	<!-- Gameplay_Mechanic List -->
 	<GuiScrollCtrl
-			Name="GuiScrollCtrl_Gameplay_Mechanic_List"
+			InternalName="GuiScrollCtrl_Gameplay_Mechanic_List"
 			Profile="GuiLightScrollProfile_0"
 			HorizSizing="relative"
 			VertSizing="relative"
 			Position="0 80"
 			Extent="200 120"
 			MinExtent="1 1"
-			canSave="1"
 			Visible="1"
 			Active="1"
-			hovertime="1000"
 			vScrollBar="dynamic"
 			hScrollBar="dynamic">
 			
 				<GuiListBoxCtrl 
-					Name="GuiListBoxCtrl_Gameplay_Mechanic_List"
+					InternalName="GuiListBoxCtrl_Gameplay_Mechanic_List"
                                         class="Class_GuiListBoxCtrl_Gameplay_Mechanic_List"
 					Profile="gui_list_profile_colored"
-					isContainer="0"
 					HorizSizing="relative"
 					VertSizing="relative"
 					Position="0 0"
 					Extent="200 120"
 					MinExtent="1 1"
-					canSave="1"
 					Visible="1"
 					Active="1"
 					AllowMultipleSelections="0"/>
@@ -93,7 +86,6 @@
 <!-- Minimize -->
 <!--
 <GuiButtonCtrl
-		Name="GuiButtonCtrl_Minimize"
 		Profile="blackButtonProfile"
 		class="Class_Gameplay_Mechanic_Browser_Button"
                 String_Type="Minimize"
@@ -108,7 +100,6 @@
 		Active="1"
 		useMouseEvents="1">
 <GuiSpriteCtrl
-    Name="GuiSpriteCtrl_Minimize"
     Profile="gui_profile_modalless"
     Image="Module_Gameplay_Mechanic_Browser:Image_Skull_Button"
     HorizSizing="relative"
@@ -122,7 +113,6 @@
 -->
 
 <GuiButtonCtrl
-		Name="GuiButtonCtrl_Use"
 		Profile="blackButtonProfile"
 		class="Class_Gameplay_Mechanic_Browser_Button"
                 String_Type="Execute"

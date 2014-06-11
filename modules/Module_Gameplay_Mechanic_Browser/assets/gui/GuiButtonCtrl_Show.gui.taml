@@ -1,5 +1,4 @@
 <GuiButtonCtrl
-		Name="GuiButtonCtrl_Gameplay_Mechanic_Browser_Show"
 		Profile="BlackButtonProfile"
 		class="Class_Gameplay_Mechanic_Browser_Button"
                 String_Type="Show"

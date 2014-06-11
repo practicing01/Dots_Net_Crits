@@ -1,18 +1,11 @@
 function Module_Construct::Sprite_Select_Initialize(%this)
 {
 
-if (!isObject(Gui_Player_Sprite_Select))
-{
-
-Dots_Net_Crits.add(TamlRead("./../../../Gui/Gui_Player_Sprite_Select.gui.taml"));
-
-}
-
-Canvas.pushDialog(Gui_Player_Sprite_Select);
+Gui_Dots_Net_Crits_Overlay.add(%this.GuiControl_Player_Sprite_Select);
 
 //Populate player sprite list.
 
-Gui_List_Player_Sprite_List.clearItems();
+%this.GuiControl_Player_Sprite_Select->GuiScrollCtrl_Player_Sprite_List->GuiListBoxCtrl_Player_Sprite_List.clearItems();
 
 %String_Player_Sprite_Modules=ModuleDatabase.findModuleTypes("Gameplay_Player_Sprite",false);
 
@@ -45,7 +38,7 @@ ScriptObject_Sprite_Data=0;
 
 %this.SimSet_Player_Sprite_Modules.add(%ScriptObject_Player_Sprite_Module);
 
-Gui_List_Player_Sprite_List.addItem(%Module_ID_Player_Sprite_Module.Description);
+%this.GuiControl_Player_Sprite_Select->GuiScrollCtrl_Player_Sprite_List->GuiListBoxCtrl_Player_Sprite_List.addItem(%Module_ID_Player_Sprite_Module.Description);
 
 ModuleDatabase.unloadExplicit(%Module_ID_Player_Sprite_Module.ModuleId);
 

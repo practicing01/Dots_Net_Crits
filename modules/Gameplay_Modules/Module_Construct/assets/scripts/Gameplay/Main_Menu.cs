@@ -1,7 +1,7 @@
 function Module_Construct::Main_Menu(%this)
 {
 
-Module_Construct.Scene_Unload();
+%this.Scene_Unload();
 
 schedule(0,0,"Module_Gui_Main_Menu::Scene_Load",Module_Gui_Main_Menu);
 

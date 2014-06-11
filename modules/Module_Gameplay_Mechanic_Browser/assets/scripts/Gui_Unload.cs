@@ -33,11 +33,23 @@ ModuleDatabase.unloadExplicit(%ScriptObject_Gameplay_Mechanic_Module.ModuleId);
 
 }
 
-//Canvas.popDialog(Gui_Gameplay_Mechanic_Browser);
+if (isObject(%this.GuiControl_Browser))
+{
 
-Gui_Dots_Net_Crits_Overlay.remove(Gui_Gameplay_Mechanic_Browser);
+%this.GuiControl_Browser.deleteObjects();
 
-Gui_Dots_Net_Crits_Overlay.remove(GuiButtonCtrl_Gameplay_Mechanic_Browser_Show);
+%this.GuiControl_Browser.delete();
+
+}
+
+if (isObject(%this.GuiButtonCtrl_Show))
+{
+
+%this.GuiButtonCtrl_Show.deleteObjects();
+
+%this.GuiButtonCtrl_Show.delete();
+
+}
 
 %this.Ass_Unload();
 

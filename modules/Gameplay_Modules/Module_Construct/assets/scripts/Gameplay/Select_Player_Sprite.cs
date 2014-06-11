@@ -73,7 +73,7 @@ Scene_Dots_Net_Crits.add(%ScriptObject_Client_Copy.Sprite_Player_Sprite);
 if (%ScriptObject_Client_Copy.GameConnection_Handle==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side)
 {
 
-Canvas.popDialog(Gui_Player_Sprite_Select);
+Gui_Dots_Net_Crits_Overlay.remove(%this.GuiControl_Player_Sprite_Select);
 
 %this.Sprite_Player_Sprite_Preview.safeDelete();
 

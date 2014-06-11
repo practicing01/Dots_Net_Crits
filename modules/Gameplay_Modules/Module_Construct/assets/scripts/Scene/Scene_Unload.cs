@@ -4,6 +4,8 @@ function Module_Construct::Scene_Unload(%this)
 if (isObject(Module_Gameplay_Mechanic_Browser))
 {
 
+//Does this automatically call the unload function?
+
 ModuleDatabase.unloadExplicit(Module_Gameplay_Mechanic_Browser);
 
 }
@@ -58,10 +60,30 @@ if (isObject(%this.SimSet_Floor_Grid))
 
 }
 
-if (isObject(Gui_Player_Sprite_Select))
+if (isObject(%this.GuiControl_Player_Sprite_Select))
 {
 
-Canvas.popDialog(Gui_Player_Sprite_Select);
+%this.GuiControl_Player_Sprite_Select.deleteObjects();
+
+%this.GuiControl_Player_Sprite_Select.delete();
+
+}
+
+if (isObject(%this.GuiButtonCtrl_Main_Menu))
+{
+
+%this.GuiButtonCtrl_Main_Menu.deleteObjects();
+
+%this.GuiButtonCtrl_Main_Menu.delete();
+
+}
+
+if (isObject(%this.GuiControl_Object_Select))
+{
+
+%this.GuiControl_Object_Select.deleteObjects();
+
+%this.GuiControl_Object_Select.delete();
 
 }
 

@@ -55,8 +55,65 @@ SceneWindow_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller
 
 %this.Picked_Object=0;
 
-/*****/
+/******************************/
 
-%this.GuiButtonCtrl_Main_Menu=0;
+%this.GuiButtonCtrl_Main_Menu=TamlRead("./../../Gui/GuiButtonCtrl_Main_Menu.gui.taml");
+
+%this.GuiButtonCtrl_Main_Menu.Module_ID_Parent=%this;
+
+for (%x=0;%x<%this.GuiButtonCtrl_Main_Menu.getCount();%x++)
+{
+
+%GuiControl_Child=%this.GuiButtonCtrl_Main_Menu.getObject(%x);
+
+%GuiControl_Child.Module_ID_Parent=%this;
+
+}
+
+Dots_Net_Crits.add(%this.GuiButtonCtrl_Main_Menu);
+
+Gui_Dots_Net_Crits_Overlay.add(%this.GuiButtonCtrl_Main_Menu);
+
+/******************************/
+
+/******************************/
+
+%this.GuiControl_Object_Select=TamlRead("./../../Gui/GuiControl_Object_Select.gui.taml");
+
+%this.GuiControl_Object_Select.Module_ID_Parent=%this;
+
+for (%x=0;%x<%this.GuiControl_Object_Select.getCount();%x++)
+{
+
+%GuiControl_Child=%this.GuiControl_Object_Select.getObject(%x);
+
+%GuiControl_Child.Module_ID_Parent=%this;
+
+}
+
+Dots_Net_Crits.add(%this.GuiControl_Object_Select);
+
+/******************************/
+
+/******************************/
+
+%this.GuiControl_Player_Sprite_Select=TamlRead("./../../Gui/GuiControl_Player_Sprite_Select.gui.taml");
+
+%this.GuiControl_Player_Sprite_Select.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+
+%this.GuiControl_Player_Sprite_Select.Module_ID_Parent=%this;
+
+for (%x=0;%x<%this.GuiControl_Player_Sprite_Select.getCount();%x++)
+{
+
+%GuiControl_Child=%this.GuiControl_Player_Sprite_Select.getObject(%x);
+
+%GuiControl_Child.Module_ID_Parent=%this;
+
+}
+
+Dots_Net_Crits.add(%this.GuiControl_Player_Sprite_Select);
+
+/******************************/
 
 }

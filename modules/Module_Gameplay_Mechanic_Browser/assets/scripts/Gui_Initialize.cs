@@ -10,10 +10,10 @@ if (isObject(%this.SimSet_Gameplay_Mechanic_Module_Groups))
 
 }
 
-if (isObject(GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List))
+if (isObject(%this.GuiControl_Browser->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List))
 {
 
-GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.deleteObjects();
+%this.GuiControl_Browser->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.deleteObjects();
 
 }
 
@@ -98,18 +98,19 @@ Text=%ScriptObject_Gameplay_Mechanic_Module.Group;
 ButtonType="PushButton";
 HorizSizing="relative";
 VertSizing="relative";
-//Position="0 0";
 Extent="50 50";
 MinExtent="1 1";
 useMouseEvents="1";
 
+Module_ID_Parent=%this;
+
 };
 
-GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.add(%GuiButtonCtrl_Group);
+%this.GuiControl_Browser->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.add(%GuiButtonCtrl_Group);
 
-GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.Extent.X+=80;
+%this.GuiControl_Browser->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.Extent.X+=80;
 
-GuiScrollCtrl_Gameplay_Mechanic_Tab_List.computeSizes();
+%this.GuiControl_Browser->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List.computeSizes();
 
 }
 

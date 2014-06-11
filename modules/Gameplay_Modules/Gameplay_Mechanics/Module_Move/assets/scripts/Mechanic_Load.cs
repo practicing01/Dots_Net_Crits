@@ -4,6 +4,8 @@ exec("./Variables_Initialize.cs");
 exec("./Mechanic_Initialize.cs");
 exec("./Mechanic_Execute.cs");
 exec("./Classes/Classes.cs");
+exec("./Synchronize_Clients.cs");
+exec("./Synchronize_Module_Data.cs");
 exec("./Relay_Module_Function/Relay_Module_Function.cs");
 exec("./Mechanics/Mechanics.cs");
 

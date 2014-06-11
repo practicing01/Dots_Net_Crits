@@ -4,7 +4,7 @@ function Module_Construct::Scene_Unload(%this)
 if (isObject(Module_Gameplay_Mechanic_Browser))
 {
 
-//Does this automatically call the unload function?
+Module_Gameplay_Mechanic_Browser.Gui_Unload();
 
 ModuleDatabase.unloadExplicit(Module_Gameplay_Mechanic_Browser);
 

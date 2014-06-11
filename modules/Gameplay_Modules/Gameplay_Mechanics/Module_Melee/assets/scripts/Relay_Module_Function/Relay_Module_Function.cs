@@ -9,5 +9,11 @@ if (%Module_Function$="Melee")
 %this.Melee(%GameConnection_Client_Sender,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
 
 }
+else if (%Module_Function$="Synchronize_Module_Data")
+{
+
+%this.Synchronize_Module_Data(%GameConnection_Client_Sender);
+
+}
 
 }

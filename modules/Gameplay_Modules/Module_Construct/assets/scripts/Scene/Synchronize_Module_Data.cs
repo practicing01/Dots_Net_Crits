@@ -11,7 +11,7 @@ if (%ScriptObject_Client.GameConnection_Handle==%GameConnection_Client_Sender)
 
 %ScriptObject_Client.Module_ID_Player_Sprite_Module=%Module_ID_Player_Sprite_Module;
 
-%this.Select_Player_Sprite(%GameConnection_Client_Sender,%Parameter_0);
+%this.Select_Player_Sprite(%GameConnection_Client_Sender,%Module_ID_Player_Sprite_Module);
 
 return;
 

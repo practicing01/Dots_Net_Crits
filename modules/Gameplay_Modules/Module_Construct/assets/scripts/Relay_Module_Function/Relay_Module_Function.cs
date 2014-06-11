@@ -15,5 +15,11 @@ else if (%Module_Function$="Update_Health")
 %this.Update_Health(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
 
 }
+else if (%Module_Function$="Synchronize_Module_Data")
+{
+
+%this.Synchronize_Module_Data(%GameConnection_Client_Sender,%Parameter_0);
+
+}
 
 }

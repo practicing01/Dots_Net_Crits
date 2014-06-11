@@ -1,4 +1,4 @@
-function Class_Gui_Textedit_IP::onReturn(%this)
+function Class_GuiTextEditCtrl_IP::onReturn(%this)
 {
 
 %this.setActive(false);

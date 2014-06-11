@@ -24,15 +24,6 @@ echo("Couldn't read scene taml.");
 %this.Scene_Current.setName("");
 Scene_Set_Custom(%this.Scene_Current);
 
-if (!isObject(Gui_Config_Menu))
-{
-
-Dots_Net_Crits.add(TamlRead("./../../gui/Gui_Config_Menu.gui.taml"));
-
-}
-
-Canvas.pushDialog(Gui_Config_Menu);
-
 %this.Variables_Initialize();
 
 %this.Scene_Initialize();

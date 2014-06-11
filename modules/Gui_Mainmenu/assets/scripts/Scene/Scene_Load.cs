@@ -8,6 +8,8 @@ exec("./../Classes/Classes.cs");
 function Module_Gui_Main_Menu::Scene_Load(%this)
 {
 
+Gui_Dots_Net_Crits_Overlay.deleteObjects();
+
 %this.Ass_Load();
 
 Scene_Dots_Net_Crits.clear();
@@ -23,15 +25,6 @@ echo("Couldn't read scene taml.");
 
 %this.Scene_Current.setName("");
 Scene_Set_Custom(%this.Scene_Current);
-
-if (!isObject(Gui_Main_Menu))
-{
-
-Dots_Net_Crits.add(TamlRead("./../../gui/Gui_Main_Menu.gui.taml"));
-
-}
-
-Canvas.pushDialog(Gui_Main_Menu);
 
 %this.Variables_Initialize();
 

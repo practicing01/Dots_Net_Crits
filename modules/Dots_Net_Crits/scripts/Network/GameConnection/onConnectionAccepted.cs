@@ -14,7 +14,7 @@ if (isObject(Dots_Net_Crits.Simset_Server_List))
 
 Dots_Net_Crits.Simset_Server_List.deleteObjects();
 
-Gui_List_Servers.clearItems();
+Module_Gui_Main_Menu.GuiControl_Main_Menu->GuiScrollCtrl_Main_Menu_Server_List->GuiListBoxCtrl_Main_Menu_Server_List.clearItems();
 
 }
 

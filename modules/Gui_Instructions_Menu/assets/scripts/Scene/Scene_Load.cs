@@ -3,6 +3,7 @@ exec("./Ass_Unload.cs");
 exec("./Variables_Initialize.cs");
 exec("./Scene_Initialize.cs");
 exec("./../Buttons/Buttons.cs");
+exec("./../Classes/Classes.cs");
 
 function Module_Gui_Instructions_Menu::Scene_Load(%this)
 {
@@ -22,15 +23,6 @@ echo("Couldn't read scene taml.");
 
 %this.Scene_Current.setName("");
 Scene_Set_Custom(%this.Scene_Current);
-
-if (!isObject(Gui_Instructions_Menu))
-{
-
-Dots_Net_Crits.add(TamlRead("./../../gui/Gui_Instructions_Menu.gui.taml"));
-
-}
-
-Canvas.pushDialog(Gui_Instructions_Menu);
 
 %this.Variables_Initialize();
 

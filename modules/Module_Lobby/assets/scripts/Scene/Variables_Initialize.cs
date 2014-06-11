@@ -29,4 +29,27 @@ function Module_Lobby::Variables_Initialize(%this)
 
 %this.SimSet_Cosine_Table=new SimSet();
 
+/******************************/
+
+%this.GuiControl_Lobby=TamlRead("./../../gui/GuiControl_Lobby.gui.taml");
+
+%this.GuiControl_Lobby.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+
+%this.GuiControl_Lobby.Module_ID_Parent=%this;
+
+for (%x=0;%x<%this.GuiControl_Lobby.getCount();%x++)
+{
+
+%GuiControl_Child=%this.GuiControl_Lobby.getObject(%x);
+
+%GuiControl_Child.Module_ID_Parent=%this;
+
+}
+
+Dots_Net_Crits.add(%this.GuiControl_Lobby);
+
+Gui_Dots_Net_Crits_Overlay.add(%this.GuiControl_Lobby);
+
+/******************************/
+
 }

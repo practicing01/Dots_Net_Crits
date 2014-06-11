@@ -55,7 +55,14 @@ if (isObject(%this.SimSet_Cosine_Table))
 
 }
 
-Canvas.popDialog(Gui_Lobby);
+if (isObject(%this.GuiControl_Lobby))
+{
+
+%this.GuiControl_Lobby.deleteObjects();
+
+%this.GuiControl_Lobby.delete();
+
+}
 
 %this.Ass_Unload();
 

@@ -4,7 +4,7 @@ function Module_Construct::Scene_Unload(%this)
 if (isObject(Module_Gameplay_Mechanic_Browser))
 {
 
-ModuleDatabase.UnloadExplicit(Module_Gameplay_Mechanic_Browser);
+ModuleDatabase.unloadExplicit(Module_Gameplay_Mechanic_Browser);
 
 }
 
@@ -58,10 +58,10 @@ if (isObject(%this.SimSet_Floor_Grid))
 
 }
 
-if (isObject(Gui_Sprite_Select))
+if (isObject(Gui_Player_Sprite_Select))
 {
 
-Canvas.popDialog(Gui_Sprite_Select);
+Canvas.popDialog(Gui_Player_Sprite_Select);
 
 }
 

@@ -1,8 +1,8 @@
-function Gui_Instructions_Menu::Go_Main_Menu(%this)
+function Module_Gui_Instructions_Menu::Go_Main_Menu(%this,%GuiButtonCtrl)
 {
 
-Module_Gui_Instructions_Menu.Scene_Unload();
+%this.Scene_Unload();
 
-Module_Gui_Main_Menu.Scene_Load();
+schedule(0,0,"Module_Gui_Main_Menu::Scene_Load",Module_Gui_Main_Menu);
 
 }

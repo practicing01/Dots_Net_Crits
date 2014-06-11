@@ -1,7 +1,7 @@
-function Class_Gui_List_Servers::onDoubleClick(%this)
+function Class_GuiListBoxCtrl_Main_Menu_Server_List::onDoubleClick(%this)
 {
 
-%Server_Name=Gui_List_Servers.getItemText(Gui_List_Servers.getSelectedItem());
+%Server_Name=%this.getItemText(%this.getSelectedItem());
 
 %ScriptObject_Server=0;
 

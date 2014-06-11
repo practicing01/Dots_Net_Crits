@@ -1,5 +1,4 @@
 <GuiControl
-    Name="Gui_Config_Menu"
     Profile="gui_profile_modalless"
     HorizSizing="relative"
     VertSizing="relative"
@@ -7,166 +6,130 @@
     Extent="800 480"
     MinExtent="1 1"
     Visible="1"
-	HelpTag="0">
+    Optimal_Resolution="800 480">
 
 	<!-- Sound Toggle -->
 	<GuiCheckBoxCtrl
-		Name="Checkbox_Sound_Toggle"
+                class="Class_GuiCheckBoxCtrl_Config_Menu"
+                String_Type="Sound_Toggle"
+		InternalName="GuiCheckBoxCtrl_Sound_Toggle"
 		Profile="GuiCheckBoxProfile"
 		Text="Sound Off"
 		ButtonType="ToggleButton"
-		command="Gui_Config_Menu.Sound_Toggle();"
-		canSaveDynamicFields="0"
-		isContainer="0"
 		HorizSizing="relative"
 		VertSizing="relative"
 		Position="330 225"
 		Extent="140 30"
 		MinExtent="1 1"
-		canSave="1"
 		Visible="1"
 		Active="1"
-		hovertime="1000"
-		groupNum="-1"
 		useMouseEvents="1"/>
 
 	<!-- VSync Toggle -->
 	<GuiCheckBoxCtrl
-		Name="Checkbox_VSync_Toggle"
+                class="Class_GuiCheckBoxCtrl_Config_Menu"
+                String_Type="VSync_Toggle"
+		InternalName="GuiCheckBoxCtrl_VSync_Toggle"
 		Profile="GuiCheckBoxProfile"
 		Text="VSync On"
 		ButtonType="ToggleButton"
-		command="Gui_Config_Menu.VSync_Toggle();"
-		canSaveDynamicFields="0"
-		isContainer="0"
 		HorizSizing="relative"
 		VertSizing="relative"
 		Position="470 225"
 		Extent="140 30"
 		MinExtent="1 1"
-		canSave="1"
 		Visible="1"
 		Active="1"
-		hovertime="1000"
-		groupNum="-1"
 		useMouseEvents="1"/>
 
 	<!-- Resolution List -->
 	<GuiPopUpMenuCtrl
-		Name="GuiPopUpMenuCtrl_Resolution_List"
+		InternalName="GuiPopUpMenuCtrl_Resolution_List"
 		Profile="GuiPopUpMenuProfile_Black"
                 class="Class_GuiPopUpMenuCtrl_Resolution_List"
-		canSaveDynamicFields="0"
-		isContainer="0"
 		HorizSizing="relative"
 		VertSizing="relative"
 		Position="610 225"
 		Extent="140 30"
 		MinExtent="1 1"
-		canSave="1"
 		Visible="1"
 		Active="1"
-		hovertime="1000"
-		groupNum="-1"
 		useMouseEvents="1"/>
 		
 		<!-- go back to main menu -->
 	<GuiButtonCtrl
-		Name="Gui_Button_Go_Main_Menu"
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Main_Menu"
 		Profile="BlackButtonProfile"
 		Text="Main Menu"
 		ButtonType="PushButton"
-		command="Gui_Config_Menu.Go_Main_Menu();"
-		canSaveDynamicFields="0"
-		isContainer="0"
 		HorizSizing="relative"
 		VertSizing="relative"
 		Position="0 220"
 		Extent="128 40"
 		MinExtent="1 1"
-		canSave="1"
 		Visible="1"
 		Active="1"
-		hovertime="1000"
-		groupNum="-1"
 		useMouseEvents="1" />
 	
 	<GuiTextEditCtrl
-					Name="Gui_Textedit_Player_Name"
+					InternalName="GuiTextEditCtrl_Player_Name"
 					Profile="GuiTextEditProfile"
-					command=""
-					isContainer="0"
 					HorizSizing="relative"
 					VertSizing="relative"
 					Position="330 176"
 					Extent="160 24"
 					MinExtent="1 1"
-					canSave="1"
 					Visible="1"
 					Active="1"
 					maxChars="255"
 					text="Player Name"
-                                        class="Class_Gui_Textedit_Player_Name"
-					escapeCommand="Gui_Textedit_Player_Name.onReturn();"/>
+                                        class="Class_GuiTextEditCtrl_Player_Name"/>
 	
 	<GuiTextEditCtrl
-					Name="Gui_Textedit_IP"
+					InternalName="GuiTextEditCtrl_IP"
 					Profile="GuiTextEditProfile"
-					command=""
-					isContainer="0"
 					HorizSizing="relative"
 					VertSizing="relative"
 					Position="330 200"
 					Extent="160 24"
 					MinExtent="1 1"
-					canSave="1"
 					Visible="1"
 					Active="1"
 					maxChars="255"
-                                        class="Class_Gui_Textedit_IP"
-					text="127.0.0.1:9000"
-					escapeCommand="Gui_Textedit_IP.onReturn();"/>
+                                        class="Class_GuiTextEditCtrl_IP"
+					text="127.0.0.1:9000"/>
 	
 	<!-- set client name button -->
 	<GuiButtonCtrl
-		Name="Gui_Button_Set_Player_Name"
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Set_Player_Name"
 		Profile="BlueButtonProfile"
 		Text="Set Player Name"
 		ButtonType="PushButton"
-		command="Gui_Config_Menu.Set_Player_Name();"
-		canSaveDynamicFields="0"
-		isContainer="0"
 		HorizSizing="relative"
 		VertSizing="relative"
 		Position="490 176"
 		Extent="128 24"
 		MinExtent="1 1"
-		canSave="1"
 		Visible="1"
 		Active="1"
-		hovertime="1000"
-		groupNum="-1"
 		useMouseEvents="1" />	
 	
 	<!-- set new master server ip button -->
 	<GuiButtonCtrl
-		Name="Gui_Button_Set_IP"
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Set_Master_Server_IP"
 		Profile="BlueButtonProfile"
 		Text="Set Master Server"
 		ButtonType="PushButton"
-		command="Gui_Config_Menu.Set_Master_Server_IP();"
-		canSaveDynamicFields="0"
-		isContainer="0"
 		HorizSizing="relative"
 		VertSizing="relative"
 		Position="490 200"
 		Extent="128 24"
 		MinExtent="1 1"
-		canSave="1"
 		Visible="1"
 		Active="1"
-		hovertime="1000"
-		groupNum="-1"
 		useMouseEvents="1" />		
 		
 

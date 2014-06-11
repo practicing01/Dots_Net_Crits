@@ -1,4 +1,4 @@
-function Gui_Main_Menu::Servers_List(%this)
+function Module_Gui_Main_Menu::Servers_List(%this,%GuiButtonCtrl)
 {
 
 if (Dots_Net_Crits.Bool_Hosting_Server||Dots_Net_Crits.Bool_Hosting_Master_Server)

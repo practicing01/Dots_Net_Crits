@@ -4,14 +4,14 @@ function Module_Gui_Config_Menu::Scene_Initialize(%this)
 if ($pref::Audio::sfxVolume==0)
 {
 
-Checkbox_Sound_Toggle.setStateOn(true);
+%this.GuiControl_Config_Menu->GuiCheckBoxCtrl_Sound_Toggle.setStateOn(true);
 
 }
 
 if (!$pref::Video::disableVerticalSync)
 {
 
-Checkbox_VSync_Toggle.setStateOn(true);
+%this.GuiControl_Config_Menu->GuiCheckBoxCtrl_VSync_Toggle.setStateOn(true);
 
 }
 
@@ -25,12 +25,12 @@ getWord(%String_Resolution_List,%x) SPC
 getWord(%String_Resolution_List,%x+1) SPC
 getWord(%String_Resolution_List,%x+2);
 
-GuiPopUpMenuCtrl_Resolution_List.add(%String_Resolution,%x/3);
+%this.GuiControl_Config_Menu->GuiPopUpMenuCtrl_Resolution_List.add(%String_Resolution,%x/3);
 
 }
 
-Gui_Textedit_Player_Name.setText($pref::Dots_Net_Crits::Player_Name);
+%this.GuiControl_Config_Menu->GuiTextEditCtrl_Player_Name.setText($pref::Dots_Net_Crits::Player_Name);
 
-Gui_Textedit_IP.setText($pref::Dots_Net_Crits::Master_IP);
+%this.GuiControl_Config_Menu->GuiTextEditCtrl_IP.setText($pref::Dots_Net_Crits::Master_IP);
 
 }

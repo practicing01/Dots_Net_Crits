@@ -1,4 +1,4 @@
-function Gui_Config_Menu::VSync_Toggle(%this)
+function Module_Gui_Config_Menu::VSync_Toggle(%this,%GuiButtonCtrl)
 {
 
 $pref::Video::disableVerticalSync=!$pref::Video::disableVerticalSync;

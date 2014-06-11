@@ -73,6 +73,8 @@ function Dots_Net_Crits::Preferences_Save(%this)
 
 %FileObject_File_Out.writeLine("$pref::T2D::imageAssetGlobalFilterMode = \"" @ $pref::T2D::imageAssetGlobalFilterMode @ "\";");
 
+%FileObject_File_Out.writeLine("");
+
 %FileObject_File_Out.close();
 
 }

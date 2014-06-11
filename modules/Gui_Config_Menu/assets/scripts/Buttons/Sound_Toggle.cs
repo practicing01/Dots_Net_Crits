@@ -1,4 +1,4 @@
-function Gui_Config_Menu::Sound_Toggle(%this)
+function Module_Gui_Config_Menu::Sound_Toggle(%this,%GuiButtonCtrl)
 {
 
 if ($pref::Audio::sfxVolume==1.0)

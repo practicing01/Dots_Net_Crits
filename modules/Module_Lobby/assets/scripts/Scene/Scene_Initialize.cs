@@ -16,7 +16,7 @@ Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.add(%this);
 
 //Search for gameplay modules and populate the list.
 
-Gui_List_Gameplay_Modules.clearItems();
+%this.GuiControl_Lobby->GuiScrollCtrl_Gameplay_Modules->GuiListBoxCtrl_Gameplay_Modules.clearItems();
 
 %String_Gameplay_Modules=ModuleDatabase.findModuleTypes("Gameplay_Module",false);
 
@@ -47,7 +47,7 @@ String_Description=%Module_ID_Gameplay_Module.Description;
 
 %this.SimSet_Gameplay_Modules.add(%ScriptObject_Gameplay_Module);
 
-Gui_List_Gameplay_Modules.addItem(%Module_ID_Gameplay_Module.Description);
+%this.GuiControl_Lobby->GuiScrollCtrl_Gameplay_Modules->GuiListBoxCtrl_Gameplay_Modules.addItem(%Module_ID_Gameplay_Module.Description);
 
 ModuleDatabase.unloadExplicit(%Module_ID_Gameplay_Module.ModuleId);
 

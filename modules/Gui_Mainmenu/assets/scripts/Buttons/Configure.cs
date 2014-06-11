@@ -1,9 +1,7 @@
-function Gui_Main_Menu::Configure(%this)
+function Module_Gui_Main_Menu::Configure(%this,%GuiButtonCtrl)
 {
 
 Module_Gui_Main_Menu.Scene_Unload();
-
-Canvas.popDialog(Gui_Main_Menu);
 
 ModuleDatabase.LoadExplicit("Module_Gui_Config_Menu");
 

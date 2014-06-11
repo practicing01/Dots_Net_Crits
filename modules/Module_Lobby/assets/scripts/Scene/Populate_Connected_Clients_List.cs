@@ -1,7 +1,7 @@
 function Module_Lobby::Populate_Connected_Clients_List(%this)
 {
 
-Gui_List_Connected_Clients.clearItems();
+%this.GuiControl_Lobby->GuiScrollCtrl_Connected_Clients->GuiListBoxCtrl_Connected_Clients.clearItems();
 
 for (%x=0;%x<%this.Simset_Client_List.getCount();%x++)
 {
@@ -23,7 +23,7 @@ else
 
 }
 
-Gui_List_Connected_Clients.addItem(%String_Client_Entry);
+%this.GuiControl_Lobby->GuiScrollCtrl_Connected_Clients->GuiListBoxCtrl_Connected_Clients.addItem(%String_Client_Entry);
 
 }
 

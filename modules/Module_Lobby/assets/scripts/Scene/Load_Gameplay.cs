@@ -12,7 +12,7 @@ if (%ScriptObject_Gameplay_Module.Module_ID_Gameplay_Module$=%Module_ID_Gameplay
 
 cancel(%this.Schedule_Rotate_Stars);
 
-Canvas.popDialog(Gui_Lobby);
+%this.GuiControl_Lobby.Visible=false;
 
 ModuleDatabase.LoadExplicit(%Module_ID_Gameplay_Module);
 
@@ -28,6 +28,6 @@ return;
 
 //Disconnect from server because we don't have the gameplay module.
 
-Gui_Lobby.Go_Main_Menu();
+%this.Go_Main_Menu();
 
 }

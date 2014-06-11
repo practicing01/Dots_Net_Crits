@@ -11,13 +11,13 @@ Position="0 0";
 HorizSizing="relative";
 VertSizing="relative";
 Text=%Text; 
-Extent=Dots_Net_Crits.Resolution;
+Extent=%this.GuiControl_Instructions_Menu.Extent;
 isContainer="1";
 Profile="Gui_Profile_Modalless_Text";
 hovertime="1000";
 MaxLength="512";
 };
 
-Gui_Instructions_Menu.addGuiControl(%this.Gui_Text_ML);
+%this.GuiControl_Instructions_Menu.addGuiControl(%this.Gui_Text_ML);
 
 }

@@ -22,7 +22,7 @@ Dots_Net_Crits.Simset_Server_List=new SimSet();
 
 Dots_Net_Crits.Simset_Server_List.add(%ScriptObject_Server);
 
-Gui_List_Servers.addItem(%Connector_Name);
+Module_Gui_Main_Menu.GuiControl_Main_Menu->GuiScrollCtrl_Main_Menu_Server_List->GuiListBoxCtrl_Main_Menu_Server_List.addItem(%Connector_Name);
 
 }
 else

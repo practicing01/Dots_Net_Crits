@@ -74,7 +74,7 @@ break;
 if (%ScriptObject_Client.GameConnection_Handle==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side&&%ScriptObject_Client.Bool_Token_Bearer)
 {
 
-Gui_Button_Lobby_Start.Visible=true;
+%this.GuiControl_Lobby->GuiButtonCtrl_Lobby_Start.Visible=true;
 
 }
 

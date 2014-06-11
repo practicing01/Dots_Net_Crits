@@ -55,4 +55,8 @@ SceneWindow_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller
 
 %this.Picked_Object=0;
 
+/*****/
+
+%this.GuiButtonCtrl_Main_Menu=0;
+
 }

@@ -1,4 +1,4 @@
-function Gui_Main_Menu::Single_Player(%this)
+function Module_Gui_Main_Menu::Single_Player(%this,%GuiButtonCtrl)
 {
 
 if (Dots_Net_Crits.Bool_Hosting_Server||Dots_Net_Crits.Bool_Hosting_Master_Server)

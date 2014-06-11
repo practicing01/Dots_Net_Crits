@@ -14,6 +14,13 @@ BodyType="static";
 
 Scene_Dots_Net_Crits.add(%Sprite_BG_Render);
 
+if (isObject(Dots_Net_Crits.GameConnection_Client_Connection))
+{
+
+Dots_Net_Crits.GameConnection_Client_Connection.delete("Returning to Main Menu.");
+
+}
+
 if (isObject(Module_Master_Server))
 {
 

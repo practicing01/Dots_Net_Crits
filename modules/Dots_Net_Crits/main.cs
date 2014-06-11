@@ -28,9 +28,6 @@ exec("./scripts/Functions_Initialize/Functions_Initialize.cs");
 /*Core Scene*/
 exec("./scenes/Scene_Dots_Net_Crits.cs");
 
-/*Pause Menu*/
-exec("./gui/Gui_Pause_Menu/Gui_Pause_Menu.cs");
-
 /*Network*/
 exec("./scripts/Network/Network.cs");
 

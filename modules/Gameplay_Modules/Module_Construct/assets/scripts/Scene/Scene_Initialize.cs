@@ -42,7 +42,18 @@ Dots_Net_Crits.SimSet_Modules_That_Synchronize_Clients.add(%this);
 
 /*****/
 
+if (!isObject(Gui_Object_Select))
+{
+
 Dots_Net_Crits.add(TamlRead("./../../Gui/Gui_Object_Select.gui.taml"));
+
+}
+
+%this.GuiButtonCtrl_Main_Menu=TamlRead("./../../Gui/GuiButtonCtrl_Main_Menu.gui.taml");
+
+Dots_Net_Crits.add(%this.GuiButtonCtrl_Main_Menu);
+
+Gui_Dots_Net_Crits_Overlay.add(%this.GuiButtonCtrl_Main_Menu);
 
 /*****/
 

@@ -1,7 +1,12 @@
 function Module_Construct::Sprite_Select_Initialize(%this)
 {
 
+if (!isObject(Gui_Player_Sprite_Select))
+{
+
 Dots_Net_Crits.add(TamlRead("./../../../Gui/Gui_Player_Sprite_Select.gui.taml"));
+
+}
 
 Canvas.pushDialog(Gui_Player_Sprite_Select);
 

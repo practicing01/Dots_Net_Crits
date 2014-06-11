@@ -1,6 +1,10 @@
 function Module_Teleport::Variables_Initialize(%this)
 {
 
+%this.Vector_2D_Smoke_Size=Vector_2D_Ass_Size_To_Camera_Scale(%this.Ass_Image_Smoke);
+
+/*****/
+
 %this.Bool_Targeting_Object=false;
 
 %this.Bool_Targeting_Position=false;

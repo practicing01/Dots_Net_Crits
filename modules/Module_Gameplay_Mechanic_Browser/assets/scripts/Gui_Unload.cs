@@ -18,10 +18,10 @@ for (%x=0;%x<%this.SimSet_Gameplay_Mechanic_Modules.getCount();%x++)
 
 %ScriptObject_Gameplay_Mechanic_Module=%this.SimSet_Gameplay_Mechanic_Modules.getObject(%x);
 
-if (%ScriptObject_Gameplay_Mechanic_Module.Bool_Loaded&&isObject(%ScriptObject_Gameplay_Mechanic_Module.ModuleId))
+if (%ScriptObject_Gameplay_Mechanic_Module.Bool_Loaded&&isObject(%ScriptObject_Gameplay_Mechanic_Module.Module_ID_Gameplay_Mechanic))
 {
 
-ModuleDatabase.unloadExplicit(%ScriptObject_Gameplay_Mechanic_Module.ModuleId);
+ModuleDatabase.unloadExplicit(%ScriptObject_Gameplay_Mechanic_Module.Module_ID_Gameplay_Mechanic);
 
 }
 

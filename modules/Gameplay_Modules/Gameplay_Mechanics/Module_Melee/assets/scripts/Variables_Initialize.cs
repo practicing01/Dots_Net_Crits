@@ -22,6 +22,10 @@ SceneWindow_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller
 
 %this.SimSet_Picked_Object_List=new SimSet();
 
+%this.Highlighted_Object_BlendColor=0;
+
+%this.Highlighted_Object=0;
+
 %this.Picked_Object=0;
 
 %this.Picked_Second_Object=0;

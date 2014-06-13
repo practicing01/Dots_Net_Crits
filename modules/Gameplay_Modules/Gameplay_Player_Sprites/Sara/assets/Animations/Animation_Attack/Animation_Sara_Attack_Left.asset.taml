@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Sara_Attack_Left"
+    Image="@asset=Module_Sara:Image_Sara"
+    AnimationFrames="28 27 30"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

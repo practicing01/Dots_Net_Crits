@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Raven_Attack_Left"
+    Image="@asset=Module_Raven:Image_Raven"
+    AnimationFrames="28 27 30"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

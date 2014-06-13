@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Raven_Stand_Left"
+    Image="@asset=Module_Raven:Image_Raven"
+    AnimationFrames="28"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

@@ -12,7 +12,7 @@
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Main_Menu"
                 String_Type="Configure"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		Text="Configure"
 		ButtonType="PushButton"
 		HorizSizing="relative"
@@ -28,7 +28,7 @@
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Main_Menu"
                 String_Type="Instructions"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		Text="Instructions"
 		ButtonType="PushButton"
 		HorizSizing="relative"
@@ -44,7 +44,7 @@
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Main_Menu"
                 String_Type="List_Servers"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		Text="List Servers"
 		ButtonType="PushButton"
 		HorizSizing="relative"
@@ -60,7 +60,7 @@
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Main_Menu"
                 String_Type="Single_Player"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		Text="Single Player"
 		ButtonType="PushButton"
 		HorizSizing="relative"
@@ -76,7 +76,7 @@
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Main_Menu"
                 String_Type="Host_Master_Server"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		Text="Start Master Server"
 		ButtonType="PushButton"
 		HorizSizing="relative"
@@ -92,7 +92,7 @@
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Main_Menu"
                 String_Type="Host_Server"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		Text="Start Server"
 		ButtonType="PushButton"
 		HorizSizing="relative"

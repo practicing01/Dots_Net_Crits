@@ -38,7 +38,7 @@
 		<!-- Player_Sprite Select -->
 	<GuiButtonCtrl
 		Name="Gui_Button_Player_Sprite_Select"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		class="Class_Gui_Player_Sprite_Select_Button"
 		Text="Select"
 		ButtonType="PushButton"

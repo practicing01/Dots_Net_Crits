@@ -16,3 +16,4 @@ CharlesGabriel
 Blarumyrran
 : http://opengameart.org/content/oga-16x16-jrpg-sprites-tiles
 piacenti : http://opengameart.org/content/spell-book-pack-0
+Rawdanitsu : http://opengameart.org/content/new-blue-gui

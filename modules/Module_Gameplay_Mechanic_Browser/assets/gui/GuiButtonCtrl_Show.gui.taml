@@ -1,5 +1,5 @@
 <GuiButtonCtrl
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		class="Class_Gameplay_Mechanic_Browser_Button"
                 String_Type="Show"
 		Text="Gameplay Mechanic Browser"

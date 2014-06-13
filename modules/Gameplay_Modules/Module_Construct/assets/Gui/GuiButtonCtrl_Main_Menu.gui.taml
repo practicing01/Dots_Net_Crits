@@ -1,5 +1,5 @@
 <GuiButtonCtrl
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		class="Class_Module_Construct_Button"
                 String_Type="Main_Menu"
 		Text="Main Menu"

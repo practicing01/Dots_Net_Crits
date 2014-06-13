@@ -91,7 +91,7 @@ Group=%ScriptObject_Gameplay_Mechanic_Module.Group;
 %GuiButtonCtrl_Group=new GuiButtonCtrl()
 {
 
-Profile="blackButtonProfile";
+Profile="Blue_0ButtonProfile";
 class="Class_GuiButtonCtrl_Gameplay_Mechanic_Browser_Group";
 String_Group=%ScriptObject_Gameplay_Mechanic_Module.Group;
 Text=%ScriptObject_Gameplay_Mechanic_Module.Group;

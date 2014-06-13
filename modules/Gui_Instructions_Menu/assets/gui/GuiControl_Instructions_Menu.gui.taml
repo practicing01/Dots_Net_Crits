@@ -11,7 +11,7 @@
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Instructions_Menu"
                 String_Type="Main_Menu"
-		Profile="BlackButtonProfile"
+		Profile="Black_0ButtonProfile"
 		Text="Main Menu"
 		ButtonType="PushButton"
 		HorizSizing="relative"

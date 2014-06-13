@@ -382,6 +382,26 @@ if (!isObject(BlackButtonProfile)) new GuiControlProfile (BlackButtonProfile : G
 
 //-----------------------------------------------------------------------------
 
+if (!isObject(Black_0ButtonProfile)) new GuiControlProfile (Black_0ButtonProfile : GuiButtonProfile)
+{
+    fontSize = $platformFontSize;
+    fontColor = "255 255 255 255";
+    fontColorHL = "255 255 255 255";
+    bitmap = "^Dots_Net_Crits/gui/images/blackButton_0.png";
+};
+
+//-----------------------------------------------------------------------------
+
+if (!isObject(Blue_0ButtonProfile)) new GuiControlProfile (Blue_0ButtonProfile : GuiButtonProfile)
+{
+    fontSize = $platformFontSize;
+    fontColor = "255 255 255 255";
+    fontColorHL = "255 255 255 255";
+    bitmap = "^Dots_Net_Crits/gui/images/blueButton_0.png";
+};
+
+//-----------------------------------------------------------------------------
+
 if (!isObject(RedButtonProfile)) new GuiControlProfile (RedButtonProfile : GuiButtonProfile)
 {
     fontSize = $platformFontSize;
@@ -464,6 +484,17 @@ if (!isObject(GuiLightScrollProfile)) new GuiControlProfile (GuiLightScrollProfi
     fillColor = "212 216 220";
     border = 0;
     bitmap = "^Dots_Net_Crits/gui/images/scrollBar.png";
+    hasBitmapArray = true;
+};
+
+//-----------------------------------------------------------------------------
+
+if (!isObject(GuiLightScrollProfile_Blue_0)) new GuiControlProfile (GuiLightScrollProfile_Blue_0 : GuiScrollProfile)
+{
+    opaque = false;
+    fillColor = "212 216 220";
+    border = 0;
+    bitmap = "^Dots_Net_Crits/gui/images/scrollBar_Blue_0.png";
     hasBitmapArray = true;
 };
 

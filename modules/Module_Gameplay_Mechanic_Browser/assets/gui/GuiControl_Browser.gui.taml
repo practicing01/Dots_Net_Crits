@@ -5,7 +5,7 @@
     HorizSizing="relative"
     VertSizing="relative"
     Position="0 0"
-    Extent="230 230"
+    Extent="240 240"
     MinExtent="1 1"
     Visible="1"
     useMouseEvents="1">
@@ -25,11 +25,11 @@
 	<!-- Gameplay_Mechanic_Tab List -->
 	<GuiScrollCtrl
 			InternalName="GuiScrollCtrl_Gameplay_Mechanic_Tab_List"
-			Profile="GuiLightScrollProfile_0"
+			Profile="GuiLightScrollProfile_Blue_0"
 			HorizSizing="relative"
 			VertSizing="relative"
-			Position="0 30"
-			Extent="200 50"
+			Position="32 36"
+			Extent="164 55"
 			MinExtent="1 1"
 			Visible="1"
 			Active="1"
@@ -56,11 +56,11 @@
 	<!-- Gameplay_Mechanic List -->
 	<GuiScrollCtrl
 			InternalName="GuiScrollCtrl_Gameplay_Mechanic_List"
-			Profile="GuiLightScrollProfile_0"
+			Profile="GuiLightScrollProfile_Blue_0"
 			HorizSizing="relative"
 			VertSizing="relative"
-			Position="0 80"
-			Extent="200 120"
+			Position="32 85"
+			Extent="164 115"
 			MinExtent="1 1"
 			Visible="1"
 			Active="1"
@@ -74,7 +74,7 @@
 					HorizSizing="relative"
 					VertSizing="relative"
 					Position="0 0"
-					Extent="200 120"
+					Extent="200 115"
 					MinExtent="1 1"
 					Visible="1"
 					Active="1"
@@ -86,7 +86,7 @@
 <!-- Minimize -->
 <!--
 <GuiButtonCtrl
-		Profile="blackButtonProfile"
+		Profile="Blue_0ButtonProfile"
 		class="Class_Gameplay_Mechanic_Browser_Button"
                 String_Type="Minimize"
 		Text="-"
@@ -113,14 +113,14 @@
 -->
 
 <GuiButtonCtrl
-		Profile="blackButtonProfile"
+		Profile="Blue_0ButtonProfile"
 		class="Class_Gameplay_Mechanic_Browser_Button"
                 String_Type="Execute"
 		Text="Execute"
 		ButtonType="PushButton"
 		HorizSizing="relative"
 		VertSizing="relative"
-		Position="80 200"
+		Position="95 210"
 		Extent="50 30"
 		MinExtent="1 1"
 		Visible="1"

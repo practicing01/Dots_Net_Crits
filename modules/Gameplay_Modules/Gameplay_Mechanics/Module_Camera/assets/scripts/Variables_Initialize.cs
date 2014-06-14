@@ -1,9 +1,28 @@
 function Module_Camera::Variables_Initialize(%this)
 {
 
+//SceneObject that the camera will follow for panning.
+
+%this.SceneObject_Camera=new SceneObject()
+{
+
+Visible=false;
+
+PickingAllowed=false;
+
+GravityScale="0 0";
+
+GuiControl_Mounted=0;
+
+};
+
+Scene_Dots_Net_Crits.add(%this.SceneObject_Camera);
+
+/*****/
+
 %this.Bool_Targeting_Object=false;
 
-%this.Bool_Targeting_Position=false;
+%this.Mounted_Object=0;
 
 /*****/
 
@@ -96,5 +115,26 @@ Module_ID_Parent=%this;
 %this.Gui_Object_List.GuiListBoxCtrl_Object_List=%GuiListBoxCtrl_Object_List;
 
 %this.Gui_Object_List.add(%GuiScrollCtrl_Object_List);
+
+/******************************/
+
+%this.GuiControl_Camera=TamlRead("./../gui/GuiControl_Camera.gui.taml");
+
+%this.GuiControl_Camera.Module_ID_Parent=%this;
+
+for (%x=0;%x<%this.GuiControl_Camera.getCount();%x++)
+{
+
+%GuiControl_Child=%this.GuiControl_Camera.getObject(%x);
+
+%GuiControl_Child.Module_ID_Parent=%this;
+
+}
+
+Dots_Net_Crits.add(%this.GuiControl_Camera);
+
+Gui_Dots_Net_Crits_Overlay.add(%this.GuiControl_Camera);
+
+/******************************/
 
 }

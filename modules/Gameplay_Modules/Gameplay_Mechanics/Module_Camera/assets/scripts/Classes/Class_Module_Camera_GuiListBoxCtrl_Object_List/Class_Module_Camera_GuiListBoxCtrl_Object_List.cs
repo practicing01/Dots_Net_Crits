@@ -14,7 +14,7 @@ if (isObject(%this.Module_ID_Parent.Highlighted_Object))
 
 %this.Module_ID_Parent.Bool_Targeting_Object=false;
 
-%this.Module_ID_Parent.Bool_Targeting_Position=true;
+%this.Module_ID_Parent.Mount();
 
 Gui_Dots_Net_Crits_Overlay.remove(%this.Module_ID_Parent.Gui_Object_List);
 

@@ -3,13 +3,7 @@ function Module_Camera::Relay_Module_Function(%this,%GameConnection_Client_Sende
 %Parameter_7,%Parameter_8,%Parameter_9,%Parameter_10,%Parameter_11,%Parameter_12)
 {
 
-if (%Module_Function$="Camera")
-{
-
-%this.Camera(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
-
-}
-else if (%Module_Function$="Synchronize_Module_Data")
+if (%Module_Function$="Synchronize_Module_Data")
 {
 
 %this.Synchronize_Module_Data(%GameConnection_Client_Sender);

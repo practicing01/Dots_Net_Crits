@@ -1,22 +1,7 @@
 function Class_Module_Camera_Input_Controller::onTouchDown(%this,%touchID,%Vector_2D_World_Position)
 {
 
-if (!%this.Module_ID_Parent.Bool_Targeting_Object&&!%this.Module_ID_Parent.Bool_Targeting_Position){return;}
-
-if (%this.Module_ID_Parent.Bool_Targeting_Position)
-{
-
-%this.Module_ID_Parent.Bool_Targeting_Position=false;
-
-commandToServer('Relay_Module_Function',Module_Camera,"Camera",
-%this.Module_ID_Parent.Picked_Object.Module_ID_Parent,
-%this.Module_ID_Parent.Picked_Object.ScriptObject_Client_Parent.GameConnection_Handle,
-%this.Module_ID_Parent.Picked_Object.Int_Index,
-%Vector_2D_World_Position);
-
-return;
-
-}
+if (!%this.Module_ID_Parent.Bool_Targeting_Object){return;}
 
 %String_Object_List=Scene_Dots_Net_Crits.pickPoint(%Vector_2D_World_Position,"","","any");
 
@@ -28,7 +13,7 @@ else if (getWordCount(%String_Object_List)==1)
 
 %this.Module_ID_Parent.Bool_Targeting_Object=false;
 
-%this.Module_ID_Parent.Bool_Targeting_Position=true;
+%this.Module_ID_Parent.Mount();
 
 return;
 

@@ -40,6 +40,15 @@ if (isObject(%this.Gui_Object_List))
 
 }
 
+if (isObject(%this.GuiControl_Camera))
+{
+
+%this.GuiControl_Camera.deleteObjects();
+
+%this.GuiControl_Camera.delete();
+
+}
+
 %this.Ass_Unload();
 
 }

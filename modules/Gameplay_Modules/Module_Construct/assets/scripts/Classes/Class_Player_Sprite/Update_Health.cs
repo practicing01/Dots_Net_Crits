@@ -1,4 +1,4 @@
-function Class_Player_Sprite::Update_Health(%this,%Int_Amount,%Char_Mode)
+function Class_Player_Sprite::Update_Health(%this,%Int_Amount,%Char_Mode,%Bool_Camera_Shake,%Float_Shake_Magnitude,%Float_Shake_Time)
 {
 
 if (%Char_Mode==-1)//Decrease health.
@@ -17,6 +17,13 @@ else//Set health.
 {
 
 %this.Int_Health=%Int_Amount;
+
+}
+
+if (%Bool_Camera_Shake)
+{
+
+SceneWindow_Dots_Net_Crits.startCameraShake(%Float_Shake_Magnitude,%Float_Shake_Time);
 
 }
 

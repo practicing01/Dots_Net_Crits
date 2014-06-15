@@ -12,7 +12,7 @@ if (%Module_Function$="Select_Player_Sprite")
 else if (%Module_Function$="Update_Health")
 {
 
-%this.Update_Health(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
+%this.Update_Health(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5,%Parameter_6);
 
 }
 else if (%Module_Function$="Update_Speed")

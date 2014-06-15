@@ -56,7 +56,7 @@ for (%x=0;%x<getWordCount(%String_Object_List);%x++)
 
 commandToServer('Relay_Module_Function',%Object.Module_ID_Parent,"Update_Health",
 %Object.ScriptObject_Client_Parent.GameConnection_Handle,
-%Object.ScriptObject_Client_Parent.Int_Index,
+%Object.Int_Index,
 10,
 -1,
 1,

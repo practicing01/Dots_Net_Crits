@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Summoning_Circle"
+    ImageFile="Summoning_Circle.png"
+    CellCountX="1"
+    CellCountY="1"
+    CellWidth="80"
+    CellHeight="80"
+    Optimal_Resolution="800 480"/>
+

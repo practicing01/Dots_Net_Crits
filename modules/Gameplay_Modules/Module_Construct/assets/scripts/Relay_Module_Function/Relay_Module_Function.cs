@@ -15,6 +15,12 @@ else if (%Module_Function$="Update_Health")
 %this.Update_Health(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
 
 }
+else if (%Module_Function$="Update_Speed")
+{
+
+%this.Update_Speed(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
+
+}
 else if (%Module_Function$="Synchronize_Module_Data")
 {
 

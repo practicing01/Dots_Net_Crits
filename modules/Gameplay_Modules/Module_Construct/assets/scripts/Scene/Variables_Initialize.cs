@@ -63,6 +63,8 @@ SceneWindow_Dots_Net_Crits.addInputListener(%this.Script_Object_Input_Controller
 
 %this.GuiButtonCtrl_Main_Menu=TamlRead("./../../Gui/GuiButtonCtrl_Main_Menu.gui.taml");
 
+%this.GuiButtonCtrl_Main_Menu.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+
 %this.GuiButtonCtrl_Main_Menu.Module_ID_Parent=%this;
 
 for (%x=0;%x<%this.GuiButtonCtrl_Main_Menu.getCount();%x++)

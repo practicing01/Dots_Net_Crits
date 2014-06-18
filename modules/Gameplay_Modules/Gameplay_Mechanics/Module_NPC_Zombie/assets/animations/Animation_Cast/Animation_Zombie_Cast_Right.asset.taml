@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Zombie_Cast_Right"
+    Image="@asset=Module_NPC_Zombie:Image_Zombie"
+    AnimationFrames="13 14 15 16 17"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

@@ -27,13 +27,13 @@ else if (%Int_Animation_Type==1)
 else if (%Int_Animation_Type==2)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Up";//Attack
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Attack_Up";
 
 }
 else if (%Int_Animation_Type==3)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Up";//Cast
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Cast_Up";
 
 }
 
@@ -56,13 +56,13 @@ else if (%Int_Animation_Type==1)
 else if (%Int_Animation_Type==2)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Down";//Attack
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Attack_Down";
 
 }
 else if (%Int_Animation_Type==3)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Down";//Cast
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Cast_Down";
 
 }
 
@@ -85,13 +85,13 @@ else if (%Int_Animation_Type==1)
 else if (%Int_Animation_Type==2)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Left";//Attack
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Attack_Left";
 
 }
 else if (%Int_Animation_Type==3)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Left";//Cast
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Cast_Left";
 
 }
 
@@ -114,13 +114,13 @@ else if (%Int_Animation_Type==1)
 else if (%Int_Animation_Type==2)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Right";//Attack
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Attack_Right";
 
 }
 else if (%Int_Animation_Type==3)
 {
 
-%this.Animation="Module_NPC_Zombie:Animation_Zombie_Run_Right";//Cast
+%this.Animation="Module_NPC_Zombie:Animation_Zombie_Cast_Right";
 
 }
 

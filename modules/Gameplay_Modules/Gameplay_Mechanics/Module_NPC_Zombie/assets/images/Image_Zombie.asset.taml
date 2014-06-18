@@ -1,7 +1,7 @@
 <ImageAsset
     AssetName="Image_Zombie"
     ImageFile="Zombie.png"
-    CellCountX="3"
+    CellCountX="9"
     CellCountY="4"
     CellWidth="16"
     CellHeight="18"

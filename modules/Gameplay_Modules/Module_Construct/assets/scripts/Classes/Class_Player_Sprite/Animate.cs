@@ -9,6 +9,8 @@ function Class_Player_Sprite::Animate(%this,%Float_Angle,%Int_Animation_Type)
 
 %this.Float_Angle=%Float_Angle;
 
+%this.Int_Animation_Type=%Int_Animation_Type;
+
 if (%Float_Angle>=45&&%Float_Angle<135)//Up
 {
 
@@ -123,6 +125,15 @@ else if (%Int_Animation_Type==3)
 %this.Animation=%this.ScriptObject_Client_Parent.ScriptObject_Player_Sprite_Data.Animation_Cast_Right;
 
 }
+
+}
+
+for (%x=0;%x<%this.SimSet_Animate_Listeners.getCount();%x++)
+{
+
+%Object_Listener=%this.SimSet_Animate_Listeners.getObject(%x);
+
+%Object_Listener.Animate(%Float_Angle,%Int_Animation_Type);
 
 }
 

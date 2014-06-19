@@ -100,7 +100,17 @@ Bool_Is_Moving=false;
 
 Int_Health=100;
 
+SimSet_onRemove_Listeners=0;
+
+SimSet_Animate_Listeners=0;
+
+Int_Animation_Type=0;
+
 };
+
+%Sprite_Zombie.SimSet_onRemove_Listeners=new SimSet();
+
+%Sprite_Zombie.SimSet_Animate_Listeners=new SimSet();
 
 %Sprite_Zombie.Collision_Shape_Index=%Sprite_Zombie.createPolygonBoxCollisionShape(%Sprite_Zombie.Size);
 

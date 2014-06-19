@@ -56,7 +56,17 @@ Bool_Is_Moving=false;
 
 Int_Health=100;
 
+SimSet_onRemove_Listeners=0;
+
+SimSet_Animate_Listeners=0;
+
+Int_Animation_Type=0;
+
 };
+
+%ScriptObject_Client_Copy.Sprite_Player_Sprite.SimSet_onRemove_Listeners=new SimSet();
+
+%ScriptObject_Client_Copy.Sprite_Player_Sprite.SimSet_Animate_Listeners=new SimSet();
 
 %ScriptObject_Client_Copy.Sprite_Player_Sprite.Collision_Shape_Index=%ScriptObject_Client_Copy.Sprite_Player_Sprite.createPolygonBoxCollisionShape(%ScriptObject_Client_Copy.Sprite_Player_Sprite.Size);
 

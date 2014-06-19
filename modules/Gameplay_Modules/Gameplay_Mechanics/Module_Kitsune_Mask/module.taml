@@ -1,0 +1,14 @@
+<ModuleDefinition
+	ModuleId="Module_Kitsune_Mask"
+	Type="Gameplay_Mechanic"
+	Group="Cosmetics"
+	VersionId="1"
+	Description="Kitsune Mask."
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

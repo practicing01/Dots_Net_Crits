@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Kitsune_Mask_Cast_Right"
+    Image="@asset=Module_Kitsune_Mask:Image_Kitsune_Mask"
+    AnimationFrames="13 14 15 16 17"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

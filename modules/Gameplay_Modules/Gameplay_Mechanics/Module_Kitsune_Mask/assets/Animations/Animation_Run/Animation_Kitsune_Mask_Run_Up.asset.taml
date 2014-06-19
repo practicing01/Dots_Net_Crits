@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Kitsune_Mask_Run_Up"
+    Image="@asset=Module_Kitsune_Mask:Image_Kitsune_Mask"
+    AnimationFrames="0 1 2 1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

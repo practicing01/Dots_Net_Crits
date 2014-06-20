@@ -8,6 +8,8 @@ exec("./Synchronize_Clients.cs");
 exec("./Synchronize_Module_Data.cs");
 exec("./Relay_Module_Function/Relay_Module_Function.cs");
 exec("./Mechanics/Mechanics.cs");
+exec("./Get_Mechanics_List.cs");
+exec("./Object_Mechanic_Execute.cs");
 
 function Module_NPC_Zombie::Mechanic_Load(%this)
 {

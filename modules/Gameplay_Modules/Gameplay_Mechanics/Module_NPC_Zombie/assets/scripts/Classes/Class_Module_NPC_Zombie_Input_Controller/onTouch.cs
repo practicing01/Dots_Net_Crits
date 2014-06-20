@@ -1,7 +1,7 @@
 function Class_Module_NPC_Zombie_Input_Controller::onTouchDown(%this,%touchID,%Vector_2D_World_Position)
 {
 
-if (!%this.Module_ID_Parent.Bool_Targeting_Object&&!%this.Module_ID_Parent.Bool_Targeting_Position){return;}
+if (!%this.Module_ID_Parent.Bool_Targeting_Object&&!%this.Module_ID_Parent.Bool_Targeting_Position&&!%this.Module_ID_Parent.Bool_Targeting_For_Object_Mechanic){return;}
 
 if (%this.Module_ID_Parent.Bool_Targeting_Position)
 {
@@ -29,9 +29,30 @@ else if (getWordCount(%String_Object_List)==1)
 
 %this.Module_ID_Parent.Picked_Object=getWord(%String_Object_List,0);
 
+if (%this.Module_ID_Parent.Bool_Targeting_Object)
+{
+
 %this.Module_ID_Parent.Bool_Targeting_Object=false;
 
 %this.Module_ID_Parent.Bool_Targeting_Position=true;
+
+}
+else if (%this.Module_ID_Parent.Bool_Targeting_For_Object_Mechanic)
+{
+
+%this.Module_ID_Parent.Bool_Targeting_For_Object_Mechanic=false;
+
+%this.Module_ID_Parent.Object_Mechanic_Second_Target=%this.Module_ID_Parent.Picked_Object;
+
+commandToServer('Relay_Module_Function',Module_NPC_Zombie,%this.Module_ID_Parent.String_Mechanic,
+%this.Module_ID_Parent.Object_Mechanic_First_Target.Module_ID_Parent,
+%this.Module_ID_Parent.Object_Mechanic_First_Target.ScriptObject_Client_Parent.GameConnection_Handle,
+%this.Module_ID_Parent.Object_Mechanic_First_Target.Int_Index,
+%this.Module_ID_Parent.Object_Mechanic_Second_Target.Module_ID_Parent,
+%this.Module_ID_Parent.Object_Mechanic_Second_Target.ScriptObject_Client_Parent.GameConnection_Handle,
+%this.Module_ID_Parent.Object_Mechanic_Second_Target.Int_Index);
+
+}
 
 return;
 

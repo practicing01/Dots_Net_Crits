@@ -32,6 +32,8 @@ AngularVelocity=100;
 
 LifeTime=2;
 
+PickingAllowed=false;
+
 };
 
 Scene_Dots_Net_Crits.add(%Sprite_Summoning_Circle);
@@ -52,6 +54,8 @@ SceneLayer=15;
 Module_ID_Parent=%this;
 
 class="Class_NPC_Zombie_Smoke";
+
+PickingAllowed=false;
 
 };
 
@@ -105,6 +109,8 @@ SimSet_onRemove_Listeners=0;
 SimSet_Animate_Listeners=0;
 
 Int_Animation_Type=0;
+
+SimSet_Mechanics=%this.Get_Mechanics_List();
 
 };
 

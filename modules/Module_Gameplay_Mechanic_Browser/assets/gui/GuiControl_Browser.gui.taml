@@ -69,7 +69,7 @@
 			
 				<GuiListBoxCtrl 
 					InternalName="GuiListBoxCtrl_Gameplay_Mechanic_List"
-                                        class="Class_GuiListBoxCtrl_Gameplay_Mechanic_List"
+                                        class="Class_GuiListBoxCtrl_Gameplay_Mechanic_Browser_List"
 					Profile="gui_list_profile_colored"
 					HorizSizing="relative"
 					VertSizing="relative"

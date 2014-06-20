@@ -62,6 +62,8 @@ Module_ID_Parent=%this;
 
 class="Class_Speed_Boof";
 
+PickingAllowed=false;
+
 };
 
 Scene_Dots_Net_Crits.add(%Sprite_Speed_Boof);

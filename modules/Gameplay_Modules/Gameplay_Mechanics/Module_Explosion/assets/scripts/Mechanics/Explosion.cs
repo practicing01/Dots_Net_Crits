@@ -30,6 +30,8 @@ Module_ID_Parent=%this;
 
 class="Class_Explosion";
 
+PickingAllowed=false;
+
 };
 
 Scene_Dots_Net_Crits.add(%Sprite_Explosion);

@@ -21,6 +21,14 @@ function Module_NPC_Zombie::Variables_Initialize(%this)
 
 %this.Bool_Targeting_Position=false;
 
+%this.Bool_Targeting_For_Object_Mechanic=false;
+
+%this.Object_Mechanic_First_Target=0;
+
+%this.Object_Mechanic_Second_Target=0;
+
+%this.String_Mechanic="";
+
 /*****/
 
 %this.Simset_Client_List=new SimSet();

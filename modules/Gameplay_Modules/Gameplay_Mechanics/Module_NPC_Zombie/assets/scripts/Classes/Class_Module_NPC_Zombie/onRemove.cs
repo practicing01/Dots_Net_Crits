@@ -1,6 +1,15 @@
 function Class_Module_NPC_Zombie::onRemove(%this)
 {
 
+if (isObject(%this.SimSet_Mechanics))
+{
+
+%this.SimSet_Mechanics.deleteObjects();
+
+%this.SimSet_Mechanics.delete();
+
+}
+
 if (isObject(%this.SimSet_onRemove_Listeners))
 {
 

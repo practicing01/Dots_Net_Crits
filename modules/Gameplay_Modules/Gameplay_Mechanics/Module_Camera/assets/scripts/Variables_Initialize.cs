@@ -120,16 +120,7 @@ Module_ID_Parent=%this;
 
 %this.GuiControl_Camera=TamlRead("./../gui/GuiControl_Camera.gui.taml");
 
-%this.GuiControl_Camera.Module_ID_Parent=%this;
-
-for (%x=0;%x<%this.GuiControl_Camera.getCount();%x++)
-{
-
-%GuiControl_Child=%this.GuiControl_Camera.getObject(%x);
-
-%GuiControl_Child.Module_ID_Parent=%this;
-
-}
+Set_Gui_Module_ID_Parent(%this.GuiControl_Camera,%this);
 
 Dots_Net_Crits.add(%this.GuiControl_Camera);
 

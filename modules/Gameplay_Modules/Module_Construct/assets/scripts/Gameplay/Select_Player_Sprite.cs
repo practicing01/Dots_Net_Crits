@@ -95,6 +95,10 @@ ModuleDatabase.LoadExplicit(Module_Gameplay_Mechanic_Browser);
 
 Module_Gameplay_Mechanic_Browser.Gui_Load();
 
+ModuleDatabase.LoadExplicit(Module_Gameplay_Object_Controller);
+
+Module_Gameplay_Object_Controller.Gui_Load();
+
 }
 
 break;

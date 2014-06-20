@@ -26,6 +26,8 @@ Module_ID_Parent=%this;
 
 class="Class_Teleport_Smoke";
 
+PickingAllowed=false;
+
 };
 
 Scene_Dots_Net_Crits.add(%Sprite_Smoke);
@@ -52,6 +54,8 @@ SceneLayer=15;
 Module_ID_Parent=%this;
 
 class="Class_Teleport_Smoke";
+
+PickingAllowed=false;
 
 };
 

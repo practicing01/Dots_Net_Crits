@@ -1,0 +1,12 @@
+<ModuleDefinition
+	ModuleId="Module_Gameplay_Object_Controller"
+	VersionId="1"
+	Description="Module Gameplay Object Controller"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

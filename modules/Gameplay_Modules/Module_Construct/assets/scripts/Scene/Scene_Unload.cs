@@ -10,6 +10,15 @@ ModuleDatabase.unloadExplicit(Module_Gameplay_Mechanic_Browser);
 
 }
 
+if (isObject(Module_Gameplay_Object_Controller))
+{
+
+Module_Gameplay_Object_Controller.Gui_Unload();
+
+ModuleDatabase.unloadExplicit(Module_Gameplay_Object_Controller);
+
+}
+
 if (isObject(%this.SimSet_Gameplay_Objects))
 {
 

@@ -62,6 +62,8 @@ Module_ID_Parent=%this;
 
 class="Class_Snare";
 
+PickingAllowed=false;
+
 };
 
 Scene_Dots_Net_Crits.add(%Sprite_Snare);

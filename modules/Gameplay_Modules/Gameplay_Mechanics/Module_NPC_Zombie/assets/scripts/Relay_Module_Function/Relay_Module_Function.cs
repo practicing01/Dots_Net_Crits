@@ -21,6 +21,12 @@ else if (%Module_Function$="Update_Speed")
 %this.Update_Speed(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
 
 }
+else if (%Module_Function$="Bite")
+{
+
+%this.Bite(%GameConnection_Client_Sender,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
+
+}
 else if (%Module_Function$="Synchronize_Module_Data")
 {
 

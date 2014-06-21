@@ -13,6 +13,8 @@ function Module_Construct::Variables_Initialize(%this)
 
 %this.CompositeSprite_Floor=0;
 
+%this.CompositeSprite_Grid=0;
+
 /*****/
 
 %this.SimSet_Player_Sprite_Modules=new SimSet();
@@ -41,6 +43,8 @@ SPC
 %this.Vector_2D_Floor_Screen_Area_Size.Y*%this.Vector_2D_Camera_Size.Y;
 
 %this.Vector_2D_Floor_Tile_Size=Vector_2D_Ass_Size_To_Camera_Scale(%this.Ass_Image_Floor_Tile);
+
+%this.Vector_2D_Grid_Highlighted_Tile_Size=Vector_2D_Ass_Size_To_Camera_Scale(%this.Ass_Image_Grid_Highlighted_Tile);
 
 /*****/
 
@@ -108,6 +112,18 @@ Dots_Net_Crits.add(%this.GuiControl_Player_Sprite_Select);
 Set_Gui_Module_ID_Parent(%this.GuiControl_Player_Deaths,%this);
 
 Dots_Net_Crits.add(%this.GuiControl_Player_Deaths);
+
+/******************************/
+
+/******************************/
+
+%this.GuiButtonCtrl_Grid_Toggle=TamlRead("./../../Gui/GuiButtonCtrl_Grid_Toggle.gui.taml");
+
+%this.GuiButtonCtrl_Grid_Toggle.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+
+Set_Gui_Module_ID_Parent(%this.GuiButtonCtrl_Grid_Toggle,%this);
+
+Dots_Net_Crits.add(%this.GuiButtonCtrl_Grid_Toggle);
 
 /******************************/
 

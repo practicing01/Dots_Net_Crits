@@ -5,3 +5,4 @@ exec("./Update_Speed.cs");
 exec("./Main_Menu.cs");
 exec("./Toggle_Deaths_Visibility.cs");
 exec("./Increment_Death_Count.cs");
+exec("./Grid_Toggle.cs");

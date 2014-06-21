@@ -105,4 +105,13 @@ if (isObject(%this.GuiControl_Object_Select))
 
 }
 
+if (isObject(%this.GuiButtonCtrl_Grid_Toggle))
+{
+
+%this.GuiButtonCtrl_Grid_Toggle.deleteObjects();
+
+%this.GuiButtonCtrl_Grid_Toggle.delete();
+
+}
+
 }

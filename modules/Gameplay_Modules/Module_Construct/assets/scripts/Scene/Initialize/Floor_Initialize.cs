@@ -1,6 +1,23 @@
 function Module_Construct::Floor_Initialize(%this)
 {
 
+%this.CompositeSprite_Grid=new CompositeSprite()
+{
+
+SceneLayer=29;
+
+BodyType="static";
+
+PickingAllowed=false;
+
+Visible=false;
+
+};
+
+%this.CompositeSprite_Grid.SetBatchLayout("off");
+%this.CompositeSprite_Grid.SetBatchSortMode("z");
+%this.CompositeSprite_Grid.SetBatchIsolated(true);
+
 %this.CompositeSprite_Floor=new CompositeSprite()
 {
 
@@ -40,6 +57,16 @@ SPC
 
 %this.CompositeSprite_Floor.setSpriteImage("Module_Construct:Image_Floor_Tile");
 
+%this.CompositeSprite_Grid.addSprite();
+
+%this.CompositeSprite_Grid.setSpriteLocalPosition(%Vector_2D_Position);
+
+%this.CompositeSprite_Grid.setSpriteSize(%this.Vector_2D_Grid_Highlighted_Tile_Size);
+
+%this.CompositeSprite_Grid.setSpriteImage("Module_Construct:Image_Grid_Highlighted_Tile");
+
+%this.CompositeSprite_Grid.setSpriteBlendAlpha(0.15);
+
 /*******/
 
 %SceneObject_Floor_Grid_Tile=new ScriptObject()
@@ -60,6 +87,8 @@ Bool_Obstructed=false;
 }
 
 Scene_Dots_Net_Crits.add(%this.CompositeSprite_Floor);
+
+Scene_Dots_Net_Crits.add(%this.CompositeSprite_Grid);
 
 SceneWindow_Dots_Net_Crits.setCameraPosition(%Vector_2D_World_Limits_Half_Offset);
 

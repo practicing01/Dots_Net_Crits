@@ -27,4 +27,13 @@ SceneWindow_Dots_Net_Crits.startCameraShake(%Float_Shake_Magnitude,%Float_Shake_
 
 }
 
+if (%this.Int_Health<=0)
+{
+
+%this.Module_ID_Parent.Increment_Death_Count(%this);
+
+%this.Int_Health=100;
+
+}
+
 }

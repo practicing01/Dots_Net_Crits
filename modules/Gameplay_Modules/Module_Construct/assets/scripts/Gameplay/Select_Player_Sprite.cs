@@ -99,6 +99,8 @@ ModuleDatabase.LoadExplicit(Module_Gameplay_Object_Controller);
 
 Module_Gameplay_Object_Controller.Gui_Load();
 
+Gui_Dots_Net_Crits_Overlay.add(%this.GuiControl_Player_Deaths);
+
 }
 
 break;

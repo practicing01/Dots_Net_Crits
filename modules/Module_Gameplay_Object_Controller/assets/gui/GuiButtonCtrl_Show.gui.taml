@@ -1,3 +1,12 @@
+<GuiControl
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="800 480"
+    MinExtent="1 1"
+    Visible="1">
+
 <GuiButtonCtrl
 		Profile="Black_0ButtonProfile"
 		class="Class_Gameplay_Object_Controller_Button"
@@ -12,5 +21,5 @@
 		Visible="1"
 		Active="1"
 		useMouseEvents="1" />
-										
-</GuiButtonCtrl>
+							
+</GuiControl>

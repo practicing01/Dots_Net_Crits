@@ -1,6 +1,10 @@
 function Module_Construct::Variables_Initialize(%this)
 {
 
+%this.SimSet_Player_Deaths=new SimSet();
+
+/*****/
+
 %this.Simset_Client_List=new SimSet();
 
 /*****/
@@ -92,6 +96,18 @@ Dots_Net_Crits.add(%this.GuiControl_Object_Select);
 Set_Gui_Module_ID_Parent(%this.GuiControl_Player_Sprite_Select,%this);
 
 Dots_Net_Crits.add(%this.GuiControl_Player_Sprite_Select);
+
+/******************************/
+
+/******************************/
+
+%this.GuiControl_Player_Deaths=TamlRead("./../../Gui/GuiControl_Player_Deaths.gui.taml");
+
+%this.GuiControl_Player_Deaths.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+
+Set_Gui_Module_ID_Parent(%this.GuiControl_Player_Deaths,%this);
+
+Dots_Net_Crits.add(%this.GuiControl_Player_Deaths);
 
 /******************************/
 

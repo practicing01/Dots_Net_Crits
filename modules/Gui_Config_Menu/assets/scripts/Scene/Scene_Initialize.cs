@@ -15,6 +15,13 @@ if (!$pref::Video::disableVerticalSync)
 
 }
 
+if (!$pref::Video::fullScreen)
+{
+
+%this.GuiControl_Config_Menu->GuiCheckBoxCtrl_Fullscreen_Toggle.setStateOn(true);
+
+}
+
 %String_Resolution_List=getResolutionList($pref::Video::displayDevice);
 
 for (%x=0;%x<getWordCount(%String_Resolution_List);%x+=3)

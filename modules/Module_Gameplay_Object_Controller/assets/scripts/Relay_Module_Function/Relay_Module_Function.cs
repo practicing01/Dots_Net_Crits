@@ -3,11 +3,6 @@ function Module_Gameplay_Object_Controller::Relay_Module_Function(%this,%GameCon
 %Parameter_7,%Parameter_8,%Parameter_9,%Parameter_10,%Parameter_11,%Parameter_12)
 {
 
-if (%Module_Function$="Load_Gameplay_Mechanic")
-{
 
-%this.Load_Gameplay_Mechanic(%GameConnection_Client_Sender,%Parameter_0);
-
-}
 
 }

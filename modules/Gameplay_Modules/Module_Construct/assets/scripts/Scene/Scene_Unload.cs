@@ -1,6 +1,15 @@
 function Module_Construct::Scene_Unload(%this)
 {
 
+if (isObject(%this.SimSet_Player_Deaths))
+{
+
+%this.SimSet_Player_Deaths.deleteObjects();
+
+%this.SimSet_Player_Deaths.delete();
+
+}
+
 if (isObject(Module_Gameplay_Mechanic_Browser))
 {
 

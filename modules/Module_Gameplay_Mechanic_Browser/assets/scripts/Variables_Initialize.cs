@@ -25,7 +25,7 @@ Gui_Dots_Net_Crits_Overlay.add(%this.GuiControl_Browser);
 
 %this.GuiButtonCtrl_Show=TamlRead("./../gui/GuiButtonCtrl_Show.gui.taml");
 
-//%this.GuiButtonCtrl_Show.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+%this.GuiButtonCtrl_Show.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
 
 Set_Gui_Module_ID_Parent(%this.GuiButtonCtrl_Show,%this);
 

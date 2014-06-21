@@ -1,0 +1,68 @@
+<GuiControl
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="800 480"
+    MinExtent="1 1"
+    Visible="1">
+
+<GuiSpriteCtrl
+    InternalName="GuiSpriteCtrl_Player_Deaths"
+    Profile="gui_profile_modalless"
+    Image="Module_Gameplay_Object_Controller:Image_Game_Mechanic_Controller"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="285 140"
+    Extent="230 230"
+    MinExtent="1 1"
+    Visible="0"
+    Active="0">
+
+	<!-- Player List -->
+	<GuiScrollCtrl
+			InternalName="GuiScrollCtrl_Player_List"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="32 36"
+			Extent="164 198"
+			MinExtent="1 1"
+			Visible="1"
+			Active="1"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					InternalName="GuiListBoxCtrl_Player_List"
+                                        class="Class_Gui_List_Player_List"
+					Profile="gui_list_profile_colored"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="185 198"
+					MinExtent="1 1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+							
+</GuiSpriteCtrl>
+
+		<!-- Visibility Toggle -->
+	<GuiButtonCtrl
+		Profile="Black_0ButtonProfile"
+		class="Class_Module_Construct_Button"
+		String_Type="Deaths_Visibility_Toggle"
+		Text="Player Deaths"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="300 0"
+		Extent="150 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+						
+</GuiControl>

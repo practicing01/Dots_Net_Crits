@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Male_1_Attack_Down"
-    Image="@asset=Module_Gameplay:Image_Male_1_Attack"
-    AnimationFrames="8 9 10 11"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

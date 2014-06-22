@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Zombie_Cast_Down"
-    Image="@asset=Module_NPC_Zombie:Image_Zombie"
-    AnimationFrames="22 23 24 25 26"
-    AnimationCycle="false"
-	AnimationTime="1.0" />
-

@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Merchant_Attack_Down"
-    Image="@asset=Module_Gameplay:Image_Merchant_Attack"
-    AnimationFrames="8 9 10 11"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

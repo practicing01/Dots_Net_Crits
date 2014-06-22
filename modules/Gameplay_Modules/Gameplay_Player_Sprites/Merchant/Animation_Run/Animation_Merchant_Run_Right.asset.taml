@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Merchant_Run_Right"
-    Image="@asset=Module_Gameplay:Image_Merchant"
-    AnimationFrames="3 4 5 4"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

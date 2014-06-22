@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Samurai_F_Attack_Down"
-    Image="@asset=Module_Samurai_F:Image_Samurai_F_Attack"
-    AnimationFrames="8 9 10 11"
-    AnimationCycle="false"
-	AnimationTime="1.0" />
-

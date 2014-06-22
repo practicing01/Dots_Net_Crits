@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Female_1_Stand_Down"
-    Image="@asset=Module_Gameplay:Image_Female_1"
-    AnimationFrames="7"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

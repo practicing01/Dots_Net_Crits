@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Male_0_Stand_Up"
-    Image="@asset=Module_Gameplay:Image_Male_0"
-    AnimationFrames="1"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

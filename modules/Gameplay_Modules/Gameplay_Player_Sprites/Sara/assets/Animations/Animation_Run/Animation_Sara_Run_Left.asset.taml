@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Sara_Run_Left"
-    Image="@asset=Module_Sara:Image_Sara"
-    AnimationFrames="27 28 29 28"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

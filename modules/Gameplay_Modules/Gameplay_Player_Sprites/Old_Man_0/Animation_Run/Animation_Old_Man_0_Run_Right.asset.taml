@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Old_Man_0_Run_Right"
-    Image="@asset=Module_Gameplay:Image_Old_Man_0"
-    AnimationFrames="3 4 5 4"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

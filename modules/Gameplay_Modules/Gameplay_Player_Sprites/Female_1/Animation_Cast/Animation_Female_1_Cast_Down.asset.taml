@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Female_1_Cast_Down"
-    Image="@asset=Module_Gameplay:Image_Female_1_Cast"
-    AnimationFrames="10 11 12 13 14"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

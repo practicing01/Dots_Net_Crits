@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Ranger_F_Cast_Right"
-    Image="@asset=Module_Ranger_F:Image_Ranger_F_Cast"
-    AnimationFrames="5 6 7 8 9"
-    AnimationCycle="false"
-	AnimationTime="1.0" />
-

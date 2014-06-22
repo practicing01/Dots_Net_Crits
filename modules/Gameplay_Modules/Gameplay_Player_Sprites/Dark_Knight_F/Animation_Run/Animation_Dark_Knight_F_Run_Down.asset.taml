@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Dark_Knight_F_Run_Down"
-    Image="@asset=Module_Gameplay:Image_Dark_Knight_F"
-    AnimationFrames="6 7 8 7"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

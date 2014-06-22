@@ -1,8 +1,0 @@
-<ImageAsset
-    AssetName="Image_Cloak"
-    ImageFile="Image_Cloak.png"
-	CellCountX="32"
-    CellCountY="1"
-    CellWidth="18"
-    CellHeight="16"
-	Optimal_Resolution="800 480"/>

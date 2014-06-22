@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Zombie_Attack_Up"
-    Image="@asset=Module_NPC_Zombie:Image_Zombie"
-    AnimationFrames="1 0 3"
-    AnimationCycle="false"
-	AnimationTime="1.0" />
-

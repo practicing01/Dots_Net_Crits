@@ -1,6 +1,0 @@
-exec("./Class_Gui_Gameplay_Object_Controller/Class_Gui_Gameplay_Object_Controller.cs");
-exec("./Class_Gameplay_Object_Controller_Button/Class_Gameplay_Object_Controller_Button.cs");
-exec("./Class_GuiButtonCtrl_Gameplay_Object_Controller_Group/Class_GuiButtonCtrl_Gameplay_Object_Controller_Group.cs");
-exec("./Class_GuiListBoxCtrl_Gameplay_Mechanic_List/Class_GuiListBoxCtrl_Gameplay_Mechanic_List.cs");
-exec("./Class_Module_Gameplay_Object_Controller_Input_Controller/Class_Module_Gameplay_Object_Controller_Input_Controller.cs");
-exec("./Class_Module_Gameplay_Object_Controller_GuiListBoxCtrl_Object_List/Class_Module_Gameplay_Object_Controller_GuiListBoxCtrl_Object_List.cs");

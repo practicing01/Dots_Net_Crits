@@ -1,9 +1,0 @@
-<ImageAsset
-    AssetName="Image_Dancer_F"
-    ImageFile="Dancer_F.png"
-    CellCountX="3"
-    CellCountY="4"
-    CellWidth="16"
-    CellHeight="18"
-    Optimal_Resolution="800 480"/>
-

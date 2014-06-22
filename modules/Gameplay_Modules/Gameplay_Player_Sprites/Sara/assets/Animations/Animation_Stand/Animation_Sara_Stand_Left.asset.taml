@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Sara_Stand_Left"
-    Image="@asset=Module_Sara:Image_Sara"
-    AnimationFrames="28"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

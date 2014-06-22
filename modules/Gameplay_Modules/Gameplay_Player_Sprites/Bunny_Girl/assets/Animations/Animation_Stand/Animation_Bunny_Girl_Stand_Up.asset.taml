@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Bunny_Girl_Stand_Up"
-    Image="@asset=Module_Bunny_Girl:Image_Bunny_Girl"
-    AnimationFrames="1"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

@@ -1,7 +1,0 @@
-<AnimationAsset
-    AssetName="Animation_Merchant_Cast_Left"
-    Image="@asset=Module_Gameplay:Image_Merchant_Cast"
-    AnimationFrames="15 16 17 18 19"
-    AnimationCycle="true"
-	AnimationTime="1.0" />
-

@@ -1,7 +1,7 @@
 function Class_GuiButtonCtrl_Gameplay_Object_Controller_Group::onAction(%this)
 {
 
-%this.Module_ID_Parent.GuiControl_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_List->GuiListBoxCtrl_Gameplay_Mechanic_List.clearItems();
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Gameplay_Mechanic_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_List->GuiListBoxCtrl_Gameplay_Mechanic_List.clearItems();
 
 for (%x=0;%x<%this.Module_ID_Parent.SimSet_Gameplay_Mechanic_Modules.getCount();%x++)
 {
@@ -13,9 +13,9 @@ for (%x=0;%x<%this.Module_ID_Parent.SimSet_Gameplay_Mechanic_Modules.getCount();
 if (%ScriptObject_Mechanic.String_Group$=%this.String_Group)
 {
 
-%this.Module_ID_Parent.GuiControl_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_List->GuiListBoxCtrl_Gameplay_Mechanic_List.addItem(%ScriptObject_Mechanic.String_Mechanic);
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Gameplay_Mechanic_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_List->GuiListBoxCtrl_Gameplay_Mechanic_List.addItem(%ScriptObject_Mechanic.String_Mechanic);
 
-%ScriptObject_Mechanic.Int_List_Index=%this.Module_ID_Parent.GuiControl_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_List->GuiListBoxCtrl_Gameplay_Mechanic_List.getItemCount()-1;
+%ScriptObject_Mechanic.Int_List_Index=%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Gameplay_Mechanic_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_List->GuiListBoxCtrl_Gameplay_Mechanic_List.getItemCount()-1;
 
 }
 

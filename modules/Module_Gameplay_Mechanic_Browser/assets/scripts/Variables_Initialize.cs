@@ -11,7 +11,7 @@ function Module_Gameplay_Mechanic_Browser::Variables_Initialize(%this)
 
 %this.GuiControl_Browser=TamlRead("./../gui/GuiControl_Browser.gui.taml");
 
-//%this.GuiControl_Browser.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+%this.GuiControl_Browser.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
 
 Set_Gui_Module_ID_Parent(%this.GuiControl_Browser,%this);
 

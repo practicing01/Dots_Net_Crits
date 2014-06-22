@@ -1,6 +1,24 @@
 function Class_Player_Sprite::onRemove(%this)
 {
 
+if (isObject(%this.SimSet_Foreign_Statistics))
+{
+
+%this.SimSet_Foreign_Statistics.deleteObjects();
+
+%this.SimSet_Foreign_Statistics.delete();
+
+}
+
+if (isObject(%this.SimSet_Statistics))
+{
+
+%this.SimSet_Statistics.deleteObjects();
+
+%this.SimSet_Statistics.delete();
+
+}
+
 if (isObject(%this.SimSet_onRemove_Listeners))
 {
 

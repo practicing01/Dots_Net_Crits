@@ -1,4 +1,7 @@
-function Module_NPC_Zombie::Bite(%this,%GameConnection_Client_Sender,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Second_Module_ID_Parent,%Second_GameConnection_Handle,%Second_Int_Index)
+function Module_NPC_Zombie::Poison(%this,%GameConnection_Client_Sender,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Second_Module_ID_Parent,%Second_GameConnection_Handle,%Second_Int_Index)
+{
+
+if (%GameConnection_Client_Sender==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side)
 {
 
 %Gameplay_Object=0;
@@ -48,15 +51,6 @@ if (isObject(%Second_Gameplay_Object))
 if (%GameConnection_Client_Sender==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side)
 {
 
-%Float_Distance=%Gameplay_Object.Size.X;
-
-if (%Gameplay_Object.Size.X<%Gameplay_Object.Size.Y){%Float_Distance=%Gameplay_Object.Size.Y;}
-
-%Float_Distance*=1.5;
-
-if (Vector2Distance(%Gameplay_Object.Position,%Second_Gameplay_Object.Position)<=%Float_Distance)
-{
-
 commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent,"Update_Health",
 %Second_Gameplay_Object.ScriptObject_Client_Parent.GameConnection_Handle,
 %Second_Gameplay_Object.Int_Index,
@@ -67,9 +61,26 @@ commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent
 0.25
 );
 
-//Add poison statistic.
+}
 
-commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent,"Add_Statistic",
+for (%x=0;%x<%Gameplay_Object.SimSet_Foreign_Statistics.getCount();%x++)
+{
+
+%ScriptObject_Foreign_Statistic=%Gameplay_Object.SimSet_Foreign_Statistics.getObject(%x);
+
+//Potential bug to use $= instead of ==?
+if (%ScriptObject_Foreign_Statistic.Foreign_Object_Module_ID_Parent$=%Second_Module_ID_Parent
+&&%ScriptObject_Foreign_Statistic.Foreign_Object_GameConnection_Handle==%Second_GameConnection_Handle
+&&%ScriptObject_Foreign_Statistic.Foreign_Object_Int_Index==%Second_Int_Index
+&&%ScriptObject_Foreign_Statistic.String_Statistic$="Poison")
+{
+
+%ScriptObject_Foreign_Statistic.Int_Counter--;
+
+if (%ScriptObject_Foreign_Statistic.Int_Counter<=0)
+{
+
+commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent,"Remove_Statistic",
 %Second_Gameplay_Object.ScriptObject_Client_Parent.GameConnection_Handle,
 %Second_Gameplay_Object.Int_Index,
 %Gameplay_Object.Module_ID_Parent,
@@ -78,22 +89,15 @@ commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent
 "Poison"
 );
 
-%ScriptObject_Foreign_Statistic=new ScriptObject()
-{
+%Gameplay_Object.SimSet_Foreign_Statistics.remove(%ScriptObject_Foreign_Statistic);
 
-Foreign_Object_Module_ID_Parent=%Second_Gameplay_Object.Module_ID_Parent;
+%ScriptObject_Foreign_Statistic.delete();
 
-Foreign_Object_GameConnection_Handle=%Second_Gameplay_Object.ScriptObject_Client_Parent.GameConnection_Handle;
+}
 
-Foreign_Object_Int_Index=%Second_Gameplay_Object.Int_Index;
+break;
 
-String_Statistic="Poison";
-
-Int_Counter=3;
-
-};
-
-%Gameplay_Object.SimSet_Foreign_Statistics.add(%ScriptObject_Foreign_Statistic);
+}
 
 }
 

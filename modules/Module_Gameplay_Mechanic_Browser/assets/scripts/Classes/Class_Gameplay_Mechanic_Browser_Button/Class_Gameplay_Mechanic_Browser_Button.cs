@@ -4,22 +4,7 @@ function Class_Gameplay_Mechanic_Browser_Button::onAction(%this)
 if (%this.String_Type$="Show")
 {
 
-if (!%this.Module_ID_Parent.GuiControl_Browser.Visible)
-{
-
-%this.Module_ID_Parent.GuiControl_Browser.Active=true;
-
-%this.Module_ID_Parent.GuiControl_Browser.Visible=true;
-
-}
-else
-{
-
-%this.Module_ID_Parent.GuiControl_Browser.Active=false;
-
-%this.Module_ID_Parent.GuiControl_Browser.Visible=false;
-
-}
+%this.Module_ID_Parent.Gui_Toggle();
 
 }
 else if (%this.String_Type$="Execute")

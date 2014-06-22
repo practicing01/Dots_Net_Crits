@@ -19,5 +19,11 @@ else if (%this.String_Type$="Grid_Toggle")
 schedule(0,0,%this.Module_ID_Parent@"::"@"Grid_Toggle",%this.Module_ID_Parent);
 
 }
+else if (%this.String_Type$="Gui_Toggle")
+{
+
+schedule(0,0,%this.Module_ID_Parent@"::"@"Gui_Toggle",%this.Module_ID_Parent);
+
+}
 
 }

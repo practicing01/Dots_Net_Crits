@@ -62,7 +62,15 @@ SimSet_Animate_Listeners=0;
 
 Int_Animation_Type=0;
 
+SimSet_Statistics=0;
+
+SimSet_Foreign_Statistics=0;//Objects this object has affected.
+
 };
+
+%ScriptObject_Client_Copy.Sprite_Player_Sprite.SimSet_Foreign_Statistics=new SimSet();
+
+%ScriptObject_Client_Copy.Sprite_Player_Sprite.SimSet_Statistics=new SimSet();
 
 %ScriptObject_Client_Copy.Sprite_Player_Sprite.SimSet_onRemove_Listeners=new SimSet();
 
@@ -102,6 +110,8 @@ Module_Gameplay_Object_Controller.Gui_Load();
 Gui_Dots_Net_Crits_Overlay.add(%this.GuiControl_Player_Deaths);
 
 Gui_Dots_Net_Crits_Overlay.add(%this.GuiButtonCtrl_Grid_Toggle);
+
+Gui_Dots_Net_Crits_Overlay.add(%this.GuiButtonCtrl_Gui_Toggle);
 
 }
 

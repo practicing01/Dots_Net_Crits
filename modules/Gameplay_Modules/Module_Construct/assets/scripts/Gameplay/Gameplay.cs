@@ -6,3 +6,6 @@ exec("./Main_Menu.cs");
 exec("./Toggle_Deaths_Visibility.cs");
 exec("./Increment_Death_Count.cs");
 exec("./Grid_Toggle.cs");
+exec("./Gui_Toggle.cs");
+exec("./Add_Statistic.cs");
+exec("./Remove_Statistic.cs");

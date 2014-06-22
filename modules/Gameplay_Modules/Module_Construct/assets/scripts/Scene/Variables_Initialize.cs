@@ -127,4 +127,16 @@ Dots_Net_Crits.add(%this.GuiButtonCtrl_Grid_Toggle);
 
 /******************************/
 
+/******************************/
+
+%this.GuiButtonCtrl_Gui_Toggle=TamlRead("./../../Gui/GuiButtonCtrl_Gui_Toggle.gui.taml");
+
+%this.GuiButtonCtrl_Gui_Toggle.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+
+Set_Gui_Module_ID_Parent(%this.GuiButtonCtrl_Gui_Toggle,%this);
+
+Dots_Net_Crits.add(%this.GuiButtonCtrl_Gui_Toggle);
+
+/******************************/
+
 }

@@ -87,15 +87,69 @@ Module_ID_Parent=%this.Module_ID_Parent;
 
 };
 
-%this.Module_ID_Parent.GuiControl_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.add(%GuiButtonCtrl_Group);
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Gameplay_Mechanic_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.add(%GuiButtonCtrl_Group);
 
-%this.Module_ID_Parent.GuiControl_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.Extent.X+=80;
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Gameplay_Mechanic_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List->GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List.Extent.X+=80;
 
-%this.Module_ID_Parent.GuiControl_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List.computeSizes();
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Gameplay_Mechanic_Controller->GuiSpriteCtrl_Gameplay_Mechanic_Tab_List->GuiScrollCtrl_Gameplay_Mechanic_Tab_List.computeSizes();
+
+}
 
 }
 
 }
+
+//Populate statistics.
+
+//Base statistics.
+
+%GuiTextCtrl_Health=new GuiTextCtrl()
+{
+
+Profile="GuiTextProfile";
+Text="Health:" SPC %this.Module_ID_Parent.Picked_Object.Int_Health;
+HorizSizing="relative";
+VertSizing="relative";
+Extent="50 50";
+MinExtent="1 1";
+
+Module_ID_Parent=%this.Module_ID_Parent;
+
+};
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Statistics->GuiSpriteCtrl_Object_Statistics_List->GuiScrollCtrl_Object_Base_Statistics_List->GuiDynamicCtrlArrayControl_Object_Base_Statistics_List.add(%GuiTextCtrl_Health);
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Statistics->GuiSpriteCtrl_Object_Statistics_List->GuiScrollCtrl_Object_Base_Statistics_List->GuiDynamicCtrlArrayControl_Object_Base_Statistics_List.Extent.X+=80;
+
+%GuiTextCtrl_Speed=new GuiTextCtrl()
+{
+
+Profile="GuiTextProfile";
+Text="Speed:" SPC %this.Module_ID_Parent.Picked_Object.Int_Current_Speed;
+HorizSizing="relative";
+VertSizing="relative";
+Extent="50 50";
+MinExtent="1 1";
+
+Module_ID_Parent=%this.Module_ID_Parent;
+
+};
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Statistics->GuiSpriteCtrl_Object_Statistics_List->GuiScrollCtrl_Object_Base_Statistics_List->GuiDynamicCtrlArrayControl_Object_Base_Statistics_List.add(%GuiTextCtrl_Speed);
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Statistics->GuiSpriteCtrl_Object_Statistics_List->GuiScrollCtrl_Object_Base_Statistics_List->GuiDynamicCtrlArrayControl_Object_Base_Statistics_List.Extent.X+=80;
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Statistics->GuiSpriteCtrl_Object_Statistics_List->GuiScrollCtrl_Object_Base_Statistics_List.computeSizes();
+
+//Dynamic statistics.
+
+for (%x=0;%x<%this.Module_ID_Parent.Picked_Object.SimSet_Statistics.getCount();%x++)
+{
+
+%ScriptObject_Statistic=%this.Module_ID_Parent.Picked_Object.SimSet_Statistics.getObject(%x);
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Statistics->GuiSpriteCtrl_Object_Statistics_List->GuiScrollCtrl_Object_Statistics_List->
+GuiListBoxCtrl_Object_Statistics_List.addItem(%ScriptObject_Statistic.String_Statistic);
 
 }
 

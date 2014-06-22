@@ -13,7 +13,7 @@ function Module_Gameplay_Object_Controller::Variables_Initialize(%this)
 
 %this.GuiControl_Controller=TamlRead("./../gui/GuiControl_Controller.gui.taml");
 
-//%this.GuiControl_Controller.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
+%this.GuiControl_Controller.resize(0,0,Gui_Dots_Net_Crits_Overlay.Extent.X,Gui_Dots_Net_Crits_Overlay.Extent.Y);
 
 Set_Gui_Module_ID_Parent(%this.GuiControl_Controller,%this);
 

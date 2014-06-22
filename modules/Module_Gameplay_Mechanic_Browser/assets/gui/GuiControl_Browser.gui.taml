@@ -1,4 +1,14 @@
+<GuiControl
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="800 480"
+    MinExtent="1 1"
+    Visible="1">
+
 <GuiDragAndDropControl
+    InternalName="GuiDragAndDropControl_Gameplay_Mechanic_Browser"
     class="Class_Gui_Gameplay_Mechanic_Browser"
     Profile="GuiDefaultProfile"
     deleteOnMouseUp="0"
@@ -128,3 +138,5 @@
 		useMouseEvents="1"/>
 
 </GuiDragAndDropControl>
+							
+</GuiControl>

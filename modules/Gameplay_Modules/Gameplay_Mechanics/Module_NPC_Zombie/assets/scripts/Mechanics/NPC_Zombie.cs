@@ -112,7 +112,15 @@ Int_Animation_Type=0;
 
 SimSet_Mechanics=%this.Get_Mechanics_List();
 
+SimSet_Statistics=0;//Objects's statistics.
+
+SimSet_Foreign_Statistics=0;//Objects this object has affected.
+
 };
+
+%Sprite_Zombie.SimSet_Foreign_Statistics=new SimSet();
+
+%Sprite_Zombie.SimSet_Statistics=new SimSet();
 
 %Sprite_Zombie.SimSet_onRemove_Listeners=new SimSet();
 

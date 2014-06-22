@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Queen_Cast_Up"
+    Image="@asset=Module_Gameplay:Image_Queen_Cast"
+    AnimationFrames="0 1 2 3 4"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

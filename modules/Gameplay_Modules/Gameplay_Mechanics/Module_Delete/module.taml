@@ -1,0 +1,14 @@
+<ModuleDefinition
+	ModuleId="Module_Delete"
+	Type="Gameplay_Mechanic"
+	Group="Utility"
+	VersionId="1"
+	Description="Delete object."
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Old_Woman_0_Attack_Down"
+    Image="@asset=Module_Gameplay:Image_Old_Woman_0_Attack"
+    AnimationFrames="8 9 10 11"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

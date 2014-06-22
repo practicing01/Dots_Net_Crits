@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Old_Woman_Stand_Down"
+    Image="@asset=Module_Gameplay:Image_Old_Woman"
+    AnimationFrames="7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

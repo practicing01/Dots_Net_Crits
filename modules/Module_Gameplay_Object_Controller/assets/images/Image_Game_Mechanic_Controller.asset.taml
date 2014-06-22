@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Game_Mechanic_Controller"
+    ImageFile="Image_Game_Mechanic_Controller.png"
+    CellCountX="1"
+    CellCountY="1"
+    CellWidth="230"
+    CellHeight="230"
+    Optimal_Resolution="800 480"/>
+

@@ -1,0 +1,26 @@
+<GuiControl
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="800 480"
+    MinExtent="1 1"
+    Visible="1">
+
+		<!-- go back to main menu -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Instructions_Menu"
+                String_Type="Main_Menu"
+		Profile="Black_0ButtonProfile"
+		Text="Main Menu"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 440"
+		Extent="128 40"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+		
+</GuiControl>

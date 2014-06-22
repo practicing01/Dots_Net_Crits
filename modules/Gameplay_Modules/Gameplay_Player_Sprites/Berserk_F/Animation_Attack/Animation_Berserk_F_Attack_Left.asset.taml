@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Berserk_F_Attack_Left"
+    Image="@asset=Module_Gameplay:Image_Berserk_F_Attack"
+    AnimationFrames="12 13 14 15"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

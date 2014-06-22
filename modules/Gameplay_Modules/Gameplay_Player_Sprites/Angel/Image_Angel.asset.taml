@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Angel"
+    ImageFile="Angel.png"
+    CellCountX="3"
+    CellCountY="4"
+    CellWidth="20"
+    CellHeight="21"
+    Optimal_Resolution="800 480"/>
+

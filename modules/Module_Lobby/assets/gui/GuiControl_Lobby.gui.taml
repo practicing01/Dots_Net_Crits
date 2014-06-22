@@ -1,0 +1,139 @@
+<GuiControl
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="800 480"
+    MinExtent="1 1"
+    Visible="1">
+
+		<!-- go back to main menu -->
+	<GuiButtonCtrl
+		Name="Gui_Button_Lobby_Go_Main_Menu"
+		class="GuiButtonCtrl_Lobby_Menu"
+		String_Type="Main_Menu"
+		Profile="Black_0ButtonProfile"
+		Text="Main Menu"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 440"
+		Extent="128 40"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<!-- Connected clients list -->
+	<GuiScrollCtrl
+			InternalName="GuiScrollCtrl_Connected_Clients"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="25 140"
+			Extent="200 200"
+			MinExtent="1 1"
+			Visible="1"
+			Active="1"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					InternalName="GuiListBoxCtrl_Connected_Clients"
+					Profile="gui_list_profile_colored"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="185 200"
+					MinExtent="1 1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+
+	<!-- Gameplay modules list -->
+	<GuiScrollCtrl
+			InternalName="GuiScrollCtrl_Gameplay_Modules"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="300 140"
+			Extent="200 200"
+			MinExtent="1 1"
+			Visible="1"
+			Active="1"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					InternalName="GuiListBoxCtrl_Gameplay_Modules"
+					Profile="gui_list_profile_colored"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="185 200"
+					MinExtent="1 1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+
+		<!-- Ready -->
+	<GuiButtonCtrl
+		class="GuiButtonCtrl_Lobby_Menu"
+		String_Type="Ready"
+		Profile="Black_0ButtonProfile"
+		Text="Ready"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="339 440"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+		<!-- Start -->
+	<GuiButtonCtrl
+		InternalName="GuiButtonCtrl_Lobby_Start"
+		class="GuiButtonCtrl_Lobby_Menu"
+		String_Type="Start"
+		Profile="Black_0ButtonProfile"
+		Text="Start"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="660 440"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="0"
+		Active="1"
+		useMouseEvents="1" />
+
+		<!-- Connected clients -->
+	<GuiTextCtrl
+		Profile="GuiTextProfile"
+		Text="Players"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="93 76"
+		Extent="64 64"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+		<!--Choose Gameplay -->
+	<GuiTextCtrl
+		Profile="GuiTextProfile"
+		Text="Choose Gameplay"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="355 76"
+		Extent="90 64"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+							
+</GuiControl>

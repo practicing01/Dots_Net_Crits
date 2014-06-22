@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dark_Elemental_Stand_Down"
+    Image="@asset=Module_Gameplay:Image_Dark_Elemental"
+    AnimationFrames="7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

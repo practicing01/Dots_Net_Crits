@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Old_Man_Run_Up"
+    Image="@asset=Module_Gameplay:Image_Old_Man"
+    AnimationFrames="0 1 2 1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

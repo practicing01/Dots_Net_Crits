@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Sara"
+	Type="Gameplay_Player_Sprite"
+	VersionId="1"
+	Description="Sara"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

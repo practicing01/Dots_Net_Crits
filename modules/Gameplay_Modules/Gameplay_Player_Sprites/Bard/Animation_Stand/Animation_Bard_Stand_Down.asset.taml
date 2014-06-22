@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Bard_Stand_Down"
+    Image="@asset=Module_Gameplay:Image_Bard"
+    AnimationFrames="7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

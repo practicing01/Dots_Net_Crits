@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Ninja_F_Cast"
+    ImageFile="Ninja_F_Cast.png"
+    CellCountX="5"
+    CellCountY="4"
+    CellWidth="18"
+    CellHeight="20"
+    Optimal_Resolution="800 480"/>
+

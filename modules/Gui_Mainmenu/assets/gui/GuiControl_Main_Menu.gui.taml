@@ -1,0 +1,135 @@
+<GuiControl
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="800 480"
+    MinExtent="1 1"
+    Visible="1"
+    Optimal_Resolution="800 480">
+
+	<!-- config button -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Main_Menu"
+                String_Type="Configure"
+		Profile="Black_0ButtonProfile"
+		Text="Configure"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 450"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />	
+
+	<!-- Instructions Button -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Main_Menu"
+                String_Type="Instructions"
+		Profile="Black_0ButtonProfile"
+		Text="Instructions"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="159 450"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+		
+	<!-- List Servers -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Main_Menu"
+                String_Type="List_Servers"
+		Profile="Black_0ButtonProfile"
+		Text="List Servers"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="328 450"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+		
+	<!-- Single Player -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Main_Menu"
+                String_Type="Single_Player"
+		Profile="Black_0ButtonProfile"
+		Text="Single Player"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="328 420"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<!-- Host Master Server -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Main_Menu"
+                String_Type="Host_Master_Server"
+		Profile="Black_0ButtonProfile"
+		Text="Start Master Server"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="497 450"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<!-- Host Server -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Main_Menu"
+                String_Type="Host_Server"
+		Profile="Black_0ButtonProfile"
+		Text="Start Server"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="660 450"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<!-- Server list -->
+	<GuiScrollCtrl
+                        InternalName="GuiScrollCtrl_Main_Menu_Server_List"
+			Profile="GuiLightScrollProfile_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="300 140"
+			Extent="200 200"
+			MinExtent="1 1"
+			Visible="1"
+			Active="1"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl
+                                        InternalName="GuiListBoxCtrl_Main_Menu_Server_List"
+                                        class="Class_GuiListBoxCtrl_Main_Menu_Server_List"
+					Profile="gui_list_profile_colored"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="185 200"
+					MinExtent="1 1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+				
+</GuiControl>

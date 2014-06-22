@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Soldier_Stand_Left"
+    Image="@asset=Module_Gameplay:Image_Soldier"
+    AnimationFrames="10"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

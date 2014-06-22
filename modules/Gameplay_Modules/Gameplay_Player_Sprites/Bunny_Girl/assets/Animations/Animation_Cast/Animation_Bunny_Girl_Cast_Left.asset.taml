@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Bunny_Girl_Cast_Left"
+    Image="@asset=Module_Bunny_Girl:Image_Bunny_Girl_Cast"
+    AnimationFrames="15 16 17 18 19"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

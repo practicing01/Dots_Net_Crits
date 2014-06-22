@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_White_Mage_Stand_Right"
+    Image="@asset=Module_Gameplay:Image_White_Mage"
+    AnimationFrames="4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

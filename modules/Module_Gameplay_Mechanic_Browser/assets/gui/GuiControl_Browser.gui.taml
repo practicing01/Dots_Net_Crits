@@ -1,0 +1,142 @@
+<GuiControl
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="800 480"
+    MinExtent="1 1"
+    Visible="1">
+
+<GuiDragAndDropControl
+    InternalName="GuiDragAndDropControl_Gameplay_Mechanic_Browser"
+    class="Class_Gui_Gameplay_Mechanic_Browser"
+    Profile="GuiDefaultProfile"
+    deleteOnMouseUp="0"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="240 240"
+    MinExtent="1 1"
+    Visible="1"
+    useMouseEvents="1">
+
+<GuiSpriteCtrl
+    InternalName="GuiSpriteCtrl_Gameplay_Mechanic_Tab_List"
+    Profile="gui_profile_modalless"
+    class="Class_GuiSpriteCtrl_Gameplay_Mechanic_Browser_Background"
+    Image="Module_Gameplay_Mechanic_Browser:Image_Game_Mechanic_Browser"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="230 230"
+    MinExtent="1 1"
+    Visible="1">
+
+	<!-- Gameplay_Mechanic_Tab List -->
+	<GuiScrollCtrl
+			InternalName="GuiScrollCtrl_Gameplay_Mechanic_Tab_List"
+			Profile="GuiLightScrollProfile_Blue_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="32 36"
+			Extent="164 55"
+			MinExtent="1 1"
+			Visible="1"
+			Active="1"
+			vScrollBar="alwaysOff"
+			hScrollBar="dynamic">
+			
+                                <GuiDynamicCtrlArrayControl 
+					InternalName="GuiDynamicCtrlArrayControl_Gameplay_Mechanic_Tab_List"
+					Profile="gui_list_profile_colored"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="80 35"
+					MinExtent="1 1"
+					Visible="1"
+					Active="1"
+					colCount="1"
+					colSize="80"
+					colSpacing="0"
+					rowSize="35"
+					rowSpacing="0"/>
+	</GuiScrollCtrl>
+	
+	<!-- Gameplay_Mechanic List -->
+	<GuiScrollCtrl
+			InternalName="GuiScrollCtrl_Gameplay_Mechanic_List"
+			Profile="GuiLightScrollProfile_Blue_0"
+			HorizSizing="relative"
+			VertSizing="relative"
+			Position="32 85"
+			Extent="164 115"
+			MinExtent="1 1"
+			Visible="1"
+			Active="1"
+			vScrollBar="dynamic"
+			hScrollBar="dynamic">
+			
+				<GuiListBoxCtrl 
+					InternalName="GuiListBoxCtrl_Gameplay_Mechanic_List"
+                                        class="Class_GuiListBoxCtrl_Gameplay_Mechanic_Browser_List"
+					Profile="gui_list_profile_colored"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="0 0"
+					Extent="200 115"
+					MinExtent="1 1"
+					Visible="1"
+					Active="1"
+					AllowMultipleSelections="0"/>
+	</GuiScrollCtrl>
+							
+</GuiSpriteCtrl>
+
+<!-- Minimize -->
+<!--
+<GuiButtonCtrl
+		Profile="Blue_0ButtonProfile"
+		class="Class_Gameplay_Mechanic_Browser_Button"
+                String_Type="Minimize"
+		Text="-"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 0"
+		Extent="30 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1">
+<GuiSpriteCtrl
+    Profile="gui_profile_modalless"
+    Image="Module_Gameplay_Mechanic_Browser:Image_Skull_Button"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="0 0"
+    Extent="30 30"
+    MinExtent="1 1"
+    Visible="1"/>
+
+</GuiButtonCtrl>
+-->
+
+<GuiButtonCtrl
+		Profile="Blue_0ButtonProfile"
+		class="Class_Gameplay_Mechanic_Browser_Button"
+                String_Type="Execute"
+		Text="Execute"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="95 210"
+		Extent="50 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1"/>
+
+</GuiDragAndDropControl>
+							
+</GuiControl>

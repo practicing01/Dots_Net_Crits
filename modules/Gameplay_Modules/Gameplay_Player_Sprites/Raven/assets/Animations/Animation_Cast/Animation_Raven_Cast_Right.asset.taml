@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Raven_Cast_Right"
+    Image="@asset=Module_Raven:Image_Raven"
+    AnimationFrames="13 14 15 16 17"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

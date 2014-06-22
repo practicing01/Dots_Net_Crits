@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Monk_F_Cast_Right"
+    Image="@asset=Module_Gameplay:Image_Monk_F_Cast"
+    AnimationFrames="5 6 7 8 9"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

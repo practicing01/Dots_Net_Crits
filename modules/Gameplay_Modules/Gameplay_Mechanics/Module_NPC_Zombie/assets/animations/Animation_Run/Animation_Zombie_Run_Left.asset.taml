@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Zombie_Run_Left"
+    Image="@asset=Module_NPC_Zombie:Image_Zombie"
+    AnimationFrames="27 28 29 28"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

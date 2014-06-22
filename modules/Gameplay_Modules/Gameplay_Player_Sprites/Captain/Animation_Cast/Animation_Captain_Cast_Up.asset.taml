@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Captain_Cast_Up"
+    Image="@asset=Module_Gameplay:Image_Captain_Cast"
+    AnimationFrames="0 1 2 3 4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

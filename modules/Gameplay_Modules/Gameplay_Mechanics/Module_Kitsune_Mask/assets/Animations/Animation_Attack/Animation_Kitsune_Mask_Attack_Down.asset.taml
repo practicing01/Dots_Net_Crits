@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Kitsune_Mask_Attack_Down"
+    Image="@asset=Module_Kitsune_Mask:Image_Kitsune_Mask"
+    AnimationFrames="19 18 21"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

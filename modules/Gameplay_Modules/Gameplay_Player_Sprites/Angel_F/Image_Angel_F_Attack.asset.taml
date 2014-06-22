@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Angel_F_Attack"
+    ImageFile="Angel_F_Attack.png"
+    CellCountX="4"
+    CellCountY="4"
+    CellWidth="20"
+    CellHeight="20"
+    Optimal_Resolution="800 480"/>
+

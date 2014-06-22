@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Ranger_Stand_Down"
+    Image="@asset=Module_Gameplay:Image_Ranger"
+    AnimationFrames="7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

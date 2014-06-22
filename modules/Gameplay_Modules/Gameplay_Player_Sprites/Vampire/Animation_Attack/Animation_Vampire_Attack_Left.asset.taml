@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Vampire_Attack_Left"
+    Image="@asset=Module_Gameplay:Image_Vampire_Attack"
+    AnimationFrames="12 13 14 15"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

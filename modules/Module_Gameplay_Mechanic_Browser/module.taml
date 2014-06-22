@@ -1,0 +1,12 @@
+<ModuleDefinition
+	ModuleId="Module_Gameplay_Mechanic_Browser"
+	VersionId="1"
+	Description="Module Gameplay Mechanic Browser"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

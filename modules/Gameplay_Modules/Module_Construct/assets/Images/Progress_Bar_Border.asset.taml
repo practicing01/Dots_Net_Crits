@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Progress_Bar_Border"
+    ImageFile="Progress_Bar_Border.png"
+	CellCountX="1"
+    CellCountY="1"
+    CellWidth="128"
+    CellHeight="24"
+	Optimal_Resolution="800 480"/>

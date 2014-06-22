@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dark_Elemental_Cast_Up"
+    Image="@asset=Module_Gameplay:Image_Dark_Elemental_Cast"
+    AnimationFrames="0 1 2 3 4"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

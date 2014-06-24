@@ -102,7 +102,9 @@ Float_Angle=-90;
 
 Bool_Is_Moving=false;
 
-Int_Health=100;
+Int_Base_Health=100;
+
+Int_Current_Health=100;
 
 SimSet_onRemove_Listeners=0;
 
@@ -115,6 +117,10 @@ SimSet_Mechanics=%this.Get_Mechanics_List();
 SimSet_Status=0;//Objects's statistics.
 
 SimSet_Foreign_Status=0;//Objects this object has affected.
+
+Int_Base_Attack=10;
+
+Int_Current_Attack=10;
 
 };
 

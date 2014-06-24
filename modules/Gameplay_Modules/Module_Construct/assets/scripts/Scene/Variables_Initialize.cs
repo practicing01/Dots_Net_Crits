@@ -29,7 +29,7 @@ function Module_Construct::Variables_Initialize(%this)
 
 /*****/
 
-%this.Int_Gameplay_Object_Speed=10;
+%this.Int_Gameplay_Object_Speed=1;
 
 /*****/
 

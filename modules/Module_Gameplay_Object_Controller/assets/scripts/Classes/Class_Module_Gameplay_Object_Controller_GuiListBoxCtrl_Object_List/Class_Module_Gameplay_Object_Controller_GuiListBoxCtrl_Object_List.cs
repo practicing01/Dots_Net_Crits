@@ -107,7 +107,7 @@ Module_ID_Parent=%this.Module_ID_Parent;
 {
 
 Profile="GuiTextProfile";
-Text="Health:" SPC %this.Module_ID_Parent.Picked_Object.Int_Health;
+Text="Health:" SPC %this.Module_ID_Parent.Picked_Object.Int_Current_Health;
 HorizSizing="relative";
 VertSizing="relative";
 Extent="50 50";
@@ -120,6 +120,28 @@ Module_ID_Parent=%this.Module_ID_Parent;
 %this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List->GuiDynamicCtrlArrayControl_Object_Base_Status_List.add(%GuiTextCtrl_Health);
 
 %this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List->GuiDynamicCtrlArrayControl_Object_Base_Status_List.Extent.X+=80;
+
+/***************************************************************************************/
+
+%GuiTextCtrl_Attack=new GuiTextCtrl()
+{
+
+Profile="GuiTextProfile";
+Text="Attack:" SPC %this.Module_ID_Parent.Picked_Object.Int_Current_Attack;
+HorizSizing="relative";
+VertSizing="relative";
+Extent="50 50";
+MinExtent="1 1";
+
+Module_ID_Parent=%this.Module_ID_Parent;
+
+};
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List->GuiDynamicCtrlArrayControl_Object_Base_Status_List.add(%GuiTextCtrl_Attack);
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List->GuiDynamicCtrlArrayControl_Object_Base_Status_List.Extent.X+=80;
+
+/***************************************************************************************/
 
 %GuiTextCtrl_Speed=new GuiTextCtrl()
 {

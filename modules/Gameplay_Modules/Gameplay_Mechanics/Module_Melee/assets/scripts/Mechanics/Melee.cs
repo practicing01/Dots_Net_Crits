@@ -60,7 +60,7 @@ if (Vector2Distance(%Gameplay_Object.Position,%Second_Gameplay_Object.Position)<
 commandToServer('Relay_Module_Function',%Second_Gameplay_Object.Module_ID_Parent,"Update_Health",
 %Second_Gameplay_Object.ScriptObject_Client_Parent.GameConnection_Handle,
 %Second_Gameplay_Object.Int_Index,
-10,
+%Gameplay_Object.Int_Current_Attack,
 -1,
 1,
 5,

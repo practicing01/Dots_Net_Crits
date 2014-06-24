@@ -20,9 +20,9 @@ ModuleDatabase.LoadExplicit(%Module_ID_Player_Sprite_Module);
 %ScriptObject_Client_Copy.Sprite_Player_Sprite=new Sprite()
 {
 
-Position=%this.Vector_2D_World_Limits.X*0.5
+Position=(%this.Vector_2D_World_Limits.X*0.5)+(%this.Vector_2D_Floor_Tile_Size.X*0.5)
 SPC
-%this.Vector_2D_World_Limits.Y*0.5;
+(%this.Vector_2D_World_Limits.Y*0.5)+(%this.Vector_2D_Floor_Tile_Size.Y*0.5);
 
 Size=%ScriptObject_Client_Copy.ScriptObject_Player_Sprite_Data.Vector_2D_Size;
 
@@ -54,7 +54,9 @@ Float_Angle=-90;
 
 Bool_Is_Moving=false;
 
-Int_Health=100;
+Int_Base_Health=100;
+
+Int_Current_Health=100;
 
 SimSet_onRemove_Listeners=0;
 
@@ -65,6 +67,10 @@ Int_Animation_Type=0;
 SimSet_Status=0;
 
 SimSet_Foreign_Status=0;//Objects this object has affected.
+
+Int_Base_Attack=10;
+
+Int_Current_Attack=10;
 
 };
 

@@ -4,5 +4,4 @@ exec("./Update_Speed.cs");
 exec("./Link.cs");
 exec("./Add_Status.cs");
 exec("./Remove_Status.cs");
-exec("./Update_Foreign_Status.cs");
 exec("./Relink_Hex_Cells.cs");

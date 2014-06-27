@@ -39,12 +39,6 @@ else if (%Module_Function$="Link")
 %this.Link(%GameConnection_Client_Sender,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
 
 }
-else if (%Module_Function$="Update_Foreign_Status")
-{
-
-%this.Update_Foreign_Status(%GameConnection_Client_Sender,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
-
-}
 else if (%Module_Function$="Synchronize_Module_Data")
 {
 

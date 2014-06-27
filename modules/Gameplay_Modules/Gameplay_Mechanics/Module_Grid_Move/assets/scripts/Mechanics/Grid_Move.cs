@@ -12,11 +12,9 @@ if (%Gameplay_Object.Int_Index==%Int_Index&&%Gameplay_Object.ScriptObject_Client
 if (%Gameplay_Object.Int_Current_Speed>0)
 {
 
-//Call the object's animation function.
+//%String_SpriteIDs=Module_Lobby.Module_ID_Gameplay_Module.CompositeSprite_Grid.pickPoint(%Vector_2D_World_Position);
 
-%Gameplay_Object.Animate(Vector2AngleToPoint(%Gameplay_Object.Position,%Vector_2D_World_Position),1);
-
-%String_SpriteIDs=Module_Lobby.Module_ID_Gameplay_Module.CompositeSprite_Grid.pickPoint(%Vector_2D_World_Position);
+%String_SpriteIDs=Module_Lobby.Module_ID_Gameplay_Module.CompositeSprite_Grid.pickArea(%Vector_2D_World_Position,%Vector_2D_World_Position);
 
 if (getWordCount(%String_SpriteIDs)==0){return;}
 
@@ -31,6 +29,8 @@ Module_Lobby.Module_ID_Gameplay_Module.CompositeSprite_Grid.selectSpriteId(%Spri
 %Gameplay_Object.moveTo(%Vector_2D_World_Position,%Gameplay_Object.Int_Current_Speed,true,false);
 
 %Gameplay_Object.Bool_Is_Moving=true;
+
+%Gameplay_Object.Animate(Vector2AngleToPoint(%Gameplay_Object.Position,%Vector_2D_World_Position),1);
 
 }
 

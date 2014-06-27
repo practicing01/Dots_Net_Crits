@@ -1,12 +1,20 @@
 function Class_Module_NPC_Shield_Generator::onRemove(%this)
 {
 
+if (isObject(%this.SimSet_Linked_Parents))
+{
+
 for (%x=0;%x<%this.SimSet_Linked_Parents.getCount();%x++)
 {
 
 %Linked_Object=%this.SimSet_Linked_Parents.getObject(%x);
 
+if (isObject(%Linked_Object))
+{
+
 %Linked_Object.SimSet_Linked_Children.remove(%this);
+
+}
 
 }
 
@@ -15,11 +23,18 @@ for (%x=0;%x<%this.SimSet_Linked_Parents.getCount();%x++)
 
 %Linked_Object=%this.SimSet_Linked_Parents.getObject(%x);
 
+if (isObject(%Linked_Object))
+{
+
 %Linked_Object.SimSet_Hex_Cells.deleteObjects();
 
 %Linked_Object.SimSet_Hex_Cells.clear();
 
 %Linked_Object.Relink_Hex_Cells();
+
+}
+
+}
 
 }
 

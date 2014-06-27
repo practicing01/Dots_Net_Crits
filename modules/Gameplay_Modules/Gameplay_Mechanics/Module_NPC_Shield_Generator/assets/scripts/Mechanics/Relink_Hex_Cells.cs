@@ -13,11 +13,11 @@ for (%Int_Y_Step=0;%Int_Y_Step<%this.Module_ID_Parent.Int_Hex_Cell_Y_Interval;%I
 
 %x1=%this.Position.X;
 
-%y1=%this.Position.Y+(%Int_Y_Step*%this.Module_ID_Parent.Vector_2D_Hex_Cell_Size.Y);
+%y1=%this.Position.Y+(%Int_Y_Step*%this.Module_ID_Parent.Vector_2D_Hex_Cell_Size.Y)+(%this.Module_ID_Parent.Vector_2D_Shield_Generator_Size.Y*0.5);
 
 %x2=%Linked_Object.Position.X;
 
-%y2=%Linked_Object.Position.Y+(%Int_Y_Step*%this.Module_ID_Parent.Vector_2D_Hex_Cell_Size.Y);
+%y2=%Linked_Object.Position.Y+(%Int_Y_Step*%this.Module_ID_Parent.Vector_2D_Hex_Cell_Size.Y)+(%this.Module_ID_Parent.Vector_2D_Shield_Generator_Size.Y*0.5);
 
 %xinc1=0;
 %xinc2=0;
@@ -88,6 +88,8 @@ Size=%this.Module_ID_Parent.Vector_2D_Hex_Cell_Size;
 Angle=%Float_Angle;
 
 Image="Module_NPC_Shield_Generator:Image_Hex_Cell";
+
+BlendColor="1 1 1 0.25";
 
 BodyType="static";
 

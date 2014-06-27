@@ -48,7 +48,7 @@ if (isObject(%Gameplay_Object)&&isObject(%Second_Gameplay_Object))
 {
 
 %Gameplay_Object.SimSet_Linked_Children.add(%Second_Gameplay_Object);
-echo("added child" SPC %Second_Gameplay_Object);
+
 %Second_Gameplay_Object.SimSet_Linked_Parents.add(%Gameplay_Object);
 
 %Gameplay_Object.Animate(Vector2AngleToPoint(%Gameplay_Object.Position,%Second_Gameplay_Object.Position),2);

@@ -1,0 +1,4 @@
+exec("./Class_Module_NPC_Shield_Generator_Input_Controller/Class_Module_NPC_Shield_Generator_Input_Controller.cs");
+exec("./Class_Module_NPC_Shield_Generator_GuiListBoxCtrl_Object_List/Class_Module_NPC_Shield_Generator_GuiListBoxCtrl_Object_List.cs");
+exec("./Class_NPC_Shield_Generator_Smoke/Class_NPC_Shield_Generator_Smoke.cs");
+exec("./Class_Module_NPC_Shield_Generator/Class_Module_NPC_Shield_Generator.cs");

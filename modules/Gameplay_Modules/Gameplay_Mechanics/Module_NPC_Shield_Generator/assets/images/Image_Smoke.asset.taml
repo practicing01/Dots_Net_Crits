@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Smoke"
+    ImageFile="Smoke.png"
+    CellCountX="19"
+    CellCountY="1"
+    CellWidth="32"
+    CellHeight="36"
+    Optimal_Resolution="800 480"/>
+

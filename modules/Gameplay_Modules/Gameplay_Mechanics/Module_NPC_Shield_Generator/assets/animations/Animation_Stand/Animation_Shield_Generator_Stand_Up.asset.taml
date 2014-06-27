@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Shield_Generator_Stand_Up"
+    Image="@asset=Module_NPC_Shield_Generator:Image_Shield_Generator"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

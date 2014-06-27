@@ -161,7 +161,29 @@ Module_ID_Parent=%this.Module_ID_Parent;
 
 %this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List->GuiDynamicCtrlArrayControl_Object_Base_Status_List.Extent.X+=80;
 
+/***************************************************************************************/
+
+%GuiMLTextCtrl_Commander=new GuiMLTextCtrl()
+{
+
+Profile="GuiTextProfile";
+Text="Commander:" SPC %this.Module_ID_Parent.Picked_Object.ScriptObject_Client_Parent.Connector_Name;
+HorizSizing="relative";
+VertSizing="relative";
+Extent="50 50";
+MinExtent="1 1";
+
+Module_ID_Parent=%this.Module_ID_Parent;
+
+};
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List->GuiDynamicCtrlArrayControl_Object_Base_Status_List.add(%GuiMLTextCtrl_Commander);
+
+%this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List->GuiDynamicCtrlArrayControl_Object_Base_Status_List.Extent.X+=80;
+
 %this.Module_ID_Parent.GuiControl_Controller->GuiDragAndDropControl_Object_Status->GuiSpriteCtrl_Object_Status_List->GuiScrollCtrl_Object_Base_Status_List.computeSizes();
+
+/***************************************************************************************/
 
 //Dynamic statistics.
 

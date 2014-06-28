@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Plague_Doctor_Mask_Attack_Up"
+    Image="@asset=Module_Plague_Doctor_Mask:Image_Plague_Doctor_Mask"
+    AnimationFrames="1 0 3"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

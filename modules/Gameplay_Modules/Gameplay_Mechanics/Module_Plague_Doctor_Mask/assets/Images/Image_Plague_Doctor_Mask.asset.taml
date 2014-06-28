@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Plague_Doctor_Mask"
+    ImageFile="Image_Plague_Doctor_Mask.png"
+	CellCountX="9"
+    CellCountY="4"
+    CellWidth="16"
+    CellHeight="18"
+	Optimal_Resolution="800 480"/>

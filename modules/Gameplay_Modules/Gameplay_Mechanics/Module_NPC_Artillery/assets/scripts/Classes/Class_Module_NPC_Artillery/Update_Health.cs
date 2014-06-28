@@ -1,4 +1,4 @@
-function Class_Module_NPC_Zombie::Update_Health(%this,%Int_Amount,%Char_Mode,%Bool_Camera_Shake,%Float_Shake_Magnitude,%Float_Shake_Time)
+function Class_Module_NPC_Artillery::Update_Health(%this,%Int_Amount,%Char_Mode,%Bool_Camera_Shake,%Float_Shake_Magnitude,%Float_Shake_Time)
 {
 
 if (%Char_Mode==-1)//Decrease health.

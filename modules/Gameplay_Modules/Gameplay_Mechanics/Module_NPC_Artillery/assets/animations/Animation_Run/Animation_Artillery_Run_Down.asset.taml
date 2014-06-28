@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Artillery_Run_Down"
+    Image="@asset=Module_NPC_Artillery:Image_Artillery"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

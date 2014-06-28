@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Artillery_Cast_Left"
+    Image="@asset=Module_NPC_Artillery:Image_Artillery"
+    AnimationFrames="0"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

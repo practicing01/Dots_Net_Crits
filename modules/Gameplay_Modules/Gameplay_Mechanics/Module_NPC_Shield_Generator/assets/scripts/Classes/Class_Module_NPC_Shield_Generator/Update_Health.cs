@@ -27,4 +27,11 @@ SceneWindow_Dots_Net_Crits.startCameraShake(%Float_Shake_Magnitude,%Float_Shake_
 
 }*/
 
+if (%this.Int_Current_Health<=0)
+{
+
+%this.SafeDelete();
+
+}
+
 }

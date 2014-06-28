@@ -1,0 +1,14 @@
+<ModuleDefinition
+	ModuleId="Module_NPC_Artillery"
+	Type="Gameplay_Mechanic"
+	Group="NPC"
+	VersionId="1"
+	Description="NPC Artillery."
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

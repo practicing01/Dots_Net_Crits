@@ -78,7 +78,7 @@ Image="Module_NPC_Shield_Generator:Image_Shield_Generator";
 
 Animation="Module_NPC_Shield_Generator:Animation_Shield_Generator_Stand_Down";
 
-SceneLayer=16;
+SceneLayer=17;
 
 Module_ID_Parent=%this;
 

@@ -1,0 +1,8 @@
+<ImageAsset
+    AssetName="Image_Attack_Boof"
+    ImageFile="Attack_Boof.png"
+	CellCountX="10"
+    CellCountY="2"
+    CellWidth="32"
+    CellHeight="16"
+	Optimal_Resolution="800 480"/>

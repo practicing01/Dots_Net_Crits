@@ -21,6 +21,12 @@ else if (%Module_Function$="Update_Speed")
 %this.Update_Speed(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
 
 }
+else if (%Module_Function$="Update_Attack")
+{
+
+%this.Update_Attack(%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3);
+
+}
 else if (%Module_Function$="Add_Status")
 {
 

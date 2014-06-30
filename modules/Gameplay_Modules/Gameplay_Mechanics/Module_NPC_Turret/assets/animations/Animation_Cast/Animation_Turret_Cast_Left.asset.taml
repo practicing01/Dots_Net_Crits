@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Turret_Cast_Left"
+    Image="@asset=Module_NPC_Turret:Image_Turret"
+    AnimationFrames="0"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

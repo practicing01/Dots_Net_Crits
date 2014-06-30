@@ -82,6 +82,8 @@ CollisionCallback="true";
 
 Sprite_Parent=%Gameplay_Object;
 
+Bool_Deleted=false;
+
 };
 
 %Sprite_Shell.Collision_Shape_Index=%Sprite_Shell.createPolygonBoxCollisionShape(%Sprite_Shell.Size);

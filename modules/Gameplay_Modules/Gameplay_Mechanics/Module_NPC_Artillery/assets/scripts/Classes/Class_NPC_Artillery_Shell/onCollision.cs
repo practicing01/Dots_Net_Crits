@@ -1,6 +1,8 @@
 function Class_NPC_Artillery_Shell::onCollision(%this,%Colliding_Object,%Collision_Details)
 {
 
+if (%this.Bool_Deleted){return;}
+
 %Bool_Delete=false;
 
 if (%this.ScriptObject_Client_Parent.GameConnection_Handle==Dots_Net_Crits.GameConnection_Client_Connection_Server_Side)
@@ -65,6 +67,8 @@ PickingAllowed=false;
 };
 
 Scene_Dots_Net_Crits.add(%Sprite_Explosion);
+
+%this.Bool_Deleted=true;
 
 %this.safeDelete();
 

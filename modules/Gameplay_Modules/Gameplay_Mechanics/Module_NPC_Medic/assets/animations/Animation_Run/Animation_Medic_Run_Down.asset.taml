@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Medic_Run_Down"
+    Image="@asset=Module_NPC_Medic:Image_Medic"
+    AnimationFrames="6 7 8 7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

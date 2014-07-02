@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Medic_Stand_Up"
+    Image="@asset=Module_NPC_Medic:Image_Medic"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

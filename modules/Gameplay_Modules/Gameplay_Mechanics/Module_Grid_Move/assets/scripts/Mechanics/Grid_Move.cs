@@ -14,7 +14,7 @@ if (%Gameplay_Object.Int_Current_Speed>0)
 
 //%String_SpriteIDs=Module_Lobby.Module_ID_Gameplay_Module.CompositeSprite_Grid.pickPoint(%Vector_2D_World_Position);
 
-%String_SpriteIDs=Module_Lobby.Module_ID_Gameplay_Module.CompositeSprite_Grid.pickArea(%Vector_2D_World_Position,%Vector_2D_World_Position);
+%String_SpriteIDs=Module_Lobby.Module_ID_Gameplay_Module.CompositeSprite_Grid.pickArea(%Vector_2D_World_Position,Vector2Add(%Vector_2D_World_Position,"0.1 0.1"));
 
 if (getWordCount(%String_SpriteIDs)==0){return;}
 

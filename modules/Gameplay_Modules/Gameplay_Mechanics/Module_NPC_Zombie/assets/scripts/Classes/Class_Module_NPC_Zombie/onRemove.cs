@@ -1,6 +1,29 @@
 function Class_Module_NPC_Zombie::onRemove(%this)
 {
 
+//Remove foreign statuses
+
+if (isObject(%this.SimSet_Foreign_Status))
+{
+
+for (%x=0;%x<%this.SimSet_Foreign_Status.getCount();%x++)
+{
+
+%ScriptObject_Foreign_Status=%this.SimSet_Foreign_Status.getObject(%x);
+
+commandToServer('Relay_Module_Function',%ScriptObject_Foreign_Status.Foreign_Object_Module_ID_Parent,"Remove_Status",
+%ScriptObject_Foreign_Status.Foreign_Object_GameConnection_Handle,
+%ScriptObject_Foreign_Status.Foreign_Object_Int_Index,
+%this.Module_ID_Parent,
+%this.ScriptObject_Client_Parent.GameConnection_Handle,
+%this.Int_Index,
+%ScriptObject_Foreign_Status.String_Status
+);
+
+}
+
+}
+
 if (isObject(%this.SimSet_Foreign_Status))
 {
 

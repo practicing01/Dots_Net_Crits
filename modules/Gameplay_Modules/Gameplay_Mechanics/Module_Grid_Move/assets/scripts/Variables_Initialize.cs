@@ -39,7 +39,7 @@ VertSizing="relative";
 
 Position="0 0";
 
-Extent="50 50";
+Extent="100 50";
 
 MinExtent="1 1";
 
@@ -58,7 +58,7 @@ VertSizing="relative";
 
 Position="0 0";
 
-Extent="50 50";
+Extent="100 50";
 
 MinExtent="1 1";
 
@@ -81,7 +81,7 @@ VertSizing="relative";
 
 Position="0 0";
 
-Extent="35 50";
+Extent="100 50";
 
 MinExtent="1 1";
 

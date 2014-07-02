@@ -1,6 +1,14 @@
 function Module_Gameplay_Object_Controller::Variables_Initialize(%this)
 {
 
+%this.ActionMap_Pick_Object=new ActionMap();
+
+%this.ActionMap_Pick_Object.push();
+
+%this.ActionMap_Pick_Object.bindCmd(keyboard,"space",%this @ ".Enable_Targeting();","");
+
+/******************************/
+
 %this.SimSet_Gameplay_Mechanic_Modules=new SimSet();
 
 %this.SimSet_Gameplay_Mechanic_Module_Groups=new SimSet();
@@ -65,7 +73,7 @@ VertSizing="relative";
 
 Position="0 0";
 
-Extent="50 50";
+Extent="100 50";
 
 MinExtent="1 1";
 
@@ -84,7 +92,7 @@ VertSizing="relative";
 
 Position="0 0";
 
-Extent="50 50";
+Extent="100 50";
 
 MinExtent="1 1";
 
@@ -107,7 +115,7 @@ VertSizing="relative";
 
 Position="0 0";
 
-Extent="35 50";
+Extent="100 50";
 
 MinExtent="1 1";
 

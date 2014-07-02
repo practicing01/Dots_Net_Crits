@@ -1,6 +1,13 @@
 function Module_Construct::Scene_Unload(%this)
 {
 
+if (isObject(%this.ActionMap_Toggle_Grid))
+{
+
+%this.ActionMap_Toggle_Grid.pop();
+
+}
+
 if (isObject(%this.SimSet_Player_Deaths))
 {
 

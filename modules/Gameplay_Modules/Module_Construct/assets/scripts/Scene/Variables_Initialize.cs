@@ -1,6 +1,16 @@
 function Module_Construct::Variables_Initialize(%this)
 {
 
+%this.ActionMap_Toggle_Grid=new ActionMap();
+
+%this.ActionMap_Toggle_Grid.push();
+
+%this.ActionMap_Toggle_Grid.bindCmd(keyboard,"f",%this @ ".Gui_Toggle();","");
+
+%this.ActionMap_Toggle_Grid.bindCmd(keyboard,"d",%this @ ".Grid_Toggle();","");
+
+/******************************/
+
 %this.SimSet_Player_Deaths=new SimSet();
 
 /*****/

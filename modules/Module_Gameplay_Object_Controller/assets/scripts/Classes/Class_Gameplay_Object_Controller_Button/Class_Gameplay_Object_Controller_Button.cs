@@ -13,18 +13,6 @@ else if (%this.String_Type$="Pick")
 %this.Module_ID_Parent.Bool_Targeting_Object=true;
 
 }
-else if (%this.String_Type$="Update_Status")
-{
-
-
-
-}
-else if (%this.String_Type$="Update_All_Status")
-{
-
-
-
-}
 else if (%this.String_Type$="Execute")
 {
 

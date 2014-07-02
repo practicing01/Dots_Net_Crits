@@ -1,6 +1,8 @@
 function Module_Gameplay_Object_Controller::Gui_Unload(%this)
 {
 
+%this.ActionMap_Pick_Object.pop();
+
 if (isObject(%this.SimSet_Gameplay_Mechanic_Module_Groups))
 {
 

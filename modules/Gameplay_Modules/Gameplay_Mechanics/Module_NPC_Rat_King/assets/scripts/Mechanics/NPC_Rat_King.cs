@@ -1,4 +1,4 @@
-function Module_NPC_Turret::NPC_Turret(%this,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Vector_2D_World_Position,%Int_Gameplay_Object_Counter)
+function Module_NPC_Rat_King::NPC_Rat_King(%this,%Module_ID_Parent,%GameConnection_Handle,%Int_Index,%Vector_2D_World_Position,%Int_Gameplay_Object_Counter)
 {
 
 for (%x=0;%x<%Module_ID_Parent.SimSet_Gameplay_Objects.getCount();%x++)
@@ -22,7 +22,7 @@ Position=%Vector_2D_World_Position;
 
 Size=%this.Vector_2D_Summoning_Circle_Size;
 
-Image="Module_NPC_Turret:Image_Summoning_Circle";
+Image="Module_NPC_Rat_King:Image_Summoning_Circle";
 
 SceneLayer=15;
 
@@ -47,13 +47,13 @@ Position=%Vector_2D_World_Position;
 
 Size=%this.Vector_2D_Smoke_Size;
 
-Animation="Module_NPC_Turret:Animation_Smoke";
+Animation="Module_NPC_Rat_King:Animation_Smoke";
 
 SceneLayer=15;
 
 Module_ID_Parent=%this;
 
-class="Class_NPC_Turret_Smoke";
+class="Class_NPC_Rat_King_Smoke";
 
 PickingAllowed=false;
 
@@ -63,20 +63,20 @@ Scene_Dots_Net_Crits.add(%Sprite_Smoke);
 
 /***************************************************/
 
-//Turret sprite.
+//Rat_King sprite.
 
-%Sprite_Turret=new Sprite()
+%Sprite_Rat_King=new Sprite()
 {
 
 Position=%Vector_2D_World_Position;
 
-Size=%this.Vector_2D_Turret_Size;
+Size=%this.Vector_2D_Rat_King_Size;
 
 FixedAngle=true;
 
-Image="Module_NPC_Turret:Image_Turret";
+Image="Module_NPC_Rat_King:Image_Rat_King";
 
-Animation="Module_NPC_Turret:Animation_Turret_Stand_Down";
+Animation="Module_NPC_Rat_King:Animation_Rat_King_Stand_Down";
 
 SceneLayer=16;
 
@@ -84,13 +84,13 @@ Module_ID_Parent=%this;
 
 ScriptObject_Client_Parent=%Gameplay_Object.ScriptObject_Client_Parent;
 
-class="Class_Module_NPC_Turret";
+class="Class_Module_NPC_Rat_King";
 
 SceneGroup=0;
 
 Collision_Shape_Index=-1;
 
-String_Name="Turret" SPC %this.Int_Gameplay_Object_Counter;
+String_Name="Rat_King" SPC %this.Int_Gameplay_Object_Counter;
 
 Int_Index=%Int_Gameplay_Object_Counter;
 
@@ -122,23 +122,25 @@ Int_Base_Attack=10;
 
 Int_Current_Attack=10;
 
+Bool_Is_King=true;
+
 };
 
-%Sprite_Turret.SimSet_Foreign_Status=new SimSet();
+%Sprite_Rat_King.SimSet_Foreign_Status=new SimSet();
 
-%Sprite_Turret.SimSet_Status=new SimSet();
+%Sprite_Rat_King.SimSet_Status=new SimSet();
 
-%Sprite_Turret.SimSet_onRemove_Listeners=new SimSet();
+%Sprite_Rat_King.SimSet_onRemove_Listeners=new SimSet();
 
-%Sprite_Turret.SimSet_Animate_Listeners=new SimSet();
+%Sprite_Rat_King.SimSet_Animate_Listeners=new SimSet();
 
-%Sprite_Turret.Collision_Shape_Index=%Sprite_Turret.createPolygonBoxCollisionShape(%Sprite_Turret.Size);
+%Sprite_Rat_King.Collision_Shape_Index=%Sprite_Rat_King.createPolygonBoxCollisionShape(%Sprite_Rat_King.Size);
 
-%Sprite_Turret.setCollisionShapeIsSensor(%Sprite_Turret.Collision_Shape_Index,true);
+%Sprite_Rat_King.setCollisionShapeIsSensor(%Sprite_Rat_King.Collision_Shape_Index,true);
 
-%this.SimSet_Gameplay_Objects.add(%Sprite_Turret);
+%this.SimSet_Gameplay_Objects.add(%Sprite_Rat_King);
 
-Scene_Dots_Net_Crits.add(%Sprite_Turret);
+Scene_Dots_Net_Crits.add(%Sprite_Rat_King);
 
 /***************************************************/
 

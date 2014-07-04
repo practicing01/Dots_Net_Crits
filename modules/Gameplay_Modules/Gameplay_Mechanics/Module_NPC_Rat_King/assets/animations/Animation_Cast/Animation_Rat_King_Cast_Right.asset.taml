@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Rat_King_Cast_Right"
+    Image="@asset=Module_NPC_Rat_King:Image_Rat_King_Cast"
+    AnimationFrames="3"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Rat_Run_Left"
+    Image="@asset=Module_NPC_Rat_King:Image_Rat"
+    AnimationFrames="3 4 3 5"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

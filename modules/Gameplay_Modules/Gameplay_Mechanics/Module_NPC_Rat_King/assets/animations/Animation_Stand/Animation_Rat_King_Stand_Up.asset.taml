@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Rat_King_Stand_Up"
+    Image="@asset=Module_NPC_Rat_King:Image_Rat_King"
+    AnimationFrames="9"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

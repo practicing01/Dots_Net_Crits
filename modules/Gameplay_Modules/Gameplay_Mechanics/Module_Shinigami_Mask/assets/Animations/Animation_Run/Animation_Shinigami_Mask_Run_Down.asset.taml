@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Shinigami_Mask_Run_Down"
+    Image="@asset=Module_Shinigami_Mask:Image_Shinigami_Mask"
+    AnimationFrames="18 19 20 19"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

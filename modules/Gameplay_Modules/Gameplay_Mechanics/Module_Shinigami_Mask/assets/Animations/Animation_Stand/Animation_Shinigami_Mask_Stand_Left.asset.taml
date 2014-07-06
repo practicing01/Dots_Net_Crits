@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Shinigami_Mask_Stand_Left"
+    Image="@asset=Module_Shinigami_Mask:Image_Shinigami_Mask"
+    AnimationFrames="28"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

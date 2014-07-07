@@ -569,3 +569,29 @@ new GuiControlProfile(Gui_Profile_Modalless_Text)
 };
 }
 
+//-----------------------------------------------------------------------------
+
+if (!isObject(GuiTextEditProfile_Centered)) new GuiControlProfile (GuiTextEditProfile_Centered)
+{
+    fontSize = $platformFontSize;
+    opaque = false;
+    fillColor = "232 240 248 255";
+    fillColorHL = "251 170 0 255";
+    fillColorNA = "127 127 127 52";
+    border = -2;
+    bitmap = "^Dots_Net_Crits/gui/images/textEdit.png";
+    borderColor = "40 40 40 10";
+    fontColor = "27 59 95 255";
+    fontColorHL = "232 240 248 255";
+    fontColorNA = "0 0 0 52";
+    fontColorSEL = "0 0 0 255";
+    textOffset = "5 2";
+    autoSizeWidth = false;
+    autoSizeHeight = false;
+    tab = false;
+    canKeyFocus = true;
+    returnTab = true;
+    justify = "center";
+};
+
+//-----------------------------------------------------------------------------

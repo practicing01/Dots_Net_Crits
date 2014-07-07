@@ -45,9 +45,9 @@ for (%x=0;%x<%this.Vector_2D_World_Limits.X;%x+=%this.Vector_2D_Floor_Tile_Size.
 {
 
 %Vector_2D_Position=
-(%x-%Vector_2D_Grid_Half_Offset.X)+(%this.Vector_2D_Floor_Tile_Size.X*0.5)
+%x+(%this.Vector_2D_Floor_Tile_Size.X*0.5)
 SPC
-(%y-%Vector_2D_Grid_Half_Offset.Y)+(%this.Vector_2D_Floor_Tile_Size.Y*0.5);
+%y+(%this.Vector_2D_Floor_Tile_Size.Y*0.5);
 
 %this.CompositeSprite_Floor.addSprite();
 

@@ -122,6 +122,21 @@
 </GuiButtonCtrl>
 -->
 
+<GuiTextEditCtrl
+                InternalName="GuiTextEditCtrl_Bind"
+		Profile="GuiTextEditProfile_Centered"
+		class="Class_Gameplay_Mechanic_Browser_GuiTextEditCtrl"
+                String_Type="Bind"
+		Text="Bind"
+		maxChars="255"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="60 210"
+		Extent="60 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"/>
+
 <GuiButtonCtrl
 		Profile="Blue_0ButtonProfile"
 		class="Class_Gameplay_Mechanic_Browser_Button"
@@ -130,8 +145,8 @@
 		ButtonType="PushButton"
 		HorizSizing="relative"
 		VertSizing="relative"
-		Position="95 210"
-		Extent="50 30"
+		Position="120 210"
+		Extent="60 30"
 		MinExtent="1 1"
 		Visible="1"
 		Active="1"

@@ -14,6 +14,11 @@ Dots_Net_Crits.Preferences_Save();
 
 Dots_Net_Crits.Resolution=%String_Resolution.X SPC %String_Resolution.Y;
 
+%Y_Times_100=100*Dots_Net_Crits.Resolution.Y;
+%Cam_Y=%Y_Times_100/Dots_Net_Crits.Resolution.X;
+
+SceneWindow_Dots_Net_Crits.setCameraSize(100,%Cam_Y);
+
 Gui_Dots_Net_Crits_Overlay.resize(0,0,Dots_Net_Crits.Resolution.X,Dots_Net_Crits.Resolution.Y);
 
 }

@@ -4,6 +4,8 @@ function Module_Gui_Instructions_Menu::Scene_Initialize(%this)
 %Text="Refresh the server list,";
 %Text=%Text NL "";
 %Text=%Text NL "Double click a server entry.";
+%Text=%Text NL "";
+%Text=%Text NL "Single player also starts a P2P server.";
 
 %this.Gui_Text_ML=new GuiMLTextCtrl()
 {

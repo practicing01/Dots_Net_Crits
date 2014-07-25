@@ -13,6 +13,12 @@ else if (%this.String_Type$="Set_Master_Server_IP")
 schedule(0,0,%this.Module_ID_Parent@"::"@"Set_Master_Server_IP",%this.Module_ID_Parent,%this);
 
 }
+else if (%this.String_Type$="Set_P2P_Server_IP")
+{
+
+schedule(0,0,%this.Module_ID_Parent@"::"@"Set_P2P_Server_IP",%this.Module_ID_Parent,%this);
+
+}
 else if (%this.String_Type$="Main_Menu")
 {
 

@@ -35,6 +35,8 @@ function Dots_Net_Crits::Preferences_Save(%this)
 
 %FileObject_File_Out.writeLine("$pref::Dots_Net_Crits::Master_IP = \"" @ $pref::Dots_Net_Crits::Master_IP @ "\";");
 
+%FileObject_File_Out.writeLine("$pref::Dots_Net_Crits::P2P_IP = \"" @ $pref::Dots_Net_Crits::P2P_IP @ "\";");
+
 %FileObject_File_Out.writeLine("$pref::Video::allowOpenGL =" SPC $pref::Video::allowOpenGL @ ";");
 
 %FileObject_File_Out.writeLine("$pref::Video::appliedPref =" SPC $pref::Video::appliedPref @ ";");

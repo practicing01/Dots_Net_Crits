@@ -13,6 +13,7 @@ $pref::Dots_Net_Crits::sortOption = 0;
 $pref::Dots_Net_Crits::wireframeOption = 0;
 $pref::Dots_Net_Crits::Player_Name = "Banana";
 $pref::Dots_Net_Crits::Master_IP = "192.168.1.100:9001";
+$pref::Dots_Net_Crits::P2P_IP = "192.168.1.100:9002";
 $pref::Video::allowOpenGL = 1;
 $pref::Video::appliedPref = 1;
 $pref::Video::clipHigh = 0;

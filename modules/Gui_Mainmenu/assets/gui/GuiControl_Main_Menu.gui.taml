@@ -40,6 +40,22 @@
 		Active="1"
 		useMouseEvents="1" />
 		
+	<!-- P2P -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Main_Menu"
+                String_Type="P2P"
+		Profile="Black_0ButtonProfile"
+		Text="P2P"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="328 450"
+		Extent="140 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+		
 	<!-- List Servers -->
 	<GuiButtonCtrl
                 class="Class_GuiButtonCtrl_Main_Menu"
@@ -49,7 +65,7 @@
 		ButtonType="PushButton"
 		HorizSizing="relative"
 		VertSizing="relative"
-		Position="328 450"
+		Position="328 420"
 		Extent="140 30"
 		MinExtent="1 1"
 		Visible="1"
@@ -65,7 +81,7 @@
 		ButtonType="PushButton"
 		HorizSizing="relative"
 		VertSizing="relative"
-		Position="328 420"
+		Position="328 390"
 		Extent="140 30"
 		MinExtent="1 1"
 		Visible="1"

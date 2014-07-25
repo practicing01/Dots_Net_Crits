@@ -1,4 +1,4 @@
-function Module_Gui_Main_Menu::Single_Player(%this,%GuiButtonCtrl)
+function Module_Gui_Main_Menu::P2P(%this,%GuiButtonCtrl)
 {
 
 if (Dots_Net_Crits.Bool_Hosting_Server||Dots_Net_Crits.Bool_Hosting_Master_Server)
@@ -22,15 +22,7 @@ Dots_Net_Crits.GameConnection_Client_Connection.delete("Connecting to a differen
 
 }
 
-setNetPort(9002);//OVER NINE THOUSAND
-
-ClientGroup.deleteObjects();//Clear clients.
-
-Dots_Net_Crits.Bool_Local_Connection=true;
-
-Dots_Net_Crits.Bool_Hosting_Server=true;
-
-Module_Server.Server_Load();
+setNetPort(9003);//OVER NINE THOUSAND
 
 Dots_Net_Crits.GameConnection_Client_Connection=new GameConnection();
 
@@ -43,6 +35,8 @@ $pref::Dots_Net_Crits::Player_Name,//Connector Name
 
 );
 
-Dots_Net_Crits.GameConnection_Client_Connection.connectLocal();
+echo("Connecting to P2P server:" SPC $pref::Dots_Net_Crits::P2P_IP);
+
+Dots_Net_Crits.GameConnection_Client_Connection.connect($pref::Dots_Net_Crits::P2P_IP);
 
 }

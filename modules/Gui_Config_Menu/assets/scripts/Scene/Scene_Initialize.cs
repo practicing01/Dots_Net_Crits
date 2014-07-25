@@ -40,4 +40,6 @@ getWord(%String_Resolution_List,%x+2);
 
 %this.GuiControl_Config_Menu->GuiTextEditCtrl_IP.setText($pref::Dots_Net_Crits::Master_IP);
 
+%this.GuiControl_Config_Menu->GuiTextEditCtrl_P2P_IP.setText($pref::Dots_Net_Crits::P2P_IP);
+
 }

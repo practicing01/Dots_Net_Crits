@@ -94,7 +94,7 @@
 					Profile="GuiTextEditProfile"
 					HorizSizing="relative"
 					VertSizing="relative"
-					Position="330 176"
+					Position="330 152"
 					Extent="160 24"
 					MinExtent="1 1"
 					Visible="1"
@@ -108,7 +108,7 @@
 					Profile="GuiTextEditProfile"
 					HorizSizing="relative"
 					VertSizing="relative"
-					Position="330 200"
+					Position="330 176"
 					Extent="160 24"
 					MinExtent="1 1"
 					Visible="1"
@@ -116,6 +116,20 @@
 					maxChars="255"
                                         class="Class_GuiTextEditCtrl_IP"
 					text="127.0.0.1:9000"/>
+	
+	<GuiTextEditCtrl
+					InternalName="GuiTextEditCtrl_P2P_IP"
+					Profile="GuiTextEditProfile"
+					HorizSizing="relative"
+					VertSizing="relative"
+					Position="330 200"
+					Extent="160 24"
+					MinExtent="1 1"
+					Visible="1"
+					Active="1"
+					maxChars="255"
+                                        class="Class_GuiTextEditCtrl_P2P_IP"
+					text="192.168.1.100:9002"/>
 	
 	<!-- set client name button -->
 	<GuiButtonCtrl
@@ -126,7 +140,7 @@
 		ButtonType="PushButton"
 		HorizSizing="relative"
 		VertSizing="relative"
-		Position="490 176"
+		Position="490 152"
 		Extent="128 24"
 		MinExtent="1 1"
 		Visible="1"
@@ -139,6 +153,22 @@
                 String_Type="Set_Master_Server_IP"
 		Profile="Black_0ButtonProfile"
 		Text="Set Master Server"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="490 176"
+		Extent="128 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />		
+	
+	<!-- set p2p server ip button -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Set_P2P_Server_IP"
+		Profile="Black_0ButtonProfile"
+		Text="Set P2P Server"
 		ButtonType="PushButton"
 		HorizSizing="relative"
 		VertSizing="relative"

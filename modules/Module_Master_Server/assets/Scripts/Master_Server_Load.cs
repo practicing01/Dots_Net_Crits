@@ -1,6 +1,8 @@
 function Module_Master_Server::Master_Server_Load(%this)
 {
 
+%this.Initialize_Variables();
+
 if (isObject(%this.GameConnection_Connection))
 {
 

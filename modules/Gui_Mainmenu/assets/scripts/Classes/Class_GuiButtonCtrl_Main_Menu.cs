@@ -13,6 +13,12 @@ else if (%this.String_Type$="Instructions")
 schedule(0,0,%this.Module_ID_Parent@"::"@"Instructions",%this.Module_ID_Parent,%this);
 
 }
+else if (%this.String_Type$="P2P")
+{
+
+schedule(0,0,%this.Module_ID_Parent@"::"@"P2P",%this.Module_ID_Parent,%this);
+
+}
 else if (%this.String_Type$="List_Servers")
 {
 

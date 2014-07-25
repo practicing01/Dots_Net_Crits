@@ -1,6 +1,10 @@
 function Module_Gui_Main_Menu::Servers_List(%this,%GuiButtonCtrl)
 {
 
+//queryLanServers(0,0,"","",0,0,0,0,0,0,0);return;
+
+//querySingleServer("192.168.1.100:9001","");return;
+
 if (Dots_Net_Crits.Bool_Hosting_Server||Dots_Net_Crits.Bool_Hosting_Master_Server)
 {
 

@@ -1,6 +1,8 @@
 function Module_Server::Server_Load(%this)
 {
 
+%this.Initialize_Variables();
+
 if (Dots_Net_Crits.Bool_Local_Connection)
 {
 

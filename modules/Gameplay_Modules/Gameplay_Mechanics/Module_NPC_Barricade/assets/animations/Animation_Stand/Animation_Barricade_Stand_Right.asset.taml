@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Barricade_Stand_Right"
+    Image="@asset=Module_NPC_Barricade:Image_Barricade"
+    AnimationFrames="0"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

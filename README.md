@@ -18,3 +18,4 @@ Blarumyrran
 piacenti : http://opengameart.org/content/spell-book-pack-0
 Rawdanitsu : http://opengameart.org/content/new-blue-gui
 Tom Ootjers : http://www.gamedev.net/page/resources/_/technical/game-programming/line-drawing-algorithm-explained-r1275
+rubberduck : http://opengameart.org/content/25-special-effects-rendered-with-blender

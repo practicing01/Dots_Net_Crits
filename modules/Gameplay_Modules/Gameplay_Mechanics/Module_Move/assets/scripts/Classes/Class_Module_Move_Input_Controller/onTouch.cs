@@ -6,6 +6,45 @@ if (!%this.Module_ID_Parent.Bool_Targeting_Object&&!%this.Module_ID_Parent.Bool_
 if (%this.Module_ID_Parent.Bool_Targeting_Position)
 {
 
+//Check if there is an obstacle in the way first.
+
+%Float_Direction=Vector2AngleToPoint(%this.Module_ID_Parent.Picked_Object.Position,%Vector_2D_World_Position);
+
+%Float_Magnitude=%this.Module_ID_Parent.Picked_Object.Size.X;
+
+if (%this.Module_ID_Parent.Picked_Object.Size.Y>%Float_Magnitude)
+{
+
+%Float_Magnitude=%this.Module_ID_Parent.Picked_Object.Size.Y;
+
+}
+
+%Vector_2D_Projection=Vector2Direction(%Float_Direction,%Float_Magnitude);
+
+%Vector_2D_Projected_Position=Vector2Add(%this.Module_ID_Parent.Picked_Object.Position,%Vector_2D_Projection);
+
+%Vector_2D_Size_Half=Vector2Mult(%this.Module_ID_Parent.Picked_Object.Size,"0.5 0.5");
+
+%Vector_2D_Top_Left=Vector2Sub(%Vector_2D_Projected_Position,%Vector_2D_Size_Half);
+
+%Vector_2D_Bottom_Right=Vector2Add(%Vector_2D_Projected_Position,%Vector_2D_Size_Half);
+
+%String_Object_List=Scene_Dots_Net_Crits.pickArea(%Vector_2D_Top_Left,%Vector_2D_Bottom_Right,"","","any");
+
+if (getWordCount(%String_Object_List)!=0)
+{
+
+for (%x=0;%x<getWordCount(%String_Object_List);%x++)
+{
+
+%Object=getWord(%String_Object_List,%x);
+
+if (%Object.SceneGroup==30){return;}//Wall
+
+}
+
+}
+
 %this.Module_ID_Parent.Bool_Targeting_Position=false;
 
 commandToServer('Relay_Module_Function',Module_Move,"Move",

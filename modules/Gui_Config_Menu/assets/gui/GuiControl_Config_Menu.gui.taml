@@ -179,5 +179,243 @@
 		Active="1"
 		useMouseEvents="1" />		
 		
+	
+	<!-- p2p server ip keypad -->
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="P2P_Server_IP_Keypad"
+		Profile="Black_0ButtonProfile"
+		Text="Keypad"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="618 200"
+		Extent="128 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
 
+<GuiControl
+    InternalName="GuiControl_Keypad"
+    Profile="gui_profile_modalless"
+    HorizSizing="relative"
+    VertSizing="relative"
+    Position="322 285"
+    Extent="336 24"
+    MinExtent="1 1"
+    Visible="0">
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="1"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="0 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="2"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="24 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="3"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="48 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="4"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="72 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="5"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="96 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="6"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="120 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="7"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="144 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="8"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="168 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="9"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="192 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="0"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="216 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="."
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="240 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text=":"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="264 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="CLR"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="288 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+
+	<GuiButtonCtrl
+                class="Class_GuiButtonCtrl_Config_Menu"
+                String_Type="Key"
+		Profile="Black_0ButtonProfile"
+		Text="RET"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="312 0"
+		Extent="24 24"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1" />
+		
+</GuiControl>
+		
 </GuiControl>

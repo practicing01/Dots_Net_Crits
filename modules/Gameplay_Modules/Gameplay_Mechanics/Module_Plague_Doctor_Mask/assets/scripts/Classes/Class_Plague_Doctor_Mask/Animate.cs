@@ -14,6 +14,8 @@ function Class_Plague_Doctor_Mask::Animate(%this,%Float_Angle,%Int_Animation_Typ
 if (%Float_Angle>=45&&%Float_Angle<135)//Up
 {
 
+%this.SceneLayer=17;
+
 if (%Int_Animation_Type==0)
 {
 
@@ -42,6 +44,8 @@ else if (%Int_Animation_Type==3)
 }
 else if (%Float_Angle<=-45&&%Float_Angle>-135)//Down
 {
+
+%this.SceneLayer=15;
 
 if (%Int_Animation_Type==0)
 {
@@ -72,6 +76,8 @@ else if (%Int_Animation_Type==3)
 else if (%Float_Angle>=135||%Float_Angle<-135)//Left
 {
 
+%this.SceneLayer=15;
+
 if (%Int_Animation_Type==0)
 {
 
@@ -100,6 +106,8 @@ else if (%Int_Animation_Type==3)
 }
 else if (%Float_Angle<45||%Float_Angle>-45)//Right
 {
+
+%this.SceneLayer=15;
 
 if (%Int_Animation_Type==0)
 {

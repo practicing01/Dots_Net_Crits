@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Vampire_Run_Left"
+    Image="@asset=Module_NPC_Vampire:Image_Vampire"
+    AnimationFrames="9 10 11 10"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

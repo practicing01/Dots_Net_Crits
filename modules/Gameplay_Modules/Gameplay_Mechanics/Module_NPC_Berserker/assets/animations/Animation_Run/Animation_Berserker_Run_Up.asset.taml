@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Berserker_Run_Up"
+    Image="@asset=Module_NPC_Berserker:Image_Berserker"
+    AnimationFrames="0 1 2 1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

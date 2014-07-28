@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Berserker_Stand_Right"
+    Image="@asset=Module_NPC_Berserker:Image_Berserker"
+    AnimationFrames="4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dagger_Stand_Left"
+    Image="@asset=Module_NPC_Dagger:Image_Dagger"
+    AnimationFrames="28"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

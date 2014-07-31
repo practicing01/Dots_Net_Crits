@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dagger_Attack_Up"
+    Image="@asset=Module_NPC_Dagger:Image_Dagger"
+    AnimationFrames="1 0 3"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

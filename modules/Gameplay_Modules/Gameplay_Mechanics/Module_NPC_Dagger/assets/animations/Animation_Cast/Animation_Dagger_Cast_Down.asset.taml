@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dagger_Cast_Down"
+    Image="@asset=Module_NPC_Dagger:Image_Dagger"
+    AnimationFrames="22 23 24 25 26"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

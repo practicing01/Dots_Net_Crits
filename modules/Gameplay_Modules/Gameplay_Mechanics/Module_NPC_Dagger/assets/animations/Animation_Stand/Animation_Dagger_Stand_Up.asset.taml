@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dagger_Stand_Up"
+    Image="@asset=Module_NPC_Dagger:Image_Dagger"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

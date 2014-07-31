@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dagger_Run_Down"
+    Image="@asset=Module_NPC_Dagger:Image_Dagger"
+    AnimationFrames="18 19 20 19"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

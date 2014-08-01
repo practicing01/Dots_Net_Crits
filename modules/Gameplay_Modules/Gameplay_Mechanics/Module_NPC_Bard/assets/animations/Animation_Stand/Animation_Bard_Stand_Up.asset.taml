@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Bard_Stand_Up"
+    Image="@asset=Module_NPC_Bard:Image_Bard"
+    AnimationFrames="1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

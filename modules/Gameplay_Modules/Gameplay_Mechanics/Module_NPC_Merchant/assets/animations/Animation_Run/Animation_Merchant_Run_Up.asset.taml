@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Merchant_Run_Up"
+    Image="@asset=Module_NPC_Merchant:Image_Merchant"
+    AnimationFrames="0 1 2 1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

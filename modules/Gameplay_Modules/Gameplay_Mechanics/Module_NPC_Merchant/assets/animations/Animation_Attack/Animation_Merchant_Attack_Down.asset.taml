@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Merchant_Attack_Down"
+    Image="@asset=Module_NPC_Merchant:Image_Merchant_Attack"
+    AnimationFrames="8 9 10 11"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

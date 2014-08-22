@@ -1,0 +1,8 @@
+<ImageAsset
+	AssetName="stump2ImageMap"
+	ImageFile="stump2.png"
+	CellCountX="1"
+	CellCountY="1"
+	CellWidth="16"
+	CellHeight="16"
+/>

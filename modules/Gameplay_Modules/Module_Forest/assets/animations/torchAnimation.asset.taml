@@ -1,0 +1,7 @@
+<AnimationAsset
+	AssetName="torchAnimation"
+	Image="@asset=Module_Forest:torchImageMap"
+	AnimationFrames="0 1 2"
+	AnimationCycle="1"
+	AnimationTime="0.375"
+/>

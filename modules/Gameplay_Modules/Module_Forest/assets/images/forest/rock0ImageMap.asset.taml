@@ -1,0 +1,8 @@
+<ImageAsset
+	AssetName="rock0ImageMap"
+	ImageFile="rock0.png"
+	CellCountX="1"
+	CellCountY="1"
+	CellWidth="16"
+	CellHeight="16"
+/>

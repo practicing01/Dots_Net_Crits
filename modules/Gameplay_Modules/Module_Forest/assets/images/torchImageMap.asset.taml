@@ -1,0 +1,8 @@
+<ImageAsset
+	AssetName="torchImageMap"
+	ImageFile="torch.png"
+	CellCountX="3"
+	CellCountY="1"
+	CellWidth="16"
+	CellHeight="16"
+/>

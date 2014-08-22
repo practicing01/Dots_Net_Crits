@@ -1,0 +1,8 @@
+<ImageAsset
+	AssetName="treeImageMap"
+	ImageFile="tree.png"
+	CellCountX="1"
+	CellCountY="1"
+	CellWidth="32"
+	CellHeight="32"
+/>

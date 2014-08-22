@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Forest"
+	Type="Gameplay_Module"
+	VersionId="1"
+	Description="Forest Gameplay Module"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

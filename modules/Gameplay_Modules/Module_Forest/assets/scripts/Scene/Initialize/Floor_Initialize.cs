@@ -93,7 +93,7 @@ for (%x=0;%x<Scene_Dots_Net_Crits.getCount();%x++)
 
 %Object=Scene_Dots_Net_Crits.getObject(%x);
 
-if (%Object.class!$="Class_Player_Sprite")
+if (%Object.class!$="Class_Player_Sprite"&&%Object.class!$="Class_Wall")
 {
 
 %Object.Position=Vector2Add(%Object.Position,%Vector_2D_World_Limits_Half_Offset);

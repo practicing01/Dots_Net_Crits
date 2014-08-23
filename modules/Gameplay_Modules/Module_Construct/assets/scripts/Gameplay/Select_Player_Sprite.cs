@@ -44,7 +44,7 @@ Collision_Shape_Index=-1;
 
 String_Name=%ScriptObject_Client_Copy.Connector_Name;
 
-Int_Index=0;//Not used by player sprites but for modularities sake.  Used by other objects though for identification though.
+Int_Index=0;//Not used by player sprites but for modularity's sake.  Used by other objects though for identification though.
 
 Int_Base_Speed=%this.Int_Gameplay_Object_Speed;
 

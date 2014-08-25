@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Dancer_F_Run_Up"
+    Image="@asset=Module_Dancer_F:Image_Dancer_F"
+    AnimationFrames="0 1 2 1"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

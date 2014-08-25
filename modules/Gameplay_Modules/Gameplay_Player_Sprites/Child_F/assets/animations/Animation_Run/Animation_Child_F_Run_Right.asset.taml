@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Child_F_Run_Right"
+    Image="@asset=Module_Child_F:Image_Child_F"
+    AnimationFrames="3 4 5 4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

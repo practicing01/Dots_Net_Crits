@@ -2,7 +2,7 @@
 	ModuleId="Module_Cultist"
 	Type="Gameplay_Player_Sprite"
 	VersionId="1"
-	Description="Cultist F"
+	Description="Cultist"
 	ScriptFile="main.cs"
 	CreateFunction="create"
     DestroyFunction="destroy">

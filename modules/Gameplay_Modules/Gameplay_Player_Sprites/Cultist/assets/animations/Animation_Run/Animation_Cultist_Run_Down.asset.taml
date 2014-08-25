@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Cultist_Run_Down"
+    Image="@asset=Module_Cultist:Image_Cultist"
+    AnimationFrames="6 7 8 7"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

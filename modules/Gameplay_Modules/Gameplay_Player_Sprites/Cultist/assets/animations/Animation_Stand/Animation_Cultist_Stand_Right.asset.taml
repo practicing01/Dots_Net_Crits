@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Cultist_Stand_Right"
+    Image="@asset=Module_Cultist:Image_Cultist"
+    AnimationFrames="4"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

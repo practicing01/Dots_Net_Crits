@@ -1,0 +1,13 @@
+<ModuleDefinition
+	ModuleId="Module_Berserk_F"
+	Type="Gameplay_Player_Sprite"
+	VersionId="1"
+	Description="Berserk F"
+	ScriptFile="main.cs"
+	CreateFunction="create"
+    DestroyFunction="destroy">
+        <DeclaredAssets
+            Path="assets"
+            Extension="asset.taml"
+            Recurse="true"/>		
+</ModuleDefinition>

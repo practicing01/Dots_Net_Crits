@@ -1,6 +1,20 @@
 function Class_Module_NPC_Mech::onRemove(%this)
 {
 
+if (isObject(%this.Object_Mounted))
+{
+
+%this.Object_Mounted.dismount();
+
+if (isObject(%this.Object_Mounted.SimSet_onRemove_Listeners))
+{
+
+%this.Object_Mounted.SimSet_onRemove_Listeners.remove(%this);
+
+}
+
+}
+
 //Remove foreign statuses
 
 if (isObject(%this.SimSet_Foreign_Status))

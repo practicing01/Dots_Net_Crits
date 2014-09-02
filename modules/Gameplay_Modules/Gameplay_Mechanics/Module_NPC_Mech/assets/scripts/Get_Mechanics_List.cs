@@ -25,6 +25,17 @@ String_Mechanic="Fire";
 
 %SimSet_Mechanics_List.add(%ScriptObject_Mechanic);
 
+%ScriptObject_Mechanic=new ScriptObject()
+{
+
+String_Group="Utility";
+
+String_Mechanic="Mount";
+
+};
+
+%SimSet_Mechanics_List.add(%ScriptObject_Mechanic);
+
 return %SimSet_Mechanics_List;
 
 }

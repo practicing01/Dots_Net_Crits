@@ -122,6 +122,8 @@ Int_Base_Attack=100;
 
 Int_Current_Attack=100;
 
+Object_Mounted=0;
+
 };
 
 %Sprite_Mech.SimSet_Foreign_Status=new SimSet();

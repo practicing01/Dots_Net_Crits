@@ -44,10 +44,17 @@ else if (%Module_Function$="Punch")
 
 %this.Punch(%GameConnection_Client_Sender,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
 
-}else if (%Module_Function$="Fire")
+}
+else if (%Module_Function$="Fire")
 {
 
 %this.Fire(%GameConnection_Client_Sender,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
+
+}
+else if (%Module_Function$="Mount")
+{
+
+%this.Mount(%GameConnection_Client_Sender,%Parameter_0,%Parameter_1,%Parameter_2,%Parameter_3,%Parameter_4,%Parameter_5);
 
 }
 else if (%Module_Function$="Update_Foreign_Status")

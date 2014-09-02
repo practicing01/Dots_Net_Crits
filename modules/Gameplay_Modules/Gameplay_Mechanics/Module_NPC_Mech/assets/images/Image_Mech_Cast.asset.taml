@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Mech_Cast"
+    ImageFile="Mech_Cast.png"
+    CellCountX="5"
+    CellCountY="4"
+    CellWidth="48"
+    CellHeight="48"
+    Optimal_Resolution="800 480"/>
+

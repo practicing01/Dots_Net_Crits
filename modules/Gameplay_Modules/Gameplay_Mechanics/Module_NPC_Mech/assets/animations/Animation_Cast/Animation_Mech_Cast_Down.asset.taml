@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Mech_Cast_Down"
+    Image="@asset=Module_NPC_Mech:Image_Mech_Cast"
+    AnimationFrames="0 1 2 3 4"
+    AnimationCycle="false"
+	AnimationTime="0.5" />
+

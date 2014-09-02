@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Mech_Run_Left"
+    Image="@asset=Module_NPC_Mech:Image_Mech"
+    AnimationFrames="9 10 11 10"
+    AnimationCycle="true"
+	AnimationTime="1.0" />
+

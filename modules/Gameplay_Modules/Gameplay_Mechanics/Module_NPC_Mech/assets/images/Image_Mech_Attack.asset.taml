@@ -1,0 +1,9 @@
+<ImageAsset
+    AssetName="Image_Mech_Attack"
+    ImageFile="Mech_Attack.png"
+    CellCountX="3"
+    CellCountY="4"
+    CellWidth="48"
+    CellHeight="48"
+    Optimal_Resolution="800 480"/>
+

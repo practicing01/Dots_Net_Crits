@@ -1,0 +1,7 @@
+<AnimationAsset
+    AssetName="Animation_Mech_Attack_Down"
+    Image="@asset=Module_NPC_Mech:Image_Mech_Attack"
+    AnimationFrames="0 1 2"
+    AnimationCycle="false"
+	AnimationTime="1.0" />
+

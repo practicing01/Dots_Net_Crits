@@ -9,7 +9,7 @@ function Module_Bunny_Girl::Player_Sprite_Load(%this)
 %ScriptObject_Sprite_Data=new ScriptObject()
 {
 
-Vector_2D_Size=Vector_2D_Ass_Size_To_Camera_Scale(%this.Ass_Image_Bunny_Girl);
+Vector_2D_Size=Vector_2D_Ass_Size_To_Camera_Scale(%this.Ass_Image_Bunny_Girl_Attack);
 
 Animation_Stand_Up="Module_Bunny_Girl:Animation_Bunny_Girl_Stand_Up";
 

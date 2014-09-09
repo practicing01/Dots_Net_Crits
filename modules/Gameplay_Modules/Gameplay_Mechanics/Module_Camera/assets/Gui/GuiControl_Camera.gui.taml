@@ -5,7 +5,7 @@
     HorizSizing="relative"
     VertSizing="relative"
     Position="0 0"
-    Extent="150 150"
+    Extent="200 130"
     MinExtent="1 1"
     Visible="0"
     useMouseEvents="1">
@@ -164,8 +164,42 @@ class="Class_Gui_Module_Camera_Drop_Catcher"
 		ButtonType="PushButton"
 		HorizSizing="relative"
 		VertSizing="relative"
-		Position="120 0"
+		Position="170 0"
 		Extent="30 30"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1">
+</GuiButtonCtrl>
+
+<!-- Zoom In -->
+<GuiButtonCtrl
+		Profile="Blue_0ButtonProfile"
+		class="Class_Module_Camera_Button"
+                String_Type="Zoom_In"
+		Text="Zoom In"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="140 30"
+		Extent="60 40"
+		MinExtent="1 1"
+		Visible="1"
+		Active="1"
+		useMouseEvents="1">
+</GuiButtonCtrl>
+
+<!-- Zoom Out -->
+<GuiButtonCtrl
+		Profile="Blue_0ButtonProfile"
+		class="Class_Module_Camera_Button"
+                String_Type="Zoom_Out"
+		Text="Zoom Out"
+		ButtonType="PushButton"
+		HorizSizing="relative"
+		VertSizing="relative"
+		Position="140 70"
+		Extent="60 40"
 		MinExtent="1 1"
 		Visible="1"
 		Active="1"

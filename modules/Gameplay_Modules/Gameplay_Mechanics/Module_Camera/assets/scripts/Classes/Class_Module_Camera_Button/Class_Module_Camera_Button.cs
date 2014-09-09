@@ -185,5 +185,17 @@ SceneWindow_Dots_Net_Crits.dismount();
 }
 
 }
+else if (%this.String_Type$="Zoom_In")
+{
+
+SceneWindow_Dots_Net_Crits.setCameraZoom(SceneWindow_Dots_Net_Crits.getCameraZoom()+$pref::Dots_Net_Crits::cameraMouseZoomRate);
+
+}
+else if (%this.String_Type$="Zoom_Out")
+{
+
+SceneWindow_Dots_Net_Crits.setCameraZoom(SceneWindow_Dots_Net_Crits.getCameraZoom()-$pref::Dots_Net_Crits::cameraMouseZoomRate);
+
+}
 
 }

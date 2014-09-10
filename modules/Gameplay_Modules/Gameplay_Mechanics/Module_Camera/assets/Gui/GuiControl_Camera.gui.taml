@@ -11,7 +11,7 @@
     useMouseEvents="1">
 
 <GuiControl
-Visible=0;
+Visible="0"
 class="Class_Gui_Module_Camera_Drop_Catcher"
 />
 

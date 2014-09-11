@@ -42,7 +42,13 @@ for (%x=0;%x<getWordCount(%String_Object_List);%x++)
 
 }
 
-%this.Module_ID_Parent.Gui_Object_List.Position=SceneWindow_Dots_Net_Crits.getWindowPoint(%Vector_2D_World_Position);
+//Fracked on android.
+//%this.Module_ID_Parent.Gui_Object_List.Position=SceneWindow_Dots_Net_Crits.getWindowPoint(%Vector_2D_World_Position);
+
+%this.Module_ID_Parent.Gui_Object_List.Position=
+(Dots_Net_Crits.Resolution.X*0.5)-(%this.Module_ID_Parent.Gui_Object_List.Extent.X*0.5)
+SPC
+(Dots_Net_Crits.Resolution.Y*0.5)-(%this.Module_ID_Parent.Gui_Object_List.Extent.Y*0.5);
 
 Gui_Dots_Net_Crits_Overlay.add(%this.Module_ID_Parent.Gui_Object_List);
 

@@ -35,7 +35,13 @@ for (%x=0;%x<getWordCount(%String_Object_List);%x++)
 
 }
 
-%this.Gui_Object_List.Position=SceneWindow_Dots_Net_Crits.getWindowPoint(%this.Object_Mechanic_First_Target.Position);
+//Fracked on android.
+//%this.Gui_Object_List.Position=SceneWindow_Dots_Net_Crits.getWindowPoint(%this.Object_Mechanic_First_Target.Position);
+
+%this.Gui_Object_List.Position=
+(Dots_Net_Crits.Resolution.X*0.5)-(%this.Gui_Object_List.Extent.X*0.5)
+SPC
+(Dots_Net_Crits.Resolution.Y*0.5)-(%this.Gui_Object_List.Extent.Y*0.5);
 
 Gui_Dots_Net_Crits_Overlay.add(%this.Gui_Object_List);
 

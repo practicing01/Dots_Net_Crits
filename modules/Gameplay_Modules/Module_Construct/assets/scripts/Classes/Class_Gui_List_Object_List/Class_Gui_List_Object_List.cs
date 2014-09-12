@@ -33,3 +33,10 @@ if (isObject(%this.Module_ID_Parent.Highlighted_Object))
 %this.Module_ID_Parent.Highlighted_Object.BlendColor="0.5 1.0 1.0 1.0";
 
 }
+
+function Class_Gui_List_Object_List::onMouseDragged(%this)
+{
+
+%this.onDoubleClick();
+
+}

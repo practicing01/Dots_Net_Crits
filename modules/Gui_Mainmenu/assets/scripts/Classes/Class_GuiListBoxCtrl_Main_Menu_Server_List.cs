@@ -53,3 +53,10 @@ echo("Connecting to server:" SPC %ScriptObject_Server.Connector_Name SPC "at:" S
 Dots_Net_Crits.GameConnection_Client_Connection.connect(%ScriptObject_Server.IP_Address);
 
 }
+
+function Class_GuiListBoxCtrl_Main_Menu_Server_List::onMouseDragged(%this)
+{
+
+%this.onDoubleClick();
+
+}

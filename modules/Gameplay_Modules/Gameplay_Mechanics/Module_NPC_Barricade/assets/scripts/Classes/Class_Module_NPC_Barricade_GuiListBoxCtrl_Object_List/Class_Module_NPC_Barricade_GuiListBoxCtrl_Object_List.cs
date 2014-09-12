@@ -42,3 +42,10 @@ if (isObject(%this.Module_ID_Parent.Highlighted_Object))
 %this.Module_ID_Parent.Highlighted_Object.BlendColor="0.5 1.0 1.0 1.0";
 
 }
+
+function Class_Module_NPC_Barricade_GuiListBoxCtrl_Object_List::onMouseDragged(%this)
+{
+
+%this.onDoubleClick();
+
+}

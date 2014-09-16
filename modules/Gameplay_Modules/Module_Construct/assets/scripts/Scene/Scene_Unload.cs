@@ -1,6 +1,15 @@
 function Module_Construct::Scene_Unload(%this)
 {
 
+if (isObject(%this.SimSet_Visibility_Rays))
+{
+
+%this.SimSet_Visibility_Rays.deleteObjects();
+
+%this.SimSet_Visibility_Rays.delete();
+
+}
+
 if (isObject(%this.ActionMap_Toggle_Grid))
 {
 

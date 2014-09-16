@@ -4,3 +4,4 @@ exec("./Class_Module_Construct_Input_Controller/Class_Module_Construct_Input_Con
 exec("./Class_Player_Sprite/Class_Player_Sprite.cs");
 exec("./Class_Gui_List_Object_List/Class_Gui_List_Object_List.cs");
 exec("./Class_Module_Construct_Button/Class_Module_Construct_Button.cs");
+exec("./Class_Visibility_Segment/Class_Visibility_Segment.cs");

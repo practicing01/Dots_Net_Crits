@@ -1,6 +1,10 @@
 function Module_Construct::Variables_Initialize(%this)
 {
 
+%this.SimSet_Visibility_Rays=new SimSet();
+
+/******************************/
+
 %this.ActionMap_Toggle_Grid=new ActionMap();
 
 %this.ActionMap_Toggle_Grid.push();

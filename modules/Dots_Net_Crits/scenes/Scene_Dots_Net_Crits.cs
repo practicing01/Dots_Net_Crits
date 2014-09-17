@@ -168,7 +168,7 @@ Scene_Set_To_Window();
 //%Scene.setDebugOn("aabb");
 //%Scene.setDebugOn("oobb");
 //%Scene.setDebugOn("sleep");
-%Scene.setDebugOn("collision");
+//%Scene.setDebugOn("collision");
 //%Scene.setDebugOn("position");
 //%Scene.setDebugOn("sort");
 //%Scene.setDebugOn("controllers");

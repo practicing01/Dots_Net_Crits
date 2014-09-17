@@ -10,3 +10,4 @@ exec("./Grid_Toggle.cs");
 exec("./Gui_Toggle.cs");
 exec("./Add_Status.cs");
 exec("./Remove_Status.cs");
+exec("./Check_Object_Visibility.cs");

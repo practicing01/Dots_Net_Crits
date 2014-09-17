@@ -43,4 +43,11 @@ if (isObject(%Object_Listener))
 
 }
 
+if (isObject(%this.SimSet_Colliding_Objects))
+{
+
+%this.SimSet_Colliding_Objects.delete();
+
+}
+
 }

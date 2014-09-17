@@ -74,6 +74,10 @@ SleepingAllowed=false;
 
 SceneGroup=29;//Visibility Segments
 
+SimSet_Colliding_Objects=0;
+
+Parent_Player_Sprite=%Player_Sprite;
+
 };
 
 %SceneObject_Segment.setCollisionGroups("0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 30 31");
@@ -85,6 +89,8 @@ SceneGroup=29;//Visibility Segments
 Scene_Dots_Net_Crits.add(%SceneObject_Segment);
 
 %SceneObject_Segment.SimSet_onRemove_Listeners=new SimSet();
+
+%SceneObject_Segment.SimSet_Colliding_Objects=new SimSet();
 
 if (%SimSet_Column.getCount()>0)
 {

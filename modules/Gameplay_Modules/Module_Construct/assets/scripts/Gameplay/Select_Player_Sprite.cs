@@ -105,7 +105,7 @@ Gui_Dots_Net_Crits_Overlay.remove(%this.GuiControl_Player_Sprite_Select);
 
 %this.Floor_Initialize();
 
-%this.Visibility_Rays_Initialize();
+//%this.Visibility_Rays_Initialize();
 
 ModuleDatabase.LoadExplicit(Module_Gameplay_Mechanic_Browser);
 

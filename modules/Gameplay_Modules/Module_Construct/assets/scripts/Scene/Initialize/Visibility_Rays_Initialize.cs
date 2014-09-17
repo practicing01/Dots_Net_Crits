@@ -25,7 +25,7 @@ break;
 
 %Vector_2D_Segment_Size=Vector2Mult("16 16",%Vector_2D_Camera_World_Scale);
 
-for (%x=90;%x>=-90;%x-=20)//Columns (angle)
+for (%x=90;%x>=-90;%x-=10)//Columns (angle)
 {
 
 %SimSet_Column=new SimSet();
@@ -105,7 +105,7 @@ if (%SimSet_Column.getCount()>0)
 
 }
 
-%Int_Row_Size_Scale_Counter+=5;
+%Int_Row_Size_Scale_Counter+=2;
 
 %Int_Row_Counter++;
 
